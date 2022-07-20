@@ -1,0 +1,286 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIGN IN</title>
+    <link
+      rel="icon"
+      href="https://tse1.mm.bing.net/th?id=OIP.G2IV-RvoujvzA0G6K7DRXgHaIN&pid=Api&P=0"
+    />
+    <script
+      src="https://kit.fontawesome.com/adceeb3ad0.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      #nav {
+        display: flex;
+        margin: auto;
+        align-items: center;
+
+        border-bottom: 0.1px solid rgb(214, 206, 206);
+        width: 100%;
+        padding: 10px 10px;
+      }
+      #logo {
+        margin-left: 550px;
+      }
+      #b {
+        margin-left: 30px;
+      }
+
+      #signin {
+        margin-left: 500px;
+
+        width: 400px;
+      }
+      .form {
+        margin-top: 10px;
+        position: relative;
+      }
+      .form input {
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+        border: 1px solid gray;
+        outline: none;
+        padding-top: 20px;
+        padding-left: 15px;
+        font-size: 14;
+      }
+      .form label {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, sans-serif;
+        color: #343b53;
+      }
+      h1 {
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 2.25rem;
+        font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, sans-serif;
+        color: #141d38;
+      }
+      .eye {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+      }
+      #hide2 {
+        display: none;
+      }
+
+      input:focus {
+        border-color: red;
+      }
+      #check input:hover {
+        border-color: blue;
+      }
+      .form input:focus ~ label,
+      input:not(:placeholder-shown) + label {
+        top: 3px;
+        font-size: 12px;
+        font-family: sans-serif;
+      }
+      .form input:hover {
+        border-color: skyblue;
+      }
+      #botm {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin: auto;
+
+        width: 100px;
+      }
+      .botm {
+        width: 17px;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .p {
+        text-align: center;
+      }
+      p {
+        font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 14px;
+        color: #343b53;
+      }
+      #check {
+        display: flex;
+      }
+      a {
+        text-decoration: none;
+      }
+      .botm1 {
+        width: 17px;
+        text-align: center;
+        margin-top: 6.5px;
+      }
+      button {
+        align-items: center;
+        border-style: solid;
+        border-width: 0;
+        display: inline-flex;
+        font-weight: 500;
+        justify-content: center;
+        padding: 14px 175px 14px 175px;
+        font-size: 1rem;
+        background-color: #a1b4e7;
+        color: white;
+        border-radius: 0.5rem;
+      }
+      .or {
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        margin-left: 50px;
+        margin-top: 50px;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      input::placeholder {
+        color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div id="nav">
+        <a href="#"> <i id="b" class="fa-solid fa-arrow-left"></i></a>
+        <img
+          id="logo"
+          src="https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1&2"
+          alt="logo"
+        />
+      </div>
+
+      <div id="signin">
+        <h1>Sign in</h1>
+
+        <div class="form">
+          <input
+            type="email"
+            id="email"
+            placeholder="Email Address"
+            onkeyup="isempty()"
+          />
+          <label for="">Email Address</label>
+        </div>
+        <div class="form">
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            onkeyup="isempty()"
+          />
+          <label for="">Password</label>
+
+          <span class="eye" onclick="myfun()">
+            <i id="hide2" class="fa-solid fa-eye"></i>
+            <i id="hide1" class="fa-solid fa-eye-slash"></i>
+          </span>
+        </div>
+        <div id="check">
+          <input type="checkbox" />
+          <p>This is a public or shared device</p>
+        </div>
+
+        <p>
+          By signing in, I agree to the Expedia
+          <a href="#">Terms and Conditions, Privacy Statement</a> and
+          <a href="#">Expedia Rewards Terms Conditions. </a>
+        </p>
+        <button id="btn" disabled>Sign in</button>
+        <p class="p"><a href="#">Forget Password ?</a></p>
+        <p class="p">
+          Don't have an account?<a href="signup.html"> Create one</a>
+        </p>
+      </div>
+      <div class="or">
+        <p>or continue with</p>
+        <div id="botm">
+          <div>
+            <img
+              class="botm1"
+              src="https://a.travel-assets.com/egds/marks/apple.svg"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="botm"
+              src="https://a.travel-assets.com/egds/marks/facebook.svg"
+              alt=""
+            />
+          </div>
+
+          <div>
+            <img
+              class="botm"
+              src="https://a.travel-assets.com/egds/marks/google.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  let myfun = () => {
+    let x = document.getElementById("password");
+    let y = document.getElementById("hide2");
+    let z = document.getElementById("hide1");
+
+    if (x.type === "password") {
+      x.type = "text";
+      y.style.display = "block";
+      z.style.display = "none";
+    } else {
+      x.type = "password";
+      y.style.display = "none";
+      z.style.display = "block";
+    }
+  };
+
+  let isempty = () => {
+    let name = document.getElementById("email");
+    let pass = document.getElementById("password");
+    if (name.value.length > 0 && pass.value.length > 0) {
+      document.getElementById("btn").removeAttribute("disabled");
+      document.getElementById("btn");
+    } else {
+      document.getElementById("btn").setAttribute("disabled", "disabled");
+      document.getElementById("btn").style.backgroundColor = "#3662d8";
+    }
+  };
+
+  let arr = JSON.parse(localStorage.getItem("sign")) || [];
+  document.querySelector("button").addEventListener("click", myfunt);
+
+  function myfunt() {
+    let email = document.querySelector("#email").value;
+    let password = document.querySelector("#password").value;
+
+    let user = false;
+
+    arr.forEach(function (elem) {
+      if (elem.email === email && elem.password === password) {
+        user = true;
+      }
+    });
+    if (user === true) {
+      alert("logged in");
+      window.location.href = "index1.html";
+    } else {
+      alert("Invalid Email OR Password");
+    }
+  }
+</script>
+<!-- opacity: 0.36; -->

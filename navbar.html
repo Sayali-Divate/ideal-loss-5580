@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main</title>
+    <script
+      src="https://kit.fontawesome.com/adceeb3ad0.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      #navbar {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        border-top: 0.1px solid rgb(214, 206, 206);
+        border-bottom: 0.1px solid rgb(214, 206, 206);
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+      }
+      #frstd {
+        margin: auto;
+        margin-left: 70px;
+      }
+      #secdiv {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+
+        border: solid red;
+      }
+      #sel {
+        border: none;
+        margin-right: 200px;
+      }
+      #bell {
+        margin-top: 13px;
+      }
+      #gol {
+        margin-top: 14px;
+        margin-right: -100px;
+      }
+
+      .para {
+        font-family: inherit;
+        cursor: pointer;
+        margin: auto;
+        font-weight: 500;
+
+        font-size: 0.875rem;
+        color: #343b53;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <div id="frstd">
+        <img
+          id="logo"
+          src="https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1&2"
+          alt="logo"
+        />
+      </div>
+      <select name="More travel" id="sel">
+        More travel
+
+        <option value=""><p class="para">More travels</p></option>
+      </select>
+
+      <div id="secdiv">
+        <i id="gol" class="fa-solid fa-globe"></i>
+        <div class="para">English</div>
+        <div class="para">List your property</div>
+        <div class="para">Support</div>
+        <div class="para">Trips</div>
+        <i id="bell" class="fa-solid fa-bell"></i>
+        <div class="para">Sign in</div>
+      </div>
+    </div>
+  </body>
+</html>
