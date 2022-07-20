@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+
+/* navbar startss */
+
+#payment_page_navbar {
+    display: flex;
+    height: 71px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-bottom: 0.5px solid rgb(196, 194, 194);
+}
+
+#payment_page_navbar_inner {
+    display: flex;
+    width: 88%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#payment_page_navbar_image_logo_box {
+    height: 28px;
+}
+
+#payment_page_navbar_image_logo {
+    height: 100%;
+}
+
+#payment_page_navbar_signIn_option {
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 14px;
+    color: rgb(52, 59, 83);
+    margin-right: 15px;
+
+    display: flex;
+    align-items: center;
+    font-weight: 550;
+    gap: 10px;
+}
+
+.fa-circle-user {
+    width: 20px;
+}
+
+#payment_page_navbar_signIn_option:hover {
+    color: rgb(6, 124, 220);
+}
+
+/* navbar ends */
+
+
+/* secure booking text */
+#payment_page_content_section {
+    background: rgb(237, 237, 237);
+}
+
+#payment_page_content_page_secure_textbox {
+    width: 91.5%;
+    display: flex;
+    margin: auto;
+    height: 66px;
+    align-items: center;
+}
+
+#payment_page_content_page_h1 {
+    color: rgb(48, 48, 48);
+}
+
+/* secure booking text */
+
+/* cancellation text calender */
+#payment_page_content_page_free_cancellation {
+    display: flex;
+    background: rgb(255, 255, 255);
+    width: 91.5%;
+
+    margin: auto;
+    height: 68px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#payment_page_content_page_free_cancellation_calender_box {
+    padding: 17px 13px 13px 18px;
+
+}
+
+#payment_page_content_page_free_cancellation_texbox {
+    padding-top: 3px;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+#payment_page_content_page_free_cancellation_text_bold {
+    font-weight: 750;
+}
+
+#payment_page_content_page_free_cancellation_text_thin {
+    font-weight: 200;
+}
+
+/* cancellation text calender */
+
+
+/* sign up drop down */
+
+#payment_page_content_page_rewards_points {
+    margin-top: 14px;
+    width: 67%;
+    margin-left: 20.5px;
+}
+
+#payment_page_content_page_signup_textbox {
+    width: 91.5%;
+    margin: auto;
+    margin-top: 12px;
+    background: rgb(255, 255, 255);
+    padding-top: 13px;
+    display: flex;
+    cursor: pointer;
+   
+}
+
+#payment_page_content_page_h3_text {
+    display: flex;
+    padding-left: 0px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+#payment_page_content_page_lock_icon_box {
+
+    padding: 18px 17px 5px 19.5px;
+    margin-top: -18px;
+
+}
+
+#payment_page_content_page_h3_text {
+    letter-spacing: -0.8px;
+    margin-top: -1px;
+    color: rgb(6, 124, 220);
+    text-decoration: underline 2px;
+}
+
+#payment_page_content_page_double_arrow {
+    margin-top: 1px;
+    margin-left: 10px;
+    color: rgb(6, 124, 220);
+}
+
+/* #payment_page_content_page_double_arrow{
+
+
+/* sign up drop down */
+#payment_page_content_page_rewards_points_dropdown_box {
+    width: 91.5%;
+    margin: auto;
+    background: rgb(255, 255, 255);
+    display: flex;
+    background-color: 3px;
+    margin-bottom: 10px;
+
+}
+#payment_page_content_page_rewards_points_dropdown_box{
+    visibility: hidden; 
+    
+}
+
+#payment_page_content_page_rewards_points_dropdown_box_input_form {
+    padding-top: 3px;
+    margin-left: 52px;
+}
+
+.input_box_under_dropdown {
+    height: 34px;
+    border-radius: 3px;
+    border: 0.3px solid rgb(207, 204, 204);
+    outline: none;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    width: 330px;
+}
+
+#dropdown_box_input_form_email {
+    font-weight: 700;
+    font-size: 14px;
+    color: rgb(97, 97, 97);
+
+}
+
+#dropdown_box_input_form_password {
+    font-weight: 700;
+    font-size: 14px;
+    color: rgb(97, 97, 97);
+}
+
+#dropdown_box_input_form_checkbox {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+#reward_box_vetical_line {
+    height: 250px;
+    border: 1px solid rgb(210, 209, 209);
+    width: 0px;
+    background: rgb(210, 209, 209);
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+#dropdown_box_input_form_button {
+    height: 34px;
+    border-radius: 3px;
+    border: 0.3px solid rgb(207, 204, 204);
+    outline: none;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    width: 330px;
+    background: rgb(255, 194, 54);
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    cursor: pointer;
+}
+
+#dropdown_box_input_form_forgot_password_link {
+    color: rgb(6, 124, 220);
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+#dropdown_box_input_form_forgot_password_link:hover {
+    text-decoration: underline;
+
+}
+
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+}
+
+#social_media_button_google {
+    height: 34px;
+    border-radius: 3px;
+    border: 0.3px solid rgb(207, 204, 204);
+    outline: none;
+    width: 206px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 17px;
+    margin-top: 21px;
+    margin-bottom: 10px;
+    color: rgb(97,97,97);
+    border: 1px solid rgb(148, 148, 148); 
+    border-bottom: 3px solid rgb(217, 210, 210);
+    cursor: pointer;
+}
+
+#social_media_button_apple {
+    height: 34px;
+    border-radius: 3px;
+    border: 0.3px solid rgb(207, 204, 204);
+    outline: none;
+    width: 206px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 17px;
+    position: relative;
+    margin-bottom: 10px;
+    color: rgb(97,97,97);
+    border: 1px solid rgb(148, 148, 148); 
+    border-bottom: 3px solid rgb(217, 210, 210);
+    cursor: pointer;
+}
+
+#apple_button_box {
+    padding-left: 20px;
+}
+
+.fa-apple {
+    left: 10px;
+
+    position: absolute;
+}
+
+#social_media_button_facebook {
+    height: 34px;
+    border-radius: 3px;
+    border: 0.3px solid rgb(207, 204, 204);
+    outline: none;
+    width: 206px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 17px;
+    display: flex;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 8px;
+    border: 1px solid rgb(148, 148, 148); 
+    border-bottom: 3px solid rgb(217, 210, 210);
+    cursor: pointer;
+}
+
+.fa-facebook-square{
+   color:rgb(60,90,153);
+   
+}
+#facebook_button_box{
+    padding-left: 10px;
+    letter-spacing: -0.2px;
+    color: rgb(97,97,97);
+}
