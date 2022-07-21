@@ -162,30 +162,33 @@
 
       <div id="signin">
         <h1>Sign in</h1>
+        <form>
+          <div class="form">
+            <input
+              type="text"
+              id="username"
+              placeholder="User Name"
+              onkeyup="isempty()"
+            />
+            <label for="">User Name</label>
+            <span id="use"></span>
+          </div>
+          <div class="form">
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              onkeyup="isempty()"
+            />
+            <label for="">Password</label>
+            <span id="passi"></span>
 
-        <div class="form">
-          <input
-            type="email"
-            id="email"
-            placeholder="Email Address"
-            onkeyup="isempty()"
-          />
-          <label for="">Email Address</label>
-        </div>
-        <div class="form">
-          <input
-            type="password"
-            id="password"
-            placeholder="Password"
-            onkeyup="isempty()"
-          />
-          <label for="">Password</label>
-
-          <span class="eye" onclick="myfun()">
-            <i id="hide2" class="fa-solid fa-eye"></i>
-            <i id="hide1" class="fa-solid fa-eye-slash"></i>
-          </span>
-        </div>
+            <span class="eye" onclick="myfun()">
+              <i id="hide2" class="fa-solid fa-eye"></i>
+              <i id="hide1" class="fa-solid fa-eye-slash"></i>
+            </span>
+          </div>
+        </form>
         <div id="check">
           <input type="checkbox" />
           <p>This is a public or shared device</p>
@@ -196,7 +199,7 @@
           <a href="#">Terms and Conditions, Privacy Statement</a> and
           <a href="#">Expedia Rewards Terms Conditions. </a>
         </p>
-        <button id="btn" disabled>Sign in</button>
+        <button onclick="LOGIN()" id="btn" disabled>Sign in</button>
         <p class="p"><a href="#">Forget Password ?</a></p>
         <p class="p">
           Don't have an account?<a href="signup.html"> Create one</a>
@@ -232,34 +235,9 @@
     </div>
   </body>
 </html>
-<script>
-  let myfun = () => {
-    let x = document.getElementById("password");
-    let y = document.getElementById("hide2");
-    let z = document.getElementById("hide1");
-
-    if (x.type === "password") {
-      x.type = "text";
-      y.style.display = "block";
-      z.style.display = "none";
-    } else {
-      x.type = "password";
-      y.style.display = "none";
-      z.style.display = "block";
-    }
-  };
-
-  let isempty = () => {
-    let name = document.getElementById("email");
-    let pass = document.getElementById("password");
-    if (name.value.length > 0 && pass.value.length > 0) {
-      document.getElementById("btn").removeAttribute("disabled");
-      document.getElementById("btn");
-    } else {
-      document.getElementById("btn").setAttribute("disabled", "disabled");
-      document.getElementById("btn").style.backgroundColor = "#3662d8";
-    }
-  };
+<script src="./signin.js"></script>
+<!-- <script>
+  
 
   let arr = JSON.parse(localStorage.getItem("sign")) || [];
   document.querySelector("button").addEventListener("click", myfunt);
@@ -282,5 +260,5 @@
       alert("Invalid Email OR Password");
     }
   }
-</script>
+</script> -->
 <!-- opacity: 0.36; -->

@@ -13,44 +13,78 @@
         display: flex;
         justify-content: space-evenly;
         text-align: center;
-        border-top: 0.1px solid rgb(214, 206, 206);
+
         border-bottom: 0.1px solid rgb(214, 206, 206);
         width: 100%;
         padding-left: 10px;
         padding-right: 10px;
-        padding-top: 0px;
-        padding-bottom: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
       }
       #frstd {
         margin: auto;
         margin-left: 70px;
       }
       #secdiv {
+        display: flex;
         display: grid;
         grid-template-columns: repeat(7, 1fr);
-
-        border: solid red;
+        gap: 10px;
+        width: 38%;
+        margin-right: 50px;
+      }
+      #secdiv > div {
+        margin-top: 10px;
+      }
+      #para5 {
+        margin-right: 100px;
+      }
+      #secdiv > div:first-child {
       }
       #sel {
         border: none;
-        margin-right: 200px;
       }
       #bell {
-        margin-top: 13px;
+        margin-top: 10px;
+
+        display: block;
       }
       #gol {
-        margin-top: 14px;
-        margin-right: -100px;
+        margin-top: 10px;
       }
-
+      #a {
+         color: #343b53;
+        text-decoration: none;
+      }
       .para {
-        font-family: inherit;
+        font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, sans-serif;
         cursor: pointer;
-        margin: auto;
+        -webkit-tap-highlight-color: transparent;
+        text-shadow: none;
         font-weight: 500;
+        white-space: nowrap;
+        box-sizing: inherit;
+        border-style: solid;
+        border-width: 0;
+        background-repeat: no-repeat;
 
         font-size: 0.875rem;
+        font-synthesis: style;
         color: #343b53;
+        line-height: calc(18 / 14);
+        cursor: pointer;
+      }
+      .sel {
+        margin: auto;
+        margin-right: 440px;
+      }
+
+      .para:hover {
+        color: #3662d8;
+      }
+      button {
+        background-color: white;
       }
     </style>
   </head>
@@ -63,20 +97,25 @@
           alt="logo"
         />
       </div>
-      <select name="More travel" id="sel">
-        More travel
+      <div class="sel">
+        <select class="para" name="More travel" id="sel">
+          More travel
 
-        <option value=""><p class="para">More travels</p></option>
-      </select>
+          <option class="para" value="More travels">More travels</option>
+        </select>
+      </div>
 
       <div id="secdiv">
         <i id="gol" class="fa-solid fa-globe"></i>
-        <div class="para">English</div>
-        <div class="para">List your property</div>
-        <div class="para">Support</div>
-        <div class="para">Trips</div>
+        <button id="para1" class="para">English</button>
+        <button id="para2" class="para">List your property</button>
+        <button id="para3" class="para">Support</button>
+        <button id="para4" class="para">Trips</button>
         <i id="bell" class="fa-solid fa-bell"></i>
-        <div class="para">Sign in</div>
+
+        <button id="para5" class="para">
+          <a id="a" href="signup.html">Sign in</a>
+        </button>
       </div>
     </div>
   </body>

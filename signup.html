@@ -18,7 +18,6 @@
         margin: auto;
         align-items: center;
 
-        
         border-bottom: 0.1px solid rgb(214, 206, 206);
         width: 100%;
         padding: 10px 10px;
@@ -160,10 +159,51 @@
           alt="logo"
         />
       </div>
-      <form>
-        <div id="signin">
-          <h1>Create an account</h1>
 
+      <div id="signin">
+        <h1>Create an account</h1>
+        <form action="#" onsubmit=" return valid()">
+          <div class="form">
+            <input
+              type="text"
+              id="name"
+              placeholder="Name"
+              onkeyup="isempty()"
+            />
+            <label for="">Name</label>
+            <span id="nam"></span>
+          </div>
+
+          <div class="form">
+            <input
+              type="text"
+              id="username"
+              placeholder="User Name"
+              onkeyup="isempty()"
+            />
+            <label for="">User Name</label>
+            <span id="unam"></span>
+          </div>
+          <div class="form">
+            <input
+              type="text"
+              id="decription"
+              placeholder="Decription"
+              onkeyup="isempty()"
+            />
+            <label for="">Decription</label>
+            <span id="dnam"></span>
+          </div>
+          <div class="form">
+            <input
+              type="text"
+              id="mobile"
+              placeholder="Mobile Number"
+              onkeyup="isempty()"
+            />
+            <label for="">Mobile Number</label>
+            <span id="mbnam"></span>
+          </div>
           <div class="form">
             <input
               type="email"
@@ -172,24 +212,7 @@
               onkeyup="isempty()"
             />
             <label for="">Email Address</label>
-          </div>
-          <div class="form">
-            <input
-              type="text"
-              id="name"
-              placeholder="First Name"
-              onkeyup="isempty()"
-            />
-            <label for="">First Name</label>
-          </div>
-          <div class="form">
-            <input
-              type="text"
-              id="last-name"
-              placeholder="Last Name"
-              onkeyup="isempty()"
-            />
-            <label for="">Last Name</label>
+            <span id="enam"></span>
           </div>
           <div class="form">
             <input
@@ -199,29 +222,31 @@
               onkeyup="isempty()"
             />
             <label for="">Password</label>
+            <span id="pnam"></span>
 
             <span class="eye" onclick="myfun()">
               <i id="hide2" class="fa-solid fa-eye"></i>
               <i id="hide1" class="fa-solid fa-eye-slash"></i>
             </span>
           </div>
-          <div id="check">
-            <input type="checkbox" />
-            <p>This is a public or shared device</p>
-          </div>
-
-          <p>
-            By signing in, I agree to the Expedia
-            <a href="#">Terms and Conditions, Privacy Statement</a> and
-            <a href="#">Expedia Rewards Terms Conditions. </a>
-          </p>
-          <button id="btn" disabled>Continue</button>
-
-          <p class="p">
-            Already have an account?<a href="signin.html"> Sign in</a>
-          </p>
+        </form>
+        <div id="check">
+          <input type="checkbox" />
+          <p>This is a public or shared device</p>
         </div>
-      </form>
+
+        <p>
+          By signing in, I agree to the Expedia
+          <a href="#">Terms and Conditions, Privacy Statement</a> and
+          <a href="#">Expedia Rewards Terms Conditions. </a>
+        </p>
+        <button onclick="SIGN()" id="btn" disabled>Continue</button>
+
+        <p class="p">
+          Already have an account?<a href="signin.html"> Sign in</a>
+        </p>
+      </div>
+
       <div class="or">
         <p>or continue with</p>
         <div id="botm">
@@ -252,35 +277,8 @@
     </div>
   </body>
 </html>
-<script>
-  let myfun = () => {
-    let x = document.getElementById("password");
-    let y = document.getElementById("hide2");
-    let z = document.getElementById("hide1");
-
-    if (x.type === "password") {
-      x.type = "text";
-      y.style.display = "block";
-      z.style.display = "none";
-    } else {
-      x.type = "password";
-      y.style.display = "none";
-      z.style.display = "block";
-    }
-  };
-
-  let isempty = () => {
-    let name = document.getElementById("email");
-    let pass = document.getElementById("password");
-    if (name.value.length > 0 && pass.value.length > 0) {
-      document.getElementById("btn").removeAttribute("disabled");
-      document.getElementById("btn");
-    } else {
-      document.getElementById("btn").setAttribute("disabled", "disabled");
-      document.getElementById("btn").style.backgroundColor = "#3662d8";
-    }
-  };
-
+<script src="./signup.js"></script>
+<!-- <script>
   document.querySelector("button").addEventListener("click", myfunc);
   let arr = JSON.parse(localStorage.getItem("sign")) || [];
 
@@ -294,5 +292,5 @@
     localStorage.setItem("sign", JSON.stringify(arr));
     window.location.href = "signin.html";
   }
-</script>
+</script> -->
 <!-- opacity: 0.36; -->
