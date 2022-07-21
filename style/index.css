@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 } */
+body{
+    font-family: 'Centra No2', sans-serif;
+    letter-spacing: .4px;
+}
 
 /* search part styling */
 #mainAm{
@@ -22,9 +26,16 @@
 #part1Am > a >  p{
     margin-top: 30px;
 }
+
+
 #part1Am > a{
     text-decoration: none;
     color: rgb(103, 103, 103);
+}
+#part1Am > a:hover{
+    text-decoration: underline;
+    color: blue;
+    font-size: 1rem;
 }
 #part2Am{
     width: 100%;
@@ -112,7 +123,7 @@
 /* app box styling */
 #appboxAm{
     width: 90%;
-    height: 300px;
+    /* height: 300px; */
     display: flex;
     border: 2px solid rgb(223, 222, 222);
     margin: auto;
@@ -121,27 +132,29 @@
 }
 #appPart1{
     width: 35%;
-    height: 100%;
-    /* border: 2px solid red; */
+
 }
 #appPart1 > img{
-    height: 300px;
+    width: 370px;
+    height: 314px;
 }
 #appboxPart2{
     width: 52%;
     height: 100%;
     /* border: 2px solid green; */
 }
+#appboxPart2 > div > h1{
+    margin-left: 2px;
+}
 #appboxPart2 > div:first-child{
     width: 100%;
     height: 40%;
     /* border: 2px solid black; */
 }
-#appboxPart2 > div:first-child > h1,p{
-    margin-left: 15px;
-}
+
 #appboxPart2 > div:first-child > p{
     color: #343B53;
+    margin-left: 2px;
 }
 
 #appboxPart2 > div:last-child{
@@ -154,10 +167,10 @@
     margin-right: 10px;
 }
 #phone{
-    margin-left: 15px;
+    margin-left: 2px;
 }
 #appboxPart2 > div:last-child > button{
-    width: 26%;
+    width: 25%;
     color: white;
     background-color:  #3662D8;
     border: none;
@@ -167,10 +180,11 @@
 }
 #appboxPart2 > div:last-child > p{
     color: #343B53;
-    margin: 6px 0px 0px 15px;
+    margin-left: 2px;
+    font-size: .8rem;
 }
 #appboxPart2 > div:last-child > h3{
-    margin-left: 15px;
+    margin-left: 2px;
 }
 #appboxPart3{
     width: 17%;
@@ -188,15 +202,15 @@
     margin: -3px;
 }
 
+/* day two work  */
 /* new part */
 #poster{
-    width: 87%;
-    /* border: 2px solid green; */
+    width: 90%;
     margin: auto;
+    margin-top: 50px;
 }
 #poster > img{
-    height: 505px;
-    border: 1px solid rgb(87, 83, 83);
+    height: 515px;
     border-radius: 10px;
 }
 #poster > h1{
@@ -228,40 +242,110 @@
     margin: 313px 0px 0px 70px ;
     cursor: pointer;
 }
-#keepmoveAm{
+/* heldesk part styling */
+.heading{
+    margin: 70px 0px 0px 70px;
+    font-size: 2rem;
+    font-weight: 790;
+}
+ #helpdeskAm{
     width: 90%;
-    height: 200px;
-    border: 2px solid rgb(126, 123, 123);
     margin: auto;
     display: flex;
-}
-#keepmoveAm > div{
+    margin: 40px 20px 40px 50px;
+ }
+ .subDivAm{
     width: 33%;
-    border: 2px solid red;
-}
+    display: flex;
+    border: 1px solid #a7a7a7c9;
+    margin-left: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+ }
+ .fa-solid fa-circle-dollar{
+    background-color: black;
+ }
+
 
 /* three image styling */
 #threeImageAm{
     width: 90%;
-    height: 400px;
-    border: 2px solid red;
     margin: auto;
     margin-top: 40px;
     display: flex;
 }
 #threeImageAm > div{
-    border: 2px solid green;
     margin-right: 20px;
     cursor: pointer;
 }
 #threeImageAm > div > img{
     height: 255px;
-    border: 1px solid rgb(44, 42, 42);
     border-radius: 10px;
 }
 #threeImageAm > div > p{
     font-size: 13px;
+    font-size: 'Centra No2', sans-serif;
+    line-height: 6px;
 }
-#threeImageAm > h3{
-    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+#threeImageAm > div > h3{
+   font-size: 1.1rem;
+   font-weight: 600;
+   font-family: 'Centra No2', sans-serif;
+   letter-spacing: .4px;
+}
+
+/* two images section styling */
+#twoImageAm{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+}
+#twoImageAm > div{
+    width: 48%;
+    height: 100%;
+    cursor: pointer;
+}
+#twoImageAm > div:first-child{
+    margin-right: 39px;
+}
+#twoImageAm > div > img{
+    height: 324px;
+    border-radius: 10px;
+}
+
+/* scroll bar styling */
+.scrollDiv{
+    width: 90%;
+    border: 1px solid #a7a7a7c9;
+    margin: auto;
+    margin-top: 70px;
+}
+.scrollDiv > p{
+    margin: 15px 0px 20px 15px;
+}
+.scrollDiv > p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+}
+#scrollbar{
+    width: 87.6%;
+    height: 200px;
+    border: 1px solid #a7a7a7c9;
+    margin: auto;
+    overflow-y: auto;
+    display: flex;
+    padding: 15px;
+    cursor: pointer;
+}
+#scrollbar > div{
+    margin-right: 110px;
+}
+
+#scrollbar > div > p{
+    color: blue;
+    font-size: .9rem;
+    font-weight: 500;
 }
