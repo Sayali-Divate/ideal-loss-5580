@@ -109,12 +109,27 @@
 /* cancellation text calender */
 
 
+/* content gridbox ***************************************/
+#payment_page_content_page_girdboxes {
+    background: rgb(237, 237, 237);
+    display: grid;
+    grid-template-columns:66% 29.8%;
+}
+
+/* content gridbox */
+
 /* sign up drop down */
 
+#payment_page_content_page_girdbox_left {
+    width: 100%;
+}
+
 #payment_page_content_page_rewards_points {
-    margin-top: 14px;
-    width: 67%;
+    margin-top: 1px;
+    width: 100%;
     margin-left: 20.5px;
+    margin-bottom: 10px;
+
 }
 
 #payment_page_content_page_signup_textbox {
@@ -125,7 +140,10 @@
     padding-top: 13px;
     display: flex;
     cursor: pointer;
-   
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding-bottom: 5px;
+
 }
 
 #payment_page_content_page_h3_text {
@@ -133,6 +151,7 @@
     padding-left: 0px;
     align-items: center;
     margin-bottom: 5px;
+
 }
 
 #payment_page_content_page_lock_icon_box {
@@ -146,6 +165,10 @@
     letter-spacing: -0.8px;
     margin-top: -1px;
     color: rgb(6, 124, 220);
+
+}
+
+#payment_page_content_page_h3_text:hover {
     text-decoration: underline 2px;
 }
 
@@ -153,6 +176,10 @@
     margin-top: 1px;
     margin-left: 10px;
     color: rgb(6, 124, 220);
+}
+
+.dropdown_fa-angles-down {
+    margin-bottom: 5px;
 }
 
 /* #payment_page_content_page_double_arrow{
@@ -163,19 +190,22 @@
     width: 91.5%;
     margin: auto;
     background: rgb(255, 255, 255);
-    display: flex;
+    display: none;
     background-color: 3px;
-    margin-bottom: 10px;
+
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 
 }
-#payment_page_content_page_rewards_points_dropdown_box{
-    visibility: hidden; 
-    
-}
+
+/* dropdown function */
+
+
 
 #payment_page_content_page_rewards_points_dropdown_box_input_form {
     padding-top: 3px;
     margin-left: 52px;
+    padding-bottom: 15px;
 }
 
 .input_box_under_dropdown {
@@ -206,8 +236,9 @@
     font-weight: 200;
 }
 
+/* vertical line */
 #reward_box_vetical_line {
-    height: 250px;
+    height: 240px;
     border: 1px solid rgb(210, 209, 209);
     width: 0px;
     background: rgb(210, 209, 209);
@@ -235,6 +266,7 @@
     text-decoration: none;
     font-weight: 200;
     font-size: 14px;
+
 }
 
 #dropdown_box_input_form_forgot_password_link:hover {
@@ -262,8 +294,8 @@
     margin-left: 17px;
     margin-top: 21px;
     margin-bottom: 10px;
-    color: rgb(97,97,97);
-    border: 1px solid rgb(148, 148, 148); 
+    color: rgb(97, 97, 97);
+    border: 1px solid rgb(148, 148, 148);
     border-bottom: 3px solid rgb(217, 210, 210);
     cursor: pointer;
 }
@@ -279,8 +311,8 @@
     margin-left: 17px;
     position: relative;
     margin-bottom: 10px;
-    color: rgb(97,97,97);
-    border: 1px solid rgb(148, 148, 148); 
+    color: rgb(97, 97, 97);
+    border: 1px solid rgb(148, 148, 148);
     border-bottom: 3px solid rgb(217, 210, 210);
     cursor: pointer;
 }
@@ -308,17 +340,174 @@
     margin-bottom: 10px;
     padding-left: 10px;
     padding-top: 8px;
-    border: 1px solid rgb(148, 148, 148); 
+    border: 1px solid rgb(148, 148, 148);
     border-bottom: 3px solid rgb(217, 210, 210);
     cursor: pointer;
 }
 
-.fa-facebook-square{
-   color:rgb(60,90,153);
-   
+.fa-facebook-square {
+    color: rgb(60, 90, 153);
+
 }
-#facebook_button_box{
+
+#facebook_button_box {
     padding-left: 10px;
     letter-spacing: -0.2px;
-    color: rgb(97,97,97);
+    color: rgb(97, 97, 97);
 }
+
+/* hotel details */
+#payment_page_content_page_girdbox_right {
+    width:100%;
+    height: 300px;
+    /* width: 100px; */
+    /* background: rgb(255, 255, 255); */
+    background: #ea4335;
+    /* margin-left: -350.3px; */
+    margin-top: 12px;
+    border-radius: 4px;
+    /* position: absolute; */
+}
+
+/* #payment_page_content_page_hotel_details {
+
+} */
+
+/* room booking form */
+
+#payment_page_content_page_room_booking_form_box {
+    background: rgb(255,255,255);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    width: 91.5%;
+    margin-left: 56px;
+}
+
+#payment_page_content_page_room_booking_form {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding-bottom: 5px;
+    width: 100%;
+    margin: auto;
+    margin-top: 12px;
+    margin-top: 1px;
+    width: 100%;
+
+    margin-bottom: 10px;
+    /* background: rgb(255, 255, 255); */
+    
+    padding-top: 13px;
+    display: block;
+    cursor: pointer;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding-bottom: 5px;
+}
+#room_booking_form_number_of_room{
+    padding-left: 20px;
+    /* background: #4285f4; */
+    display: flex;
+}
+#form_man_icon_imagebox{
+    width: 17px;
+    margin-top: 5px;
+    
+}
+#form_man_icon_image{
+    width: 100%;
+}
+#form_man_icon_box_text{
+    display: flex;
+    gap: 5px;
+    letter-spacing: -0.2px;
+    margin-left: 16px;
+    font-size: 14px;
+}
+#booking_form_number_rooms{
+    font-weight: 700;
+}
+#booking_form_number_people{
+    font-weight: 200;
+}
+#booking_form_smoking_info{
+    font-weight: 200;
+}
+#booking_form_free_wifi{
+    display: flex;
+    margin-left: 16px;
+}
+#form_free_wifi_tick{
+    transform: rotate(0deg);
+    color: rgb(47,112,0);
+    font-weight: 700;
+    margin-top: -1px;
+}
+.fa-check{
+margin-left: 37.5px;
+width: 5px;
+}
+#form_free_wifi{
+    margin-left: 15px;
+    font-size: 13px;
+    color: rgb(47,112,0);
+    font-weight: 100;
+}
+#booking_form_inputs{
+    padding-left: 54px;
+    margin-top: 12px;
+    
+}
+#booking_form_input_flex{
+    
+    margin-top: 12px;
+    display: flex;
+}
+#booking_form_inputs_firstName{
+    font-weight: 700;
+    color: rgb(97, 96, 96);
+}
+/* #booking_form_inputs_left{
+
+} */
+#booking_form_inputs_right{
+margin-left: 40px;
+
+}
+#booking_form_inputs_lastName{
+    font-weight: 700;
+    color: rgb(97, 96, 96);
+}
+.required_field_asterisk{
+    color: #ea4335;
+}
+.booking_form_input_fields{
+    height: 34px;
+    border-radius: 3px;
+    border: 0.3px solid rgb(207, 204, 204);
+    outline: none;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    width: 206px;
+    font-size: 16px;
+    padding-left: 16px;
+    font-weight: 200;
+    color: #4285f4;
+}
+#booking_form_inputs_phone{
+    font-weight: 700;
+    color: rgb(97, 96, 96);
+}
+#booking_form_inputs_phone_field{
+    height: 34px;
+    border-radius: 3px;
+    border: 0.3px solid rgb(207, 204, 204);
+    outline: none;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    width: 350px;
+    font-size: 16px;
+    padding-left: 16px;
+    font-weight: 200;
+    color: #4285f4;
+}
+/* room booking form */
