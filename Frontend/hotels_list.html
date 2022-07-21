@@ -5,58 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/40eef63782.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/hotels_list.css">
 </head>
 <body>
     <div id="parent">
-        <div id="childParent1"> /*div for seachbox, checkin, ckeckout,*/
-            <div id="search">
-                <div class="icon"></div>
+        <div id="childParent1" > 
+            <div id="search" class="topBlock">
+                <div class="icon"><i class="fa-solid fa-location-dot fa-lg" ></i></div>
                 <div>
                     <p class="tag">Going to</p>
-                    <p class="head">
+                    <button id="destination" class="head">Goa
                         <!--take the location from local storage -->
                         <!-- also adding functionality so that location can be changed here -->
-                    </p>
+                    </button>
                 </div>                
-            </div>
-            <div id="check-in">
-                <div class="icon"></div>
+            </div>            
+            <div id="check-in" class="topBlock">
+                <div class="icon"><i class="fa-solid fa-calendar-day fa-lg"></i></div>
                 <div>
-                    <p class="tag">Going to</p>
-                    <p class="head">
+                    <p class="tag">Check-In</p>
+                    <button class="head"> 2 Aug
                         <!--take the check-in date from local storage -->
                         <!-- also adding functionality so that date can be changed here -->
-                    </p>
+                    </button>
                 </div>  
             </div>
-            <div id="check-out">
-                <div class="icon"></div>
+            <div id="check-out" class="topBlock">
+                <div class="icon"><i class="fa-solid fa-calendar-day fa-lg"></i></div>
                 <div>
-                    <p class="tag">Going to</p>
-                    <p class="head">
-                        <!--take the check-out date from local storage -->
+                    <p class="tag">Check-Out</p>
+                    <button class="head"> 3 Aug                    
+                         <!--take the check-out date from local storage -->
                         <!-- also adding functionality so that date can be changed here -->
-                    </p>
+                    </button> 
                 </div>  
             </div>
-            <div id="travellers">
-                <div class="icon"></div>
+            <div id="travellers" class="topBlock">
+                <div class="icon"><i class="fa-solid fa-user fa-lg"></i></div>
                 <div>
-                    <p class="tag">Going to</p>
-                    <p class="head">
+                    <p class="tag">Travellers</p>
+                    <button class="head"> 1 room, 2 travellers
                         <!--take the check-out date from local storage -->
                         <!-- also adding functionality so that date can be changed here -->
-                    </p>
+                    </button>
                 </div>  
             </div>
             <button id="searchBtn">Search</button>
         </div>
         <div id="childParent2">
             <div id="sidebar">
-                <!-- insert map here -->
+                <div id="map">
+                    <p>Insert map here...</p>
+                    <!-- insert map here -->
+                </div>
+                <hr>
+                <div id="search_by_property">
+                    <h3>Search by property name</h3>
+                    <div>
+                        <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <button class="head">e.g. Best western</button>
+                    </div>
+                </div>
+                <hr>
+                <div id="filter">
+                    <h3>Filter by</h3>
+                    <div id="price_per_night">
+                        <p>Price per night</p>
+                        <div><input type="radio" name="price"><label for="">Less than Rs 2000</label></div>
+                        <div><input type="radio" name="price"><label for="">Rs 2000 to Rs 4000</label></div>
+                        <div><input type="radio" name="price"><label for="">Rs 4000 to Rs 8000</label></div>
+                        <div><input type="radio" name="price"><label for="">Rs 8000 to Rs 11000</label></div>
+                        <div><input type="radio" name="price"><label for="">Greater than Rs 11000</label></div>
+                    </div>
+                    <div id="guest_rating">
+                        <p>Guest rating</p>
+                        <div><input type="radio" name="rating"><label for="">Any</label></div>
+                        <div><input type="radio" name="rating"><label for="">Exceptional 4.6+</label></div>
+                        <div><input type="radio" name="rating"><label for="">Wonderful 4.5+</label></div>
+                        <div><input type="radio" name="rating"><label for="">Very good 4+</label></div>
+                        <div><input type="radio" name="rating"><label for="">Good 3.5+</label></div>
+                    </div>
+                    <div id="payment_type">
+                        <p>Payment type</p>
+                        <div><input type="checkbox"><label for="">Fully refundable</label></div>
+                        <div><input type="checkbox"><label for="">Reserve now, pay later</label></div>
+                    </div>
+                </div>                
             </div>
             <div id="main">
                 <div id="sort">
+                    <div id="adv">
+                        <p>476 properties</p>
+                        <p>See how we pick our recommended properties <i class="fa-solid fa-circle-info fa-xs"></i></p>
+                    </div>
+                    <div id="sortOption" class="topBlock">
+                        <div>
+                            <p class="tag">Sort by</p>
+                            <button class="head">Recommended</button>
+                        </div>
+                        <div class="icon"><i class="fa-solid fa-angle-down"></i></div>
+                    </div>
                     <!-- tab for sorting functionality -->
                 </div>
                 <div id="list">
@@ -66,4 +115,5 @@
         </div>
     </div>
 </body>
+<script src="./scripts/hotels_list.js" type="module"></script>
 </html>
