@@ -206,6 +206,12 @@
             "rating":3.7,
             "price":7000
         }
+    ],
+
+    "destinations":[
+        "Mumbai, India", "Goa, India"
     ]
+
+
     
 }
