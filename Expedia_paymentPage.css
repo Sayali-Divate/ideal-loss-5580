@@ -113,7 +113,7 @@
 #payment_page_content_page_girdboxes {
     background: rgb(237, 237, 237);
     display: grid;
-    grid-template-columns:66% 29.8%;
+    grid-template-columns: 66% 29.8%;
 }
 
 /* content gridbox */
@@ -358,7 +358,7 @@
 
 /* hotel details */
 #payment_page_content_page_girdbox_right {
-    width:100%;
+    width: 100%;
     height: 300px;
     /* width: 100px; */
     /* background: rgb(255, 255, 255); */
@@ -376,7 +376,7 @@
 /* room booking form */
 
 #payment_page_content_page_room_booking_form_box {
-    background: rgb(255,255,255);
+    background: rgb(255, 255, 255);
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
     width: 91.5%;
@@ -395,92 +395,112 @@
 
     margin-bottom: 10px;
     /* background: rgb(255, 255, 255); */
-    
+
     padding-top: 13px;
     display: block;
-    cursor: pointer;
+
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
     padding-bottom: 5px;
 }
-#room_booking_form_number_of_room{
+
+#room_booking_form_number_of_room {
     padding-left: 20px;
     /* background: #4285f4; */
     display: flex;
 }
-#form_man_icon_imagebox{
+
+#form_man_icon_imagebox {
     width: 17px;
     margin-top: 5px;
-    
+
 }
-#form_man_icon_image{
+
+#form_man_icon_image {
     width: 100%;
 }
-#form_man_icon_box_text{
+
+#form_man_icon_box_text {
     display: flex;
     gap: 5px;
     letter-spacing: -0.2px;
     margin-left: 16px;
     font-size: 14px;
 }
-#booking_form_number_rooms{
+
+#booking_form_number_rooms {
     font-weight: 700;
 }
-#booking_form_number_people{
+
+#booking_form_number_people {
     font-weight: 200;
 }
-#booking_form_smoking_info{
+
+#booking_form_smoking_info {
     font-weight: 200;
 }
-#booking_form_free_wifi{
+
+#booking_form_free_wifi {
     display: flex;
     margin-left: 16px;
 }
-#form_free_wifi_tick{
+
+#form_free_wifi_tick {
     transform: rotate(0deg);
-    color: rgb(47,112,0);
+    color: rgb(47, 112, 0);
     font-weight: 700;
     margin-top: -1px;
 }
-.fa-check{
-margin-left: 37.5px;
-width: 5px;
+
+.fa-check {
+    margin-left: 37.5px;
+    width: 5px;
 }
-#form_free_wifi{
+
+#form_free_wifi {
     margin-left: 15px;
     font-size: 13px;
-    color: rgb(47,112,0);
+    color: rgb(47, 112, 0);
     font-weight: 100;
 }
-#booking_form_inputs{
+
+#booking_form_inputs {
     padding-left: 54px;
     margin-top: 12px;
-    
+
 }
-#booking_form_input_flex{
-    
+
+#booking_form_input_flex {
+
     margin-top: 12px;
     display: flex;
 }
-#booking_form_inputs_firstName{
+
+#booking_form_inputs_firstName {
     font-weight: 700;
     color: rgb(97, 96, 96);
+    font-size: 14px;
 }
+
 /* #booking_form_inputs_left{
 
 } */
-#booking_form_inputs_right{
-margin-left: 40px;
+#booking_form_inputs_right {
+    margin-left: 25.5px;
 
 }
-#booking_form_inputs_lastName{
+
+#booking_form_inputs_lastName {
     font-weight: 700;
     color: rgb(97, 96, 96);
+    font-size: 14px;
 }
-.required_field_asterisk{
+
+.required_field_asterisk {
     color: #ea4335;
 }
-.booking_form_input_fields{
+
+.booking_form_input_fields {
     height: 34px;
     border-radius: 3px;
     border: 0.3px solid rgb(207, 204, 204);
@@ -493,21 +513,174 @@ margin-left: 40px;
     font-weight: 200;
     color: #4285f4;
 }
-#booking_form_inputs_phone{
+
+#booking_form_inputs_phone {
     font-weight: 700;
     color: rgb(97, 96, 96);
+    font-size: 14px;
 }
-#booking_form_inputs_phone_field{
+
+#booking_form_inputs_phone_field {
     height: 34px;
     border-radius: 3px;
     border: 0.3px solid rgb(207, 204, 204);
     outline: none;
     margin-top: 8px;
     margin-bottom: 15px;
-    width: 350px;
+    width: 326px;
     font-size: 16px;
     padding-left: 16px;
     font-weight: 200;
     color: #4285f4;
 }
+
+#country_code_field {
+    height: 34px;
+    border-radius: 3px;
+    border: 0.3px solid rgb(207, 204, 204);
+    outline: none;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    width: 125px;
+    font-size: 16px;
+    padding-left: 5px;
+    font-weight: 200;
+
+    box-shadow: rgba(129, 129, 129, 0.2) 0px 20px 30px inset;
+}
+
+.country_code_select_option:focus {
+
+    width: auto;
+    color: #4285f4;
+}
+
+#checkbox_under_inputs_phone_label {
+    font-size: 13px;
+    letter-spacing: -0.2px;
+    font-weight: 100;
+    color: rgb(97, 96, 96);
+
+}
+
+#checkbox_under_phone_field_box {
+    margin-top: -3px;
+    margin-bottom: 10px;
+}
+
+#checkbox_under_inputs_phone_label:hover {
+    color: #4285f4;
+}
+
+#optional_bedding_box {
+    display: flex;
+    gap: 9px;
+    font-size: 13px;
+    color: #4285f4;
+    margin-bottom: 17px;
+    cursor: pointer;
+}
+
+#optional_bedding_dropdown_textbox {
+    font-size: 13.5px;
+    letter-spacing: -0.2px;
+    font-weight: 100;
+    color: rgb(97, 96, 96);
+    margin-bottom: 17px;
+}
+
+#optional_bedding_dropdown_select_bedding {
+    height: 34px;
+    width: 150px;
+    font-size: 16px;
+    padding-left: 5px;
+    font-weight: 200;
+    border-radius: 3px;
+    box-shadow: rgba(129, 129, 129, 0.2) 0px 20px 30px inset;
+}
+
+#optional_bedding_dropdown_first {
+    display: none;
+    margin-bottom: 17px;
+}
+
+#optional_special_request_box {
+    display: flex;
+    gap: 9px;
+    font-size: 13px;
+    color: #4285f4;
+    margin-bottom: 17px;
+    cursor: pointer;
+
+}
+
+#optional_special_request_box:hover {
+    text-decoration: underline;
+}
+
+#optional_special_request_dropdown_textbox {
+    font-size: 13.5px;
+    letter-spacing: -0.2px;
+    font-weight: 100;
+    color: rgb(97, 96, 96);
+    margin-bottom: 17px;
+}
+
+#optional_special_request_dropdown_second {
+    display: none;
+    margin-bottom: 40px;
+}
+
+/* body {
+	overflow: hidden;
+} */
+/* #optional_special_request_dropdown_resizeable_box{
+    /* position: relative; 
+} */
+
+#resizeable_box_placeholder {
+    padding-left: 10px;
+    padding-top: 10px;
+    color: rgb(97, 96, 96);
+    font-size: 14px;
+}
+
+#pane {
+    /* position: absolute; */
+    max-width: 97%;
+    min-width: 97%;
+    height: 100px;
+    top: 20%;
+    left: 2%;
+
+
+    margin: 0;
+    padding: 0;
+    z-index: 99;
+    border: 3px solid rgb(97, 96, 96);
+    background: #fefefe;
+    border-radius: 5px;
+}
+
+
+/* #ghostpane {
+	background: #999;
+	opacity: 0.2;
+
+	max-width: 690px;
+	height: 45%;
+	top: 20%;
+	left: 20%;
+	
+	/* position: absolute; 
+	margin: 0;
+	padding: 0;
+	z-index: 98;
+
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+} */
 /* room booking form */

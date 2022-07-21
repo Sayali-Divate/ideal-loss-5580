@@ -120,6 +120,7 @@
                     </div>
                 </div>
                 <!-- reward text -->
+                <!-- room booking form -->
 
                 <div id="payment_page_content_page_room_booking_form_box">
 
@@ -162,23 +163,515 @@
                             </div>
 
                             <div id="booking_form_phone_input">
-                                <label id="booking_form_inputs_phone">Mobile phone number<span
+                                <label id="booking_form_inputs_phone">Mobile phone number <span
                                         class="required_field_asterisk">*</span></label><br>
                                 <select id="country_code_field">
-                                    <option value=""></option>
-                                    <option value=""></option>
-                                    <option value=""></option>
-                                    <option value=""></option>
-                                    <option value=""></option>
+                                    <option data-countryCode="US" value="1" Selected>USA (+1)</option>
+                                    <option data-countryCode="GB" value="44">UK (+44)</option>
+                                    <option class="payment_page_country_code" data-countryCode="DZ" value="213">Algeria
+                                        (+213)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="AD" value="376">Andorra
+                                        (+376)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="AO" value="244">Angola
+                                        (+244)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="AI" value="1264">
+                                        Anguilla (+1264)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="AG" value="1268">Antigua
+                                        &amp; Barbuda (+1268)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="AR" value="54">Argentina
+                                        (+54)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="AM" value="374">Armenia
+                                        (+374)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="AW" value="297">Aruba
+                                        (+297)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="AU" value="61">Australia
+                                        (+61)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="AT" value="43">Austria
+                                        (+43)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="AZ" value="994">
+                                        Azerbaijan (+994)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="BS" value="1242">Bahamas
+                                        (+1242)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="BH" value="973">Bahrain
+                                        (+973)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="BD" value="880">
+                                        Bangladesh (+880)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="BB" value="1246">
+                                        Barbados (+1246)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="BY" value="375">Belarus
+                                        (+375)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="BE" value="32">Belgium
+                                        (+32)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="BZ" value="501">Belize
+                                        (+501)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="BJ" value="229">Benin
+                                        (+229)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="BM" value="1441">Bermuda
+                                        (+1441)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="BT" value="975">Bhutan
+                                        (+975)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="BO" value="591">Bolivia
+                                        (+591)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="BA" value="387">Bosnia
+                                        Herzegovina (+387)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="BW" value="267">Botswana
+                                        (+267)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="BR" value="55">Brazil
+                                        (+55)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="BN" value="673">Brunei
+                                        (+673)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="BG" value="359">Bulgaria
+                                        (+359)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="BF" value="226">Burkina
+                                        Faso (+226)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="BI" value="257">Burundi
+                                        (+257)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="KH" value="855">Cambodia
+                                        (+855)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="CM" value="237">Cameroon
+                                        (+237)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="CA" value="1">Canada
+                                        (+1)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="CV" value="238">Cape
+                                        Verde Islands (+238)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="KY" value="1345">Cayman
+                                        Islands (+1345)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="CF" value="236">Central
+                                        African Republic (+236)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="CL" value="56">Chile
+                                        (+56)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="CN" value="86">China
+                                        (+86)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="CO" value="57">Colombia
+                                        (+57)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="KM" value="269">Comoros
+                                        (+269)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="CG" value="242">Congo
+                                        (+242)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="CK" value="682">Cook
+                                        Islands (+682)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="CR" value="506">Costa
+                                        Rica (+506)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="HR" value="385">Croatia
+                                        (+385)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="CU" value="53">Cuba
+                                        (+53)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="CY" value="90392">Cyprus
+                                        North (+90392)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="CY" value="357">Cyprus
+                                        South (+357)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="CZ" value="42">Czech
+                                        Republic (+42)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="DK" value="45">Denmark
+                                        (+45)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="DJ" value="253">Djibouti
+                                        (+253)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="DM" value="1809">
+                                        Dominica (+1809)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="DO" value="1809">
+                                        Dominican Republic (+1809)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="EC" value="593">Ecuador
+                                        (+593)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="EG" value="20">Egypt
+                                        (+20)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="SV" value="503">El
+                                        Salvador (+503)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="GQ" value="240">
+                                        Equatorial Guinea (+240)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="ER" value="291">Eritrea
+                                        (+291)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="EE" value="372">Estonia
+                                        (+372)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="ET" value="251">Ethiopia
+                                        (+251)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="FK" value="500">Falkland
+                                        Islands (+500)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="FO" value="298">Faroe
+                                        Islands (+298)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="FJ" value="679">Fiji
+                                        (+679)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="FI" value="358">Finland
+                                        (+358)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="FR" value="33">France
+                                        (+33)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="GF" value="594">French
+                                        Guiana (+594)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="PF" value="689">French
+                                        Polynesia (+689)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="GA" value="241">Gabon
+                                        (+241)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="GM" value="220">Gambia
+                                        (+220)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="GE" value="7880">Georgia
+                                        (+7880)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="DE" value="49">Germany
+                                        (+49)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="GH" value="233">Ghana
+                                        (+233)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="GI" value="350">
+                                        Gibraltar (+350)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="GR" value="30">Greece
+                                        (+30)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="GL" value="299">
+                                        Greenland (+299)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="GD" value="1473">Grenada
+                                        (+1473)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="GP" value="590">
+                                        Guadeloupe (+590)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="GU" value="671">Guam
+                                        (+671)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="GT" value="502">
+                                        Guatemala (+502)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="GN" value="224">Guinea
+                                        (+224)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="GW" value="245">Guinea -
+                                        Bissau (+245)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="GY" value="592">Guyana
+                                        (+592)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="HT" value="509">Haiti
+                                        (+509)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="HN" value="504">Honduras
+                                        (+504)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="HK" value="852">Hong
+                                        Kong (+852)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="HU" value="36">Hungary
+                                        (+36)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="IS" value="354">Iceland
+                                        (+354)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="IN" value="91">India
+                                        (+91)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="ID" value="62">Indonesia
+                                        (+62)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="IR" value="98">Iran
+                                        (+98)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="IQ" value="964">Iraq
+                                        (+964)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="IE" value="353">Ireland
+                                        (+353)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="IL" value="972">Israel
+                                        (+972)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="IT" value="39">Italy
+                                        (+39)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="JM" value="1876">Jamaica
+                                        (+1876)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="JP" value="81">Japan
+                                        (+81)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="JO" value="962">Jordan
+                                        (+962)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="KZ" value="7">Kazakhstan
+                                        (+7)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="KE" value="254">Kenya
+                                        (+254)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="KI" value="686">Kiribati
+                                        (+686)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="KP" value="850">Korea
+                                        North (+850)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="KR" value="82">Korea
+                                        South (+82)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="KW" value="965">Kuwait
+                                        (+965)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="KG" value="996">
+                                        Kyrgyzstan (+996)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="LA" value="856">Laos
+                                        (+856)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="LV" value="371">Latvia
+                                        (+371)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="LB" value="961">Lebanon
+                                        (+961)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="LS" value="266">Lesotho
+                                        (+266)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="LR" value="231">Liberia
+                                        (+231)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="LY" value="218">Libya
+                                        (+218)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="LI" value="417">
+                                        Liechtenstein (+417)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="LT" value="370">
+                                        Lithuania (+370)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="LU" value="352">
+                                        Luxembourg (+352)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="MO" value="853">Macao
+                                        (+853)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="MK" value="389">
+                                        Macedonia (+389)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="MG" value="261">
+                                        Madagascar (+261)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="MW" value="265">Malawi
+                                        (+265)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="MY" value="60">Malaysia
+                                        (+60)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="MV" value="960">Maldives
+                                        (+960)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="ML" value="223">Mali
+                                        (+223)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="MT" value="356">Malta
+                                        (+356)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="MH" value="692">Marshall
+                                        Islands (+692)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="MQ" value="596">
+                                        Martinique (+596)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="MR" value="222">
+                                        Mauritania (+222)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="YT" value="269">Mayotte
+                                        (+269)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="MX" value="52">Mexico
+                                        (+52)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="FM" value="691">
+                                        Micronesia (+691)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="MD" value="373">Moldova
+                                        (+373)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="MC" value="377">Monaco
+                                        (+377)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="MN" value="976">Mongolia
+                                        (+976)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="MS" value="1664">
+                                        Montserrat (+1664)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="MA" value="212">Morocco
+                                        (+212)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="MZ" value="258">
+                                        Mozambique (+258)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="MN" value="95">Myanmar
+                                        (+95)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="NA" value="264">Namibia
+                                        (+264)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="NR" value="674">Nauru
+                                        (+674)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="NP" value="977">Nepal
+                                        (+977)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="NL" value="31">
+                                        Netherlands (+31)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="NC" value="687">New
+                                        Caledonia (+687)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="NZ" value="64">New
+                                        Zealand (+64)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="NI" value="505">
+                                        Nicaragua (+505)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="NE" value="227">Niger
+                                        (+227)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="NG" value="234">Nigeria
+                                        (+234)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="NU" value="683">Niue
+                                        (+683)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="NF" value="672">Norfolk
+                                        Islands (+672)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="NP" value="670">Northern
+                                        Marianas (+670)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="NO" value="47">Norway
+                                        (+47)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="OM" value="968">Oman
+                                        (+968)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="PW" value="680">Palau
+                                        (+680)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="PA" value="507">Panama
+                                        (+507)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="PG" value="675">Papua
+                                        New Guinea (+675)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="PY" value="595">Paraguay
+                                        (+595)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="PE" value="51">Peru
+                                        (+51)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="PH" value="63">
+                                        Philippines (+63)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="PL" value="48">Poland
+                                        (+48)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="PT" value="351">Portugal
+                                        (+351)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="PR" value="1787">Puerto
+                                        Rico (+1787)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="QA" value="974">Qatar
+                                        (+974)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="RE" value="262">Reunion
+                                        (+262)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="RO" value="40">Romania
+                                        (+40)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="RU" value="7">Russia
+                                        (+7)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="RW" value="250">Rwanda
+                                        (+250)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="SM" value="378">San
+                                        Marino (+378)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="ST" value="239">Sao Tome
+                                        &amp; Principe (+239)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="SA" value="966">Saudi
+                                        Arabia (+966)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="SN" value="221">Senegal
+                                        (+221)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="CS" value="381">Serbia
+                                        (+381)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="SC" value="248">
+                                        Seychelles (+248)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="SL" value="232">Sierra
+                                        Leone (+232)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="SG" value="65">Singapore
+                                        (+65)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="SK" value="421">Slovak
+                                        Republic (+421)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="SI" value="386">Slovenia
+                                        (+386)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="SB" value="677">Solomon
+                                        Islands (+677)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="SO" value="252">Somalia
+                                        (+252)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="ZA" value="27">South
+                                        Africa (+27)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="ES" value="34">Spain
+                                        (+34)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="LK" value="94">Sri Lanka
+                                        (+94)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="SH" value="290">St.
+                                        Helena (+290)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="KN" value="1869">St.
+                                        Kitts (+1869)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="SC" value="1758">St.
+                                        Lucia (+1758)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="SD" value="249">Sudan
+                                        (+249)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="SR" value="597">Suriname
+                                        (+597)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="SZ" value="268">
+                                        Swaziland (+268)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="SE" value="46">Sweden
+                                        (+46)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="CH" value="41">
+                                        Switzerland (+41)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="SI" value="963">Syria
+                                        (+963)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="TW" value="886">Taiwan
+                                        (+886)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="TJ" value="7">Tajikstan
+                                        (+7)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="TH" value="66">Thailand
+                                        (+66)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="TG" value="228">Togo
+                                        (+228)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="TO" value="676">Tonga
+                                        (+676)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="TT" value="1868">
+                                        Trinidad &amp; Tobago (+1868)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="TN" value="216">Tunisia
+                                        (+216)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="TR" value="90">Turkey
+                                        (+90)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="TM" value="7">
+                                        Turkmenistan (+7)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="TM" value="993">
+                                        Turkmenistan (+993)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="TC" value="1649">Turks
+                                        &amp; Caicos Islands (+1649)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="TV" value="688">Tuvalu
+                                        (+688)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="UG" value="256">Uganda
+                                        (+256)</option class="payment_page_country_code">
+                                    <!-- <option class="payment_page_country_code" data-countryCode="GB" value="44">UK (+44)</option class="payment_page_country_code"> -->
+                                    <option class="payment_page_country_code" data-countryCode="UA" value="380">Ukraine
+                                        (+380)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="AE" value="971">United
+                                        Arab Emirates (+971)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="UY" value="598">Uruguay
+                                        (+598)</option class="payment_page_country_code">
+                                    <!-- <option class="payment_page_country_code" data-countryCode="US" value="1">USA (+1)</option class="payment_page_country_code"> -->
+                                    <option class="payment_page_country_code" data-countryCode="UZ" value="7">Uzbekistan
+                                        (+7)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="VU" value="678">Vanuatu
+                                        (+678)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="VA" value="379">Vatican
+                                        City (+379)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="VE" value="58">Venezuela
+                                        (+58)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="VN" value="84">Vietnam
+                                        (+84)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="VG" value="84">Virgin
+                                        Islands - British (+1284)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="VI" value="84">Virgin
+                                        Islands - US (+1340)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="WF" value="681">Wallis
+                                        &amp; Futuna (+681)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="YE" value="969">Yemen
+                                        (North)(+969)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="YE" value="967">Yemen
+                                        (South)(+967)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="ZM" value="260">Zambia
+                                        (+260)</option class="payment_page_country_code">
+                                    <option class="payment_page_country_code" data-countryCode="ZW" value="263">Zimbabwe
+                                        (+263)</option class="payment_page_country_code">
                                 </select>
-                                <input type="text" id="booking_form_inputs_phone_field" placeholder="So property can reach you">
+                                <input type="text" id="booking_form_inputs_phone_field"
+                                    placeholder="So property can reach you">
                             </div>
+                            <div id="checkbox_under_phone_field_box">
+
+                                <input type="checkbox" id="checkbox_under_inputs_phone_field">
+                                <label id="checkbox_under_inputs_phone_label" for="checkbox_under_inputs_phone_field">
+                                    Receive text alerts about this trip. Message and data rates may apply.
+                                </label><br>
+                            </div>
+                            <div id="optional_bedding_box">
+                                <div id="optional_bedding_p_textbox">
+                                    <p id="optional_bedding_h4_text_text" style="display: flex;">Bedding requests
+                                        (optional)</p>
+
+                                </div>
+                                <div id="optional_bedding_double_arrow">
+                                    <i class="fa-solid fa-angles-down" id="optional_bedding_downarrow"
+                                        class="dropdown_fa-angles-down" style="font-size:12px;"></i>
+                                </div>
+                            </div>
+                            <div id="optional_bedding_dropdown_first">
+                                <div id="optional_bedding_dropdown_textbox">
+                                    <p id="optional_bedding_dropdown_p_text">
+                                        Bedding requests cannot be guaranteed. Please contact the property to confirm.
+                                    </p>
+                                </div>
+                                <div id="optional_bedding_dropdown_select_box">
+                                    <select id="optional_bedding_dropdown_select_bedding">
+                                        <option value="doubleBed">1 Double Bed</option>
+                                        <option value="twinBed">2 Twin Bed</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div id="optional_special_request_box">
+                                <div id="optional_special_request_p_textbox">
+                                    <p id="optional_special_request_p_text" style="display: flex;">Special Requests
+                                        (optional)</p>
+
+                                </div>
+                                <div id="optional_special_request_double_arrow">
+                                    <i class="fa-solid fa-angles-down" id="optional_special_request_downarrow"
+                                        class="dropdown_fa-angles-down" style="font-size:12px;"></i>
+                                </div>
+
+                            </div>
+                            <div id="optional_special_request_dropdown_second">
+                                <div id="optional_special_request_dropdown_textbox">
+                                    <p id="optional_special_request_dropdown_p_text">
+                                        Special/accessibility requests (e.g. roll-away beds, late check-in, and
+                                        accessible rooms) are not guaranteed. If you don't hear back from the
+                                        property, you may want to contact them directly to confirm. The property may
+                                        charge a fee for certain special requests.
+                                    </p>
+                                </div>
+                                <div id="optional_special_request_dropdown_resizeable_box">
+                                    <div id="pane">
+                                        <div id="resizeable_box_placeholder">Limit 250 characters</div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
                         </div>
+
 
                     </div>
                 </div>
+                <!-- room booking form -->
+
+                
+                <!-- protect your hotel -->
 
 
+
+                <!-- protect your hotel -->
             </div>
 
             <div id="payment_page_content_page_girdbox_right">
