@@ -13,7 +13,7 @@
             "services":"Free WiFi + Pool",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.2,
-            "price":16150
+            "price":"16,150"
         },
         {
             "images":
@@ -28,7 +28,7 @@
             "services":"Free WiFi + Pool",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.1,
-            "price":6999
+            "price":"6,999"
         },
         {
             "images":
@@ -42,7 +42,7 @@
             "place":"Chimbel",
             "services":"Free WiFi + Pool",            
             "rating":4.2,
-            "price":8099
+            "price":"8,099"
         },
         {
             "images":
@@ -57,7 +57,7 @@
             "services":"Free WiFi + Spa + Air conditioned",
             "payserv":"Fully refundable",
             "rating":4.3,
-            "price":6800
+            "price":"6,800"
         },
         {
             "images":
@@ -72,7 +72,7 @@
             "services":"pool",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.7,
-            "price":29000
+            "price":"29,000"
         },
         {
             "images":
@@ -87,7 +87,7 @@
             "services":"Free WiFi + Spa + Air conditioned",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.7,
-            "price":23000
+            "price":"23,000"
         },
         {
             "images":
@@ -102,7 +102,7 @@
             "services":"Free WiFi + Spa + Air conditioned",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.1,
-            "price":8505
+            "price":"8,505"
         },
         {
             "images":
@@ -117,7 +117,7 @@
             "services":"Free WiFi + Spa + Air conditioned",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":3.6,
-            "price":7500
+            "price":"7,500"
         },
         {
             "images":
@@ -132,7 +132,7 @@
             "services":"Free WiFi + Spa + Air conditioned",
             "payserv":"Fully refundable",
             "rating":3.8,
-            "price":10798
+            "price":"10,798"
         },
         {
             "images":
@@ -147,7 +147,7 @@
             "services":"Breakfast Included + Spa + Air conditioned",
             "payserv":"Fully refundable",
             "rating":4.5,
-            "price":20500
+            "price":"20,500"
         },
         {
             "images":
@@ -162,7 +162,7 @@
             "services":"Free WiFi + Hot Tub + Air conditioned",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.2,
-            "price":9000
+            "price":"9,000"
         },
         {
             "images":
@@ -177,7 +177,7 @@
             "services":"Free WiFi + Spa + Air conditioned",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4,
-            "price":17500
+            "price":"17,500"
         },
         {
             "images":
@@ -192,7 +192,7 @@
             "services":"Free WiFi + Pool",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.3,
-            "price":3500
+            "price":"3,500"
         },
         {
             "images":
@@ -207,7 +207,7 @@
             "services":"Free WiFi + Pool",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.6,
-            "price":12000
+            "price":"12,000"
         },
         {
             "images":
@@ -222,7 +222,7 @@
             "services":"Free WiFi + Pool",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.6,
-            "price":10500
+            "price":"10,500"
         },
         {
             "images":
@@ -237,7 +237,7 @@
             "services":"Free WiFi + Pool",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.5,
-            "price":13500
+            "price":"13,500"
         },
         {
             "images":
@@ -252,7 +252,7 @@
             "services":"Free WiFi + Pool",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.3,
-            "price":8000
+            "price":"8,000"
         },
         {
             "images":
@@ -267,7 +267,7 @@
             "services":"Free WiFi + Pool",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.6,
-            "price":12000
+            "price":"12,000"
         },
         {
             "images":
@@ -282,7 +282,7 @@
             "services":"Free WiFi",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.7,
-            "price":19000
+            "price":"19,000"
         },
         {
             "images":
@@ -297,7 +297,7 @@
             "services":"Free WiFi",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.6,
-            "price":11000
+            "price":"11,000"
         },
         {
             "images":
@@ -312,7 +312,7 @@
             "services":"Free WiFi",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.8,
-            "price":13000
+            "price":"13,000"
         },
         {
             "images":
@@ -327,7 +327,7 @@
             "services":"Free WiFi + Pool",
             "payserv":"Fully refundable",
             "rating":3.5,
-            "price":9349
+            "price":"9,349"
         },
         {
             "images":
@@ -342,7 +342,7 @@
             "services":"Free WiFi",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":3.7,
-            "price":7000
+            "price":"7,000"
         }
     ],
 

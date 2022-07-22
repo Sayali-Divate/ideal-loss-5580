@@ -32,7 +32,7 @@ body{
     border: 3px solid #3662d8;
 }
 #search{
-    width: 400px;
+    width: 35%;
 }
 #search:hover{  
     cursor: pointer; 
@@ -45,10 +45,10 @@ body{
 #check-out,
 #travellers,
 #searchBtn{
-    width: 180px;
+    width:15%;
 }
 input[type="date"]{
-    width: 60%;
+    /* width: 60%; */
     outline: none;
 }
 input[type="date"]::-webkit-calendar-picker-indicator{
@@ -88,10 +88,10 @@ input[type="date"]::-webkit-calendar-picker-indicator{
 }
 #childParent2{
     width: 100%;
-    margin-top: 20px;
+    margin-top: 40px;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    gap: 20px;
+    gap: 30px;
 }
 hr{
     margin: 10px 0 ;
@@ -100,6 +100,17 @@ hr{
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+#map{
+    width: 100%; 
+    border: 1px solid black; 
+    border-radius: 10px;  
+}
+#map:hover{
+    border: 3px solid #3662d8;
+}
+#gmap_canvas{
+    border-radius: 10px;
 }
 #search_by_property>h3{
     margin-bottom: 10px;
@@ -141,4 +152,66 @@ input[type="checkbox"]{
     width: 250px;
     display: flex;
     justify-content: space-between;
+}
+#list{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+.hotel{
+    display: flex;   
+    height: 200px;      
+    background-color: white;
+    border-radius: 10px;
+    gap: 10px;
+}
+.hotel h3{
+    font-weight: 500;
+    font-size: 20px;
+}
+.hotel>div:first-child{
+    width: 70%;   
+}
+.hotel>div:first-child>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+.hotel>div:last-child{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+.bottomBlock{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.payserv{
+    width: 60%;
+    margin-bottom: 10px;    
+}
+.payserv>p{
+    color: green;
+}
+.rating{
+    display: flex;
+    gap: 5px;
+}
+.rating>p:first-child{
+    font-weight: 700;
+}
+#hide{
+    display: none;
+    visibility: hidden;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
 }
