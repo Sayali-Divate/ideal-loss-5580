@@ -1,7 +1,13 @@
 {
     "hotel_details":[
         {
-            "image":"https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/31000000/30790000/30783800/30783748/b015ad4a_b.jpg",
+            "images":
+            {
+                "one":"https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/31000000/30790000/30783800/30783748/b015ad4a_b.jpg",
+                "two":"https://images.trvl-media.com/hotels/31000000/30790000/30783800/30783748/814cf825.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "three":"https://images.trvl-media.com/hotels/31000000/30790000/30783800/30783748/584f018f.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "four":"https://images.trvl-media.com/hotels/31000000/30790000/30783800/30783748/6c712ebd.jpg?impolicy=resizecrop&rw=455&ra=fit"
+            },
             "name":"ITC, Grand Goa, a Luxury Collection Resort & Spa, Goa",
             "place":"Arossin",
             "services":"Free WiFi + Pool",
@@ -10,7 +16,13 @@
             "price":16150
         },
         {
-            "image":"https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/13000000/12920000/12918300/12918286/0e484b93_b.jpg",
+            "images":
+            {
+                "one": "https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/13000000/12920000/12918300/12918286/0e484b93_b.jpg",
+                "two": "https://images.trvl-media.com/hotels/13000000/12920000/12918300/12918286/1ca9feca.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "three": "https://images.trvl-media.com/hotels/13000000/12920000/12918300/12918286/6e62eab1.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "four": "https://images.trvl-media.com/hotels/13000000/12920000/12918300/12918286/0537092d.jpg?impolicy=resizecrop&rw=455&ra=fit"
+            },
             "name":"Hyatt Centric Candolim, Goa",
             "place":"Candolim",
             "services":"Free WiFi + Pool",
@@ -19,7 +31,13 @@
             "price":6999
         },
         {
-            "image":"https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/22000000/21430000/21429100/21429037/460fe046_b.jpg",
+            "images":
+            {
+                "one": "https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/22000000/21430000/21429100/21429037/460fe046_b.jpg",
+                "two": "https://images.trvl-media.com/hotels/22000000/21430000/21429100/21429037/b0db84f8.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "three": "https://images.trvl-media.com/hotels/22000000/21430000/21429100/21429037/a0b21d24.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "four": "https://images.trvl-media.com/hotels/22000000/21430000/21429100/21429037/77ed17fe.jpg?impolicy=resizecrop&rw=455&ra=fit"
+            },
             "name":"Double Tree by Hilton Goa-Panaji",
             "place":"Chimbel",
             "services":"Free WiFi + Pool",            
@@ -27,7 +45,13 @@
             "price":8099
         },
         {
-            "image":"https://images.trvl-media.com/hotels/3000000/2520000/2516300/2516280/36d90ef2.jpg?impolicy=resizecrop&rw=455&ra=fit",
+            "images":
+            {
+                "one": "https://images.trvl-media.com/hotels/3000000/2520000/2516300/2516280/48a085d5.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "two": "https://images.trvl-media.com/hotels/3000000/2520000/2516300/2516280/36d90ef2.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "three": "https://images.trvl-media.com/hotels/3000000/2520000/2516300/2516280/e50e4ee7.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "four": "https://images.trvl-media.com/hotels/3000000/2520000/2516300/2516280/4e36b540.jpg?impolicy=resizecrop&rw=455&ra=fit"
+            },
             "name":"Novotel Goa Dona Sylvia Hotel",
             "place":"Cavelossim",
             "services":"Free WiFi + Spa + Air conditioned",
@@ -36,7 +60,13 @@
             "price":6800
         },
         {
-            "image":"https://images.trvl-media.com/hotels/1000000/440000/438400/438378/bdbe16ac.jpg?impolicy=resizecrop&rw=455&ra=fit",
+            "images":
+            {
+                "one": "https://images.trvl-media.com/hotels/1000000/440000/438400/438378/bdbe16ac.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "two": "https://images.trvl-media.com/hotels/1000000/440000/438400/438378/d08ab991.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "three": "https://images.trvl-media.com/hotels/1000000/440000/438400/438378/616334b9.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "four": "https://images.trvl-media.com/hotels/1000000/440000/438400/438378/fd40d8a9.jpg?impolicy=resizecrop&rw=455&ra=fit"
+            },
             "name":"The Leela Goa ",
             "place":"Cavelossim",
             "services":"pool",
@@ -45,7 +75,13 @@
             "price":29000
         },
         {
-            "image":"https://images.trvl-media.com/hotels/1000000/670000/663700/663615/08a8dd9d.jpg?impolicy=resizecrop&rw=455&ra=fit",
+            "images":
+            {
+                "one": "https://images.trvl-media.com/hotels/1000000/670000/663700/663615/5bb5e9f8.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "two": "https://images.trvl-media.com/hotels/1000000/670000/663700/663615/67f06b8b.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "three": "https://images.trvl-media.com/hotels/1000000/670000/663700/663615/26f5c79b.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "four": "https://images.trvl-media.com/hotels/1000000/670000/663700/663615/08a8dd9d.jpg?impolicy=resizecrop&rw=455&ra=fit"
+            },
             "name":"Taj Exotic Resort & Spa, Goa",
             "place":"Benaulim",
             "services":"Free WiFi + Spa + Air conditioned",
@@ -54,7 +90,13 @@
             "price":23000
         },
         {
-            "image":"https://images.trvl-media.com/hotels/5000000/4480000/4474800/4474764/2e15d580.jpg?impolicy=resizecrop&rw=455&ra=fit",
+            "images":
+            {
+                "one": "https://images.trvl-media.com/hotels/5000000/4480000/4474800/4474764/2e15d580.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "two": "https://images.trvl-media.com/hotels/5000000/4480000/4474800/4474764/1ee7a8f3.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "three": "https://images.trvl-media.com/hotels/5000000/4480000/4474800/4474764/a7fb7c8d.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "four": "https://images.trvl-media.com/hotels/5000000/4480000/4474800/4474764/87b1d6b8.jpg?impolicy=resizecrop&rw=455&ra=fit"
+            },
             "name":"Radisson Blu Resort Goa Cavelossim Beach",
             "place":"Cavelossim",
             "services":"Free WiFi + Spa + Air conditioned",
@@ -63,7 +105,13 @@
             "price":8505
         },
         {
-            "image":"https://images.trvl-media.com/hotels/1000000/80000/70600/70518/dce1b7a5.jpg?impolicy=resizecrop&rw=455&ra=fit",
+            "images":
+            {
+                "one": "https://images.trvl-media.com/hotels/5000000/4480000/4474800/4474764/87b1d6b8.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "two": "https://images.trvl-media.com/hotels/1000000/80000/70600/70518/456061fc.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "three": "https://images.trvl-media.com/hotels/1000000/80000/70600/70518/5cd1dff0.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "four": "https://images.trvl-media.com/hotels/1000000/80000/70600/70518/7d8f3584.jpg?impolicy=resizecrop&rw=455&ra=fit"
+            },
             "name":"Bogmallo Beach Resort, Goa",
             "place":"Bogmallo",
             "services":"Free WiFi + Spa + Air conditioned",
@@ -72,7 +120,13 @@
             "price":7500
         },
         {
-            "image":"https://images.trvl-media.com/hotels/1000000/930000/921600/921574/623993db.jpg?impolicy=resizecrop&rw=455&ra=fit",
+            "images":
+            {
+                "one": "https://images.trvl-media.com/hotels/1000000/930000/921600/921574/623993db.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "two": "https://images.trvl-media.com/hotels/1000000/930000/921600/921574/623993db.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "three": "https://images.trvl-media.com/hotels/1000000/930000/921600/921574/092f1a6d.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "four": "https://images.trvl-media.com/hotels/1000000/930000/921600/921574/f7adf7c2.jpg?impolicy=resizecrop&rw=455&ra=fit"
+            },
             "name":"The LaLiT Golf & Spa Resort Goa",
             "place":"Palolem",
             "services":"Free WiFi + Spa + Air conditioned",
@@ -81,7 +135,13 @@
             "price":10798
         },
         {
-            "image":"https://images.trvl-media.com/hotels/1000000/530000/526400/526340/f5764d77.jpg?impolicy=resizecrop&rw=455&ra=fit",
+            "images":
+            {
+                "one": "https://images.trvl-media.com/hotels/1000000/530000/526400/526340/f5764d77.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "two": "https://images.trvl-media.com/hotels/1000000/530000/526400/526340/2a5881dc.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "three": "https://images.trvl-media.com/hotels/1000000/530000/526400/526340/3864fb4a.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "four": "https://images.trvl-media.com/hotels/1000000/530000/526400/526340/aa1802fc.jpg?impolicy=resizecrop&rw=455&ra=fit"
+            },
             "name":"Taj Fort Aguada Resort & Spa, Goa",
             "place":"Aguada Fort Area",
             "services":"Breakfast Included + Spa + Air conditioned",
@@ -90,7 +150,13 @@
             "price":20500
         },
         {
-            "image":"https://images.trvl-media.com/hotels/11000000/10550000/10547600/10547516/b5c4d061.jpg?impolicy=resizecrop&rw=455&ra=fit",
+            "images":
+            {
+                "one": "https://images.trvl-media.com/hotels/11000000/10550000/10547600/10547516/abca2a26.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "two": "https://images.trvl-media.com/hotels/11000000/10550000/10547600/10547516/b5c4d061.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "three": "https://images.trvl-media.com/hotels/11000000/10550000/10547600/10547516/9759e533.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "four": "https://images.trvl-media.com/hotels/11000000/10550000/10547600/10547516/e4d85275.jpg?impolicy=resizecrop&rw=455&ra=fit"
+            },
             "name":"Planet Hollywood Goa Beach Resort",
             "place":"Uttorda",
             "services":"Free WiFi + Hot Tub + Air conditioned",
@@ -99,7 +165,13 @@
             "price":9000
         },
         {
-            "image":"https://images.trvl-media.com/hotels/25000000/24050000/24041500/24041444/e8849892.jpg?impolicy=resizecrop&rw=455&ra=fit",
+            "images":
+            {
+                "one": "https://images.trvl-media.com/hotels/25000000/24050000/24041500/24041444/e8849892.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "two": "https://images.trvl-media.com/hotels/25000000/24050000/24041500/24041444/8b29f5f1.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "three": "https://images.trvl-media.com/hotels/25000000/24050000/24041500/24041444/81b4c340.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "four": "https://images.trvl-media.com/hotels/25000000/24050000/24041500/24041444/3c6e5762.jpg?impolicy=resizecrop&rw=455&ra=fit"
+            },
             "name":"Azaya Beach Resort,Goa",
             "place":"Benaulim",
             "services":"Free WiFi + Spa + Air conditioned",
@@ -108,7 +180,13 @@
             "price":17500
         },
         {
-            "image":"https://images.trvl-media.com/hotels/78000000/77160000/77152400/77152397/fe050728.jpg?impolicy=resizecrop&rw=455&ra=fit",
+            "images":
+            {
+                "one": "https://images.trvl-media.com/hotels/78000000/77160000/77152400/77152397/73d21434.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "two": "https://images.trvl-media.com/hotels/78000000/77160000/77152400/77152397/7c922ac6.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "three": "https://images.trvl-media.com/hotels/78000000/77160000/77152400/77152397/fe050728.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "four": "https://images.trvl-media.com/hotels/78000000/77160000/77152400/77152397/e083768b.jpg?impolicy=resizecrop&rw=455&ra=fit"
+            },
             "name":"Sea Breeze Max Resort & Spa, Goa",
             "place":"Fatrade",
             "services":"Free WiFi + Pool",
@@ -117,7 +195,13 @@
             "price":3500
         },
         {
-            "image":"https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/6000000/5310000/5301700/5301691/42bd346d_b.jpg",
+            "images":
+            {
+                "one": "https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/6000000/5310000/5301700/5301691/42bd346d_b.jpg",
+                "two": "https://images.trvl-media.com/hotels/6000000/5310000/5301700/5301691/33d94bb4.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "three": "https://images.trvl-media.com/hotels/6000000/5310000/5301700/5301691/12567285.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "four": "https://images.trvl-media.com/hotels/6000000/5310000/5301700/5301691/cea6d2e2.jpg?impolicy=resizecrop&rw=455&ra=fit"
+            },
             "name":"The St. Regis Mumbai",
             "place":"Mumbai",
             "services":"Free WiFi + Pool",
@@ -126,7 +210,13 @@
             "price":12000
         },
         {
-            "image":"https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/4000000/3030000/3021000/3020992/e0a8daae_b.jpg",
+            "images":
+            {
+                "one": "https://images.trvl-media.com/hotels/4000000/3030000/3021000/3020992/bd8f1693.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "two": "https://images.trvl-media.com/hotels/4000000/3030000/3021000/3020992/b8e14888.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "three": "https://images.trvl-media.com/hotels/4000000/3030000/3021000/3020992/fd4703b2.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "four": "https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/4000000/3030000/3021000/3020992/e0a8daae_b.jpg"
+            },
             "name":"The Westin Mumbai Garden City",
             "place":"Goregaon",
             "services":"Free WiFi + Pool",
@@ -135,7 +225,13 @@
             "price":10500
         },
         {
-            "image":"https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/5000000/4260000/4253900/4253887/0c5cee25_b.jpg",
+            "images":
+            {
+                "one": "https://images.trvl-media.com/hotels/5000000/4260000/4253900/4253887/fdccf218.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "two": "https://images.trvl-media.com/hotels/5000000/4260000/4253900/4253887/0c5cee25.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "three": "https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/5000000/4260000/4253900/4253887/0c5cee25_b.jpg",
+                "four": "https://images.trvl-media.com/hotels/5000000/4260000/4253900/4253887/9d4bc4b1.jpg?impolicy=resizecrop&rw=455&ra=fit"
+            },
             "name":"Sofitel Mumbai BKC Hotel",
             "place":"Bandra Kurla Complex",
             "services":"Free WiFi + Pool",
@@ -144,7 +240,13 @@
             "price":13500
         },
         {
-            "image":"https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/1000000/900000/895300/895247/00825dba_b.jpg",
+            "images":
+            {
+                "one": "https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/1000000/900000/895300/895247/00825dba_b.jpg",
+                "two": "https://images.trvl-media.com/hotels/1000000/900000/895300/895247/5f6e7c8e.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "three": "https://images.trvl-media.com/hotels/1000000/900000/895300/895247/6a135483.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "four": "https://images.trvl-media.com/hotels/1000000/900000/895300/895247/4ecf71ae.jpg?impolicy=resizecrop&rw=455&ra=fit"
+            },
             "name":"The Westin Mumbai Powai Lake",
             "place":"Bandra Kurla Complex",
             "services":"Free WiFi + Pool",
@@ -153,7 +255,13 @@
             "price":8000
         },
         {
-            "image":"https://images.trvl-media.com/hotels/10000000/9790000/9784600/9784580/2a61cd38.jpg?impolicy=resizecrop&rw=455&ra=fit",
+            "images":
+            {
+                "one": "https://images.trvl-media.com/hotels/10000000/9790000/9784600/9784580/2a61cd38.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "two": "https://images.trvl-media.com/hotels/10000000/9790000/9784600/9784580/c31b061d.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "three": "https://images.trvl-media.com/hotels/10000000/9790000/9784600/9784580/5f07eb8c.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "four": "https://images.trvl-media.com/hotels/10000000/9790000/9784600/9784580/982f5487.jpg?impolicy=resizecrop&rw=455&ra=fit"
+            },
             "name":"JW Marriott Mumbai Sahar",
             "place":"Mumbai",
             "services":"Free WiFi + Pool",
@@ -162,7 +270,13 @@
             "price":12000
         },
         {
-            "image":"https://images.trvl-media.com/hotels/20000000/19460000/19458500/19458493/a7678da8.jpg?impolicy=resizecrop&rw=455&ra=fit",
+            "images":
+            {
+                "one": "https://images.trvl-media.com/hotels/20000000/19460000/19458500/19458493/a7678da8.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "two": "https://images.trvl-media.com/hotels/20000000/19460000/19458500/19458493/21dd333b.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "three": "https://images.trvl-media.com/hotels/20000000/19460000/19458500/19458493/1db78232.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "four": "https://images.trvl-media.com/hotels/20000000/19460000/19458500/19458493/f93bcf11.jpg?impolicy=resizecrop&rw=455&ra=fit"
+            },
             "name":"The Taj Mahal Palace Mumbai",
             "place":"Mumbai",
             "services":"Free WiFi",
@@ -171,7 +285,13 @@
             "price":19000
         },
         {
-            "image":"https://images.trvl-media.com/hotels/12000000/11550000/11544400/11544400/1b5ae2e3.jpg?impolicy=resizecrop&rw=455&ra=fit",
+            "images":
+            {
+                "one": "https://images.trvl-media.com/hotels/12000000/11550000/11544400/11544400/1b5ae2e3.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "two": "https://images.trvl-media.com/hotels/12000000/11550000/11544400/11544400/d20bd3a1.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "three": "https://images.trvl-media.com/hotels/12000000/11550000/11544400/11544400/06d997c5.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "four": "https://images.trvl-media.com/hotels/12000000/11550000/11544400/11544400/45ba31ca.jpg?impolicy=resizecrop&rw=455&ra=fit"
+            },
             "name":"Taj Santacruz",
             "place":"Mumbai",
             "services":"Free WiFi",
@@ -180,7 +300,13 @@
             "price":11000
         },
         {
-            "image":"https://images.trvl-media.com/hotels/1000000/10000/4800/4772/b3d8a21b.jpg?impolicy=resizecrop&rw=455&ra=fit",
+            "images":
+            {
+                "one": "https://images.trvl-media.com/hotels/1000000/10000/4800/4772/b3d8a21b.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "two": "https://images.trvl-media.com/hotels/1000000/10000/4800/4772/4cf956df.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "three": "https://images.trvl-media.com/hotels/1000000/10000/4800/4772/d9aadb9e.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "four": "https://images.trvl-media.com/hotels/1000000/10000/4800/4772/7218113e.jpg?impolicy=resizecrop&rw=455&ra=fit"
+            },
             "name":"The Oberoi Mumbai",
             "place":"Mumbai",
             "services":"Free WiFi",
@@ -189,7 +315,13 @@
             "price":13000
         },
         {
-            "image":"https://images.trvl-media.com/hotels/1000000/50000/49300/49261/a652d6bb.jpg?impolicy=resizecrop&rw=455&ra=fit",
+            "images":
+            {
+                "one": "https://images.trvl-media.com/hotels/1000000/50000/49300/49261/a652d6bb.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "two": "https://images.trvl-media.com/hotels/1000000/50000/49300/49261/c4a4c56e.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "three": "https://images.trvl-media.com/hotels/1000000/50000/49300/49261/27734ef3.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "four": "https://images.trvl-media.com/hotels/1000000/50000/49300/49261/b02a5c04.jpg?impolicy=resizecrop&rw=455&ra=fit"
+            },
             "name":"Novotel Mumbai Juhu Beach Hotel",
             "place":"Mumbai",
             "services":"Free WiFi + Pool",
@@ -198,7 +330,13 @@
             "price":9349
         },
         {
-            "image":"https://images.trvl-media.com/hotels/3000000/2610000/2600800/2600773/df348763.jpg?impolicy=resizecrop&rw=455&ra=fit",
+            "images":
+            {
+                "one": "https://images.trvl-media.com/hotels/3000000/2610000/2600800/2600773/df348763.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "two": "https://images.trvl-media.com/hotels/3000000/2610000/2600800/2600773/ab0fca2e.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "three": "https://images.trvl-media.com/hotels/3000000/2610000/2600800/2600773/5bfb204a.jpg?impolicy=resizecrop&rw=455&ra=fit",
+                "four": "https://images.trvl-media.com/hotels/3000000/2610000/2600800/2600773/a3ac4c5c.jpg?impolicy=resizecrop&rw=455&ra=fit"
+            },
             "name":"Hotel Sea Princes",
             "place":"Mumbai",
             "services":"Free WiFi",
