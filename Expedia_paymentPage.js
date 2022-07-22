@@ -1,3 +1,23 @@
+
+//mock data
+let hotel_container=document.querySelector("#payment_page_content_page_hotel_details")
+
+let hotel_objects=
+    {
+        "image":"https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/31000000/30790000/30783800/30783748/b015ad4a_b.jpg",
+        "name":"ITC, Grand Goa, a Luxury Collection Resort & Spa, Goa",
+        "place":"Arossin",
+        "services":"Free WiFi + Pool",
+        "payserv":"Fully refundable, Reserve now, pay later",
+        "rating":4.2,
+        "price":16150
+    }
+localStorage.setItem("hotel_data",JSON.stringify(hotel_objects))
+
+//mock data
+
+
+
 let dropdown_trigger = document.querySelector("#payment_page_content_page_signup_textbox")
 let double_arrow_down = document.querySelector("#payment_page_content_page_double_arrow")
 let dropdown_target = document.querySelector("#payment_page_content_page_rewards_points_dropdown_box")
@@ -374,3 +394,43 @@ not_a_residence_trigger.addEventListener("click",is_resident)
 // }
 
 // radio_button_trigger_no.addEventListener("click",radio_no)
+
+let data_from_ls=JSON.parse(localStorage.getItem("hotel_data"))
+console.log('data_from_ls:', data_from_ls)
+
+append_hotel_data(data_from_ls)
+
+function append_hotel_data(el){
+    hotel_container.innerHTML=""
+    let card=document.createElement("div")
+    card.setAttribute("class","hotel_card")
+
+    let hotel_poster_box=document.createElement("div")
+    hotel_poster_box.setAttribute("class","image_box")
+
+    let hotel_poster=document.createElement("img")
+    hotel_poster.src=el.image
+
+    hotel_poster_box.append(hotel_poster)
+
+
+    
+    card.append(hotel_poster_box)
+    hotel_container.append(card)
+}
+
+
+
+
+
+
+
+// {
+//     "image":"https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/31000000/30790000/30783800/30783748/b015ad4a_b.jpg",
+//     "name":"ITC, Grand Goa, a Luxury Collection Resort & Spa, Goa",
+//     "place":"Arossin",
+//     "services":"Free WiFi + Pool",
+//     "payserv":"Fully refundable, Reserve now, pay later",
+//     "rating":4.2,
+//     "price":16150
+// },
