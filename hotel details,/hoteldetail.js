@@ -40,7 +40,7 @@ mapp=[
     {icon:"fa-solid fa-location-dot", text:"Saturday Night Market" ,time: "9 min walk"},
     {icon:"fa-solid fa-location-dot", text:"Baga Night Market" ,time: "13 min walk"},
     {icon:"fa-solid fa-car", text:"Miraculous Cross" ,time: "3 min drive"},
-    // {icon:"fa-solid fa-car", text:"Goa (GOI-Dabolim)" ,time: "44 min drive"}
+   
 ]
 
 mapp.forEach(ele=>{
