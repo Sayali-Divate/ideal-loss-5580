@@ -27,21 +27,32 @@ body{
     gap: 20px;
     background-color: white;
 }
+.topBlock:hover{
+    cursor: pointer; 
+    border: 3px solid #3662d8;
+}
 #search{
     width: 400px;
-    position: relative;
 }
-#search_popup{
-    width: 500px;
-    position: absolute;
-    top: 10%;
-    left: 10%;
+#search:hover{  
+    cursor: pointer; 
+    border: 3px solid #3662d8;
+}
+#destination{
+    outline: none;
 }
 #check-in,
 #check-out,
 #travellers,
 #searchBtn{
     width: 180px;
+}
+input[type="date"]{
+    width: 60%;
+    outline: none;
+}
+input[type="date"]::-webkit-calendar-picker-indicator{
+    display: none;
 }
 #travellers{
     width: fit-content;
@@ -111,9 +122,9 @@ input[type="radio"],
 input[type="checkbox"]{
     transform: scale(1.5);
 }
-#main{
+/* #main{
     border: 1px solid;
-}
+} */
 #sort{
     display: flex;
     justify-content: space-between;    

@@ -12,33 +12,33 @@
     <div id="parent">
         <div id="childParent1" > 
             <div id="search" class="topBlock">
-                <div class="icon"><i class="fa-solid fa-location-dot fa-lg" ></i></div>
+                <div class="icon"><i class="fa-solid fa-location-dot fa-lg" id="location" ></i></div>
                 <div>
                     <p class="tag">Going to</p>
-                    <button id="destination" class="head">Goa
+                    <input type= "text" placeholder="" id="destination" class="head">
                         <!--take the location from local storage -->
                         <!-- also adding functionality so that location can be changed here -->
-                    </button>
-                </div>                
+                    
+                </div>                               
             </div>            
             <div id="check-in" class="topBlock">
                 <div class="icon"><i class="fa-solid fa-calendar-day fa-lg"></i></div>
                 <div>
                     <p class="tag">Check-In</p>
-                    <button class="head"> 2 Aug
+                    <input type="date" class="head" id="checkin_date"> 
                         <!--take the check-in date from local storage -->
                         <!-- also adding functionality so that date can be changed here -->
-                    </button>
+                    
                 </div>  
             </div>
             <div id="check-out" class="topBlock">
                 <div class="icon"><i class="fa-solid fa-calendar-day fa-lg"></i></div>
                 <div>
                     <p class="tag">Check-Out</p>
-                    <button class="head"> 3 Aug                    
+                    <input type="date" class="head" id="checkout_date">                   
                          <!--take the check-out date from local storage -->
                         <!-- also adding functionality so that date can be changed here -->
-                    </button> 
+                     
                 </div>  
             </div>
             <div id="travellers" class="topBlock">
