@@ -37,7 +37,7 @@
             <input min="2022-07-01" max="2023-12-31" type="date">
         </div>
         <div id="subPart3Am">
-            <p>1 room, 2 travelers</p>
+            <p onclick="roomTravelersFun()" class="InsideSubPart3Am">1 room, 2 travelers</p>
             <label for="" class="Label">Check-out</label>
             <input type="date" min="2022-07-01" max="2023-12-31">
         </div>
@@ -57,10 +57,24 @@
             </div>
             <div>
                 <h3>Text yourself a download link for easy access</h3>
-                <input type="tel" id="phone">
-                <input type="number" name="" id="" placeholder="Phone number">
-                <button>Get the app</button>
-                <p>By providing your number, you agree to receive a one-time automated text message with a link to get the app. Standard text message rates may apply.</p>
+                <select name="" id="">
+                    <option value="+91,India">India +91</option>
+                    <option value="+54,Argentina">Argentina +54</option>
+                    <option value="+61,Australia">Australia +61</option>
+                    <option value="+43,Austria">Austria +43</option>
+                    <option value="+32,Belgium">Belgium +32</option>
+                    <option value="+55,Brazil">Brazil +55</option>
+                    <option value="+1,Canada">Canada +1</option>
+                    <option value="+45,Denmark">Denmark +45</option>
+                    <option value="+358,Finland">Finland +358</option>
+                    <option value="+33,France">France +33</option>
+                    <option value="+49,Germany">Germany +49</option>
+                    <option value="+852,HongKong">Hong Kong SAR +852</option>
+                    <option value="+353,Ireland">Ireland +353</option>
+                </select>
+                <input type="number" name="" id="Phone_num" placeholder="Phone number">
+                <button onclick="getTheApp()">Get the app</button>
+                <p class="appInfo">By providing your number, you agree to receive a one-time automated text message with a link to get the app. Standard text message rates may apply.</p>
             </div>
         </div>
         <div id="appboxPart3">
@@ -206,3 +220,4 @@
     
 </body>
 </html>
+<script src="./script/index.js"></script>
