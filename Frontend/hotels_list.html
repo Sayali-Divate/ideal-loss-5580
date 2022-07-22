@@ -55,15 +55,21 @@
         <div id="childParent2">
             <div id="sidebar">
                 <div id="map">
-                    <p>Insert map here...</p>
+                    <iframe  
+                     id="gmap_canvas"                      
+                     frameborder="0" 
+                     scrolling="no" 
+                     marginheight="0" 
+                     marginwidth="0">
+                    </iframe>
                     <!-- insert map here -->
                 </div>
                 <hr>
                 <div id="search_by_property">
                     <h3>Search by property name</h3>
-                    <div>
+                    <div id="property_div">
                         <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
-                        <button class="head">e.g. Best western</button>
+                        <input class="head" id="property" placeholder="e.g. Best western">
                     </div>
                 </div>
                 <hr>

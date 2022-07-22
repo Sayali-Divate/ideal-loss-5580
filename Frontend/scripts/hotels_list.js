@@ -19,6 +19,9 @@ let defaultData= async(query)=>{
     data.length ? append(data) : displayMsg();
     place_name.value=query; 
     localStorage.setItem("place", query);  
+
+    // map insertion
+    showMap(query);
 }
 
 // if the city doesn't match the data, included in API
@@ -26,6 +29,7 @@ let defaultData= async(query)=>{
 let displayMsg =()=>{    
     document.querySelector("#list").innerHTML=null
     document.querySelector("#hide").style.display="flex";
+    document.querySelector("#hide").style.visibility="visible";
 }
 
 // for getting the data from api...
@@ -101,8 +105,11 @@ let append=(data)=>{
 
         hotel.append(imgDiv, mainDiv);
         container.append(hotel);
-    })  
-    
+
+        hotel.click=()=>{
+            hotelDetails(ele);
+        }
+    })   
 
 }
 
@@ -141,6 +148,13 @@ let trigger= async (info)=>{
     
  }
 
+//  To redirect to hotel details page after clicking a hotel..
+
+let hotelDetails=(data)=>{
+    localStorage.setItem("hotel_details", JSON.stringify(data));
+    window.location.href="./hoteldetail.html"
+}
+
 //  To trigger the calender on clicking div for check in and check out
 
 let checkIn=document.querySelector("#check-in");
@@ -155,7 +169,25 @@ checkOut.onclick=()=>{
     date.showPicker();   
 }
 
-// sorting functionality
+// Sidebar functionalities........
+
+// sidebar -- inserting a map
+
+let showMap=(city)=>{
+    let url=`https://maps.google.com/maps?q=${city}&t=&z=13&ie=UTF8&iwloc=&output=embed`;
+    let frame=document.querySelector("#gmap_canvas");
+    frame.src=url;
+}
+
+// search by property name ...
+
+let property=document.querySelector("#property_div");
+property.addEventListener("click", ()=>{
+    let name=document.querySelector("#property");
+    trigger(name);
+})
+
+
 
 
 
