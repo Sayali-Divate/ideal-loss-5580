@@ -317,3 +317,60 @@ function onUp(e) {
     clicked = null;
 
 }
+
+
+let not_a_residence_trigger=document.querySelector("#protect_your_hotel_click_here_not")
+let residence_trigger=document.querySelector("#protect_your_hotel_click_here")
+let residence_target=document.querySelector("#protect_your_hotel_note_section")
+let not_a_residence_target=document.querySelector("#protect_your_hotel_note_section_not")
+
+let is_not_resident=()=>{
+    event.preventDefault()
+    if(not_a_residence_target.style.display="none"){
+        not_a_residence_target.style.display="flex"
+        residence_target.style.display="none"
+    }
+}
+
+residence_trigger.addEventListener("click",is_not_resident)
+
+let is_resident=()=>{
+    event.preventDefault()
+    if(residence_target.style.display="none"){
+        residence_target.style.display="flex"
+        not_a_residence_target.style.display="none"
+        
+    }
+}
+
+not_a_residence_trigger.addEventListener("click",is_resident)
+
+
+// let radio_button_trigger_yes=document.querySelector("#protect_your_hotel_radio_input_yes")
+// let radio_button_trigger_no=document.querySelector("#protect_your_hotel_radio_input_no")
+
+// let radio_yes=()=>{
+//     if(radio_button_trigger_yes.checked==false){
+//         radio_button_trigger_yes.checked=true
+//         radio_button_trigger_no.checked=false
+//         console.log('hello:')
+//     }
+// // else if(radio_button_trigger_yes.checked==true){
+// //     radio_button_trigger_yes.checked=false
+// // }
+// }
+
+// radio_button_trigger_yes.addEventListener("click",radio_yes)
+
+// let radio_no=()=>{
+//     if(radio_button_trigger_no.checked==false){
+//         radio_button_trigger_no.checked=true
+//         radio_button_trigger_yes.checked=false
+//         console.log('hello:')
+//     }
+// // else if(radio_button_trigger_yes.checked==true){
+// //     radio_button_trigger_yes.checked=false
+// // }
+// }
+
+// radio_button_trigger_no.addEventListener("click",radio_no)
