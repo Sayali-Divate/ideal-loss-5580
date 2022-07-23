@@ -15,8 +15,10 @@ let defaultData= async(query)=>{
 
     query= query ? query : city
     let data= await getData(query); 
+    let msgDiv=document.querySelector("#hide");
     
-    data.length ? append(data) : displayMsg();
+    data.length ? ( append(data) ,  msgDiv.style.visibility="hidden") : displayMsg("The API works only for Goa and Mumbai");
+    
     place_name.value=query; 
     localStorage.setItem("place", query);  
 
@@ -26,10 +28,13 @@ let defaultData= async(query)=>{
 
 // if the city doesn't match the data, included in API
 
-let displayMsg =()=>{    
+let displayMsg =(msg)=>{    
     document.querySelector("#list").innerHTML=null
-    document.querySelector("#hide").style.display="flex";
-    document.querySelector("#hide").style.visibility="visible";
+    let div=document.querySelector("#hide");
+    div.style.display="flex";
+    div.style.visibility="visible";
+
+    div.innerText=msg;
 }
 
 // for getting the data from api...
@@ -86,10 +91,13 @@ let append=(data)=>{
 
         let block=document.createElement("div");
         block.className="rating";
+
         let ratin = document.createElement("p");
         ratin.innerText=`${rating}/5`;
+
         let review=document.createElement("p");
         review.innerText=ratingBasedTag(rating);
+
         block.append(ratin, review);
 
         ratingDiv.append(payDiv,block);
@@ -169,6 +177,21 @@ checkOut.onclick=()=>{
     date.showPicker();   
 }
 
+// sorting functionality.......
+
+let sort=document.querySelector("#selectPrice");
+console.log(sort);
+sort.onchange=()=>{
+    let val=document.querySelector("#selectPrice").value;
+    let city=localStorage.getItem("place");
+    
+    if(val=="rec") fetchIt(`http://127.0.0.1:3000/api/hotel_details?q=${city}`);
+    else if(val=="low") fetchIt(`http://127.0.0.1:3000/api/hotel_details?q=${city}&_sort=price&_order=asc`);
+    else if(val=="high") fetchIt(`http://127.0.0.1:3000/api/hotel_details?q=${city}&_sort=price&_order=desc`);
+    else if(val=="rating") fetchIt(`http://127.0.0.1:3000/api/hotel_details?q=${city}&_sort=rating&_order=desc`);
+}
+
+
 // Sidebar functionalities........
 
 // sidebar -- inserting a map
@@ -187,7 +210,89 @@ property.addEventListener("click", ()=>{
     trigger(name);
 })
 
+// filter by price.....
 
+let filterPrice=document.querySelectorAll("#price_per_night>div>input");
+
+filterPrice.forEach(ele=>{
+    ele.onclick=()=>{
+        filterBYprice(ele.id);        
+    }
+})
+
+let filterBYprice= (id)=>{
+    let p1;
+    let p2;
+    if(id=="anyPrice"){p1=0; p2=11100000;} 
+    else if(id=="lessThan2k"){p1=0; p2=2000;} 
+    else if(id=="2kTo4K") {p1=2000; p2=4000;}
+    else if(id=="4kTo8k") {p1=4000; p2=8000;}
+    else if(id=="8kTo11k") {p1=8000; p2=11000;}
+    else if(id=="greaterThan11k") {p1=11000; p2=11100000;}    
+
+    let query=localStorage.getItem("place");
+    console.log(p1, p2);
+    
+    let url=`http://127.0.0.1:3000/api/hotel_details?q=${query}&price_gte=${p1}&price_lte=${p2}`
+    fetchIt(url);
+
+}
+
+let fetchIt= async (url)=>{
+
+    let res=await fetch(url, {
+        method:"GET",
+        headers:{
+            "content-type":"application/json"
+        }
+    });
+    let data=await res.json();    
+    
+    let div=document.querySelector("#hide");
+    !data.length ? displayMsg ("Data is not available for selected options try different options") : (append(data), div.style.visibility="hidden" );
+    
+}
+
+// filter by ratings
+
+let rating=document.querySelectorAll(`[name="rating"]`);
+console.log(rating)
+rating.forEach(ele=>{
+    ele.onclick=()=>{
+        filterByRating(Number(ele.id));
+    }    
+})
+
+let filterByRating=(id)=>{
+    console.log("yes")
+
+    let query=localStorage.getItem("place");
+
+    let url=`http://127.0.0.1:3000/api/hotel_details?q=${query}&rating_gte=${id}`
+
+    fetchIt(url);
+}
+
+// filter by the payserve options
+
+let payserv=document.querySelectorAll(`[type="checkbox"]`);
+payserv.forEach(ele=>{
+    ele.onclick=()=>{
+       
+        if(ele.checked){            
+            filterbyPayserv(ele.id);
+        }
+    }
+    
+})
+let filterbyPayserv=(id)=>{
+    let city=localStorage.getItem("place");
+    let url= `http://127.0.0.1:3000/api/hotel_details?city=${city}&q=${id}`
+
+    fetchIt(url)
+}
+
+ 
 
 
 

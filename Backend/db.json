@@ -9,11 +9,12 @@
                 "four":"https://images.trvl-media.com/hotels/31000000/30790000/30783800/30783748/6c712ebd.jpg?impolicy=resizecrop&rw=455&ra=fit"
             },
             "name":"ITC, Grand Goa, a Luxury Collection Resort & Spa, Goa",
+            "city":"goa",
             "place":"Arossin",
             "services":"Free WiFi + Pool",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.2,
-            "price":"16,150"
+            "price":16150
         },
         {
             "images":
@@ -24,11 +25,12 @@
                 "four": "https://images.trvl-media.com/hotels/13000000/12920000/12918300/12918286/0537092d.jpg?impolicy=resizecrop&rw=455&ra=fit"
             },
             "name":"Hyatt Centric Candolim, Goa",
+            "city":"goa",
             "place":"Candolim",
             "services":"Free WiFi + Pool",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.1,
-            "price":"6,999"
+            "price":6999
         },
         {
             "images":
@@ -39,10 +41,11 @@
                 "four": "https://images.trvl-media.com/hotels/22000000/21430000/21429100/21429037/77ed17fe.jpg?impolicy=resizecrop&rw=455&ra=fit"
             },
             "name":"Double Tree by Hilton Goa-Panaji",
+            "city":"goa",
             "place":"Chimbel",
             "services":"Free WiFi + Pool",            
             "rating":4.2,
-            "price":"8,099"
+            "price":8099
         },
         {
             "images":
@@ -53,11 +56,12 @@
                 "four": "https://images.trvl-media.com/hotels/3000000/2520000/2516300/2516280/4e36b540.jpg?impolicy=resizecrop&rw=455&ra=fit"
             },
             "name":"Novotel Goa Dona Sylvia Hotel",
+            "city":"goa",
             "place":"Cavelossim",
             "services":"Free WiFi + Spa + Air conditioned",
             "payserv":"Fully refundable",
             "rating":4.3,
-            "price":"6,800"
+            "price":6800
         },
         {
             "images":
@@ -68,11 +72,12 @@
                 "four": "https://images.trvl-media.com/hotels/1000000/440000/438400/438378/fd40d8a9.jpg?impolicy=resizecrop&rw=455&ra=fit"
             },
             "name":"The Leela Goa ",
+            "city":"goa",
             "place":"Cavelossim",
             "services":"pool",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.7,
-            "price":"29,000"
+            "price":29000
         },
         {
             "images":
@@ -83,11 +88,12 @@
                 "four": "https://images.trvl-media.com/hotels/1000000/670000/663700/663615/08a8dd9d.jpg?impolicy=resizecrop&rw=455&ra=fit"
             },
             "name":"Taj Exotic Resort & Spa, Goa",
+            "city":"goa",
             "place":"Benaulim",
             "services":"Free WiFi + Spa + Air conditioned",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.7,
-            "price":"23,000"
+            "price":23000
         },
         {
             "images":
@@ -98,11 +104,12 @@
                 "four": "https://images.trvl-media.com/hotels/5000000/4480000/4474800/4474764/87b1d6b8.jpg?impolicy=resizecrop&rw=455&ra=fit"
             },
             "name":"Radisson Blu Resort Goa Cavelossim Beach",
+            "city":"goa",
             "place":"Cavelossim",
             "services":"Free WiFi + Spa + Air conditioned",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.1,
-            "price":"8,505"
+            "price":8505
         },
         {
             "images":
@@ -113,11 +120,12 @@
                 "four": "https://images.trvl-media.com/hotels/1000000/80000/70600/70518/7d8f3584.jpg?impolicy=resizecrop&rw=455&ra=fit"
             },
             "name":"Bogmallo Beach Resort, Goa",
+            "city":"goa",
             "place":"Bogmallo",
             "services":"Free WiFi + Spa + Air conditioned",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":3.6,
-            "price":"7,500"
+            "price":7500
         },
         {
             "images":
@@ -128,11 +136,12 @@
                 "four": "https://images.trvl-media.com/hotels/1000000/930000/921600/921574/f7adf7c2.jpg?impolicy=resizecrop&rw=455&ra=fit"
             },
             "name":"The LaLiT Golf & Spa Resort Goa",
+            "city":"goa",
             "place":"Palolem",
             "services":"Free WiFi + Spa + Air conditioned",
             "payserv":"Fully refundable",
             "rating":3.8,
-            "price":"10,798"
+            "price":10798
         },
         {
             "images":
@@ -143,11 +152,12 @@
                 "four": "https://images.trvl-media.com/hotels/1000000/530000/526400/526340/aa1802fc.jpg?impolicy=resizecrop&rw=455&ra=fit"
             },
             "name":"Taj Fort Aguada Resort & Spa, Goa",
+            "city":"goa",
             "place":"Aguada Fort Area",
             "services":"Breakfast Included + Spa + Air conditioned",
             "payserv":"Fully refundable",
             "rating":4.5,
-            "price":"20,500"
+            "price":20500
         },
         {
             "images":
@@ -158,11 +168,12 @@
                 "four": "https://images.trvl-media.com/hotels/11000000/10550000/10547600/10547516/e4d85275.jpg?impolicy=resizecrop&rw=455&ra=fit"
             },
             "name":"Planet Hollywood Goa Beach Resort",
+            "city":"goa",
             "place":"Uttorda",
             "services":"Free WiFi + Hot Tub + Air conditioned",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.2,
-            "price":"9,000"
+            "price":9000
         },
         {
             "images":
@@ -173,11 +184,12 @@
                 "four": "https://images.trvl-media.com/hotels/25000000/24050000/24041500/24041444/3c6e5762.jpg?impolicy=resizecrop&rw=455&ra=fit"
             },
             "name":"Azaya Beach Resort,Goa",
+            "city":"goa",
             "place":"Benaulim",
             "services":"Free WiFi + Spa + Air conditioned",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4,
-            "price":"17,500"
+            "price":17500
         },
         {
             "images":
@@ -188,11 +200,12 @@
                 "four": "https://images.trvl-media.com/hotels/78000000/77160000/77152400/77152397/e083768b.jpg?impolicy=resizecrop&rw=455&ra=fit"
             },
             "name":"Sea Breeze Max Resort & Spa, Goa",
+            "city":"goa",
             "place":"Fatrade",
             "services":"Free WiFi + Pool",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.3,
-            "price":"3,500"
+            "price":3500
         },
         {
             "images":
@@ -203,11 +216,12 @@
                 "four": "https://images.trvl-media.com/hotels/6000000/5310000/5301700/5301691/cea6d2e2.jpg?impolicy=resizecrop&rw=455&ra=fit"
             },
             "name":"The St. Regis Mumbai",
+            "city":"mumbai",
             "place":"Mumbai",
             "services":"Free WiFi + Pool",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.6,
-            "price":"12,000"
+            "price":12000
         },
         {
             "images":
@@ -218,11 +232,12 @@
                 "four": "https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/4000000/3030000/3021000/3020992/e0a8daae_b.jpg"
             },
             "name":"The Westin Mumbai Garden City",
+            "city":"mumbai",
             "place":"Goregaon",
             "services":"Free WiFi + Pool",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.6,
-            "price":"10,500"
+            "price":10500
         },
         {
             "images":
@@ -233,11 +248,12 @@
                 "four": "https://images.trvl-media.com/hotels/5000000/4260000/4253900/4253887/9d4bc4b1.jpg?impolicy=resizecrop&rw=455&ra=fit"
             },
             "name":"Sofitel Mumbai BKC Hotel",
+            "city":"mumbai",
             "place":"Bandra Kurla Complex",
             "services":"Free WiFi + Pool",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.5,
-            "price":"13,500"
+            "price":13500
         },
         {
             "images":
@@ -248,11 +264,12 @@
                 "four": "https://images.trvl-media.com/hotels/1000000/900000/895300/895247/4ecf71ae.jpg?impolicy=resizecrop&rw=455&ra=fit"
             },
             "name":"The Westin Mumbai Powai Lake",
+            "city":"mumbai",
             "place":"Bandra Kurla Complex",
             "services":"Free WiFi + Pool",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.3,
-            "price":"8,000"
+            "price":8000
         },
         {
             "images":
@@ -263,11 +280,12 @@
                 "four": "https://images.trvl-media.com/hotels/10000000/9790000/9784600/9784580/982f5487.jpg?impolicy=resizecrop&rw=455&ra=fit"
             },
             "name":"JW Marriott Mumbai Sahar",
+            "city":"mumbai",
             "place":"Mumbai",
             "services":"Free WiFi + Pool",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.6,
-            "price":"12,000"
+            "price":12000
         },
         {
             "images":
@@ -278,11 +296,12 @@
                 "four": "https://images.trvl-media.com/hotels/20000000/19460000/19458500/19458493/f93bcf11.jpg?impolicy=resizecrop&rw=455&ra=fit"
             },
             "name":"The Taj Mahal Palace Mumbai",
+            "city":"mumbai",
             "place":"Mumbai",
             "services":"Free WiFi",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.7,
-            "price":"19,000"
+            "price":19000
         },
         {
             "images":
@@ -293,11 +312,12 @@
                 "four": "https://images.trvl-media.com/hotels/12000000/11550000/11544400/11544400/45ba31ca.jpg?impolicy=resizecrop&rw=455&ra=fit"
             },
             "name":"Taj Santacruz",
+            "city":"mumbai",
             "place":"Mumbai",
             "services":"Free WiFi",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.6,
-            "price":"11,000"
+            "price":11000
         },
         {
             "images":
@@ -308,11 +328,12 @@
                 "four": "https://images.trvl-media.com/hotels/1000000/10000/4800/4772/7218113e.jpg?impolicy=resizecrop&rw=455&ra=fit"
             },
             "name":"The Oberoi Mumbai",
+            "city":"mumbai",
             "place":"Mumbai",
             "services":"Free WiFi",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":4.8,
-            "price":"13,000"
+            "price":13000
         },
         {
             "images":
@@ -323,11 +344,12 @@
                 "four": "https://images.trvl-media.com/hotels/1000000/50000/49300/49261/b02a5c04.jpg?impolicy=resizecrop&rw=455&ra=fit"
             },
             "name":"Novotel Mumbai Juhu Beach Hotel",
+            "city":"mumbai",
             "place":"Mumbai",
             "services":"Free WiFi + Pool",
             "payserv":"Fully refundable",
             "rating":3.5,
-            "price":"9,349"
+            "price":9349
         },
         {
             "images":
@@ -338,11 +360,12 @@
                 "four": "https://images.trvl-media.com/hotels/3000000/2610000/2600800/2600773/a3ac4c5c.jpg?impolicy=resizecrop&rw=455&ra=fit"
             },
             "name":"Hotel Sea Princes",
+            "city":"mumbai",
             "place":"Mumbai",
             "services":"Free WiFi",
             "payserv":"Fully refundable, Reserve now, pay later",
             "rating":3.7,
-            "price":"7,000"
+            "price":7000
         }
     ],
 
