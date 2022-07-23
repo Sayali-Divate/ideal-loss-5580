@@ -22,13 +22,13 @@
         <hr>
         <div id="part2Am">
         <div id="subPart1Am">
-            <input type="text" name="" id="" placeholder="Going to">
+            <input type="text" name="" id="GoingTo" placeholder="Going to">
             <div>
                 <input type="checkbox">
                 <label for="">Add a flight</label>
                 <input type="checkbox">
                 <label for="">Add a car</label>
-                <button>Search</button>
+                <button onclick="clickForDestination()">Search</button>
             </div>
           
         </div>
@@ -37,7 +37,8 @@
             <input min="2022-07-01" max="2023-12-31" type="date">
         </div>
         <div id="subPart3Am">
-            <p onclick="roomTravelersFun()" class="InsideSubPart3Am">1 room, 2 travelers</p>
+            <p onclick="roomTravelersFun()" id="DefaultAdultsNo">1 room, 2 travelers</p>
+            <div id="APDP"></div>
             <label for="" class="Label">Check-out</label>
             <input type="date" min="2022-07-01" max="2023-12-31">
         </div>
