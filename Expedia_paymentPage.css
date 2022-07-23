@@ -355,23 +355,8 @@
     letter-spacing: -0.2px;
     color: rgb(97, 97, 97);
 }
+/* ********************************************************* */
 
-/* hotel details */
-#payment_page_content_page_girdbox_right {
-    width: 100%;
-    height: 300px;
-    /* width: 100px; */
-    /* background: rgb(255, 255, 255); */
-    background: #ea4335;
-    /* margin-left: -350.3px; */
-    margin-top: 12px;
-    border-radius: 4px;
-    /* position: absolute; */
-}
-
-/* #payment_page_content_page_hotel_details {
-
-} */
 
 /* room booking form */
 
@@ -1025,3 +1010,345 @@ margin-bottom: 25px;
     margin-bottom: 18px;
 }
 /* cards details */
+
+/* data appended */
+
+.image_box{
+    width: 100%;
+    position: relative;
+    border-radius: 4px;
+}
+.poster{
+    width: 100%;
+    border-radius: 4px;
+    
+}
+.title_box{
+   position: absolute;
+   color: whitesmoke;
+margin-top: -50px;
+margin-left: 15px;
+}
+.hotel_title{
+    color: whitesmoke;
+}
+
+/* data appended */
+
+
+/* hotel details */
+#payment_page_content_page_girdbox_right {
+    width: 100%;
+    height: 300px;
+    /* width: 100px; */
+    background: rgb(237,237,237);
+    /* background: #ea4335; */
+    /* margin-left: -350.3px; */
+    margin-top: 12px;
+    border-radius: 4px;
+    /* position: absolute; */
+}
+
+/* hotel fare */
+#payment_page_hotel_fare_details{
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 14px;
+    background: rgb(255, 255, 255);
+    
+    /* height: 400px; */
+}
+#payment_page_content_page_hotel_details {
+width: 100%;
+border-radius: 4px;
+background: rgb(255, 255, 255);
+
+
+}
+.hotel_card{
+    width: 100%;
+border-radius: 4px;
+background: rgb(255, 255, 255);
+
+}
+.hotel_ratings_services_box{
+    padding: 14px;
+    
+}
+.hotel_rating{
+    font-size: 16px;
+    font-weight: 200;
+    margin-bottom: 12px;
+}
+.rating_text_review{
+    font-size: 16px;
+    font-weight: 200;
+    color: rgb(97, 96, 96);
+
+}
+.rating_number{
+    font-weight: 600;
+    color: rgb(96, 96, 96);
+
+    
+}
+.guest_review{
+    font-size: 15px;
+    font-weight: 200;  
+    color: rgb(97, 96, 96);
+margin-bottom: 15px;
+}
+.room_number_details_box{
+    display: flex;
+    margin-bottom: 15px;
+}
+.room_number{
+    font-size: 16px;
+    font-weight: 600;
+}
+.room_details{
+    font-size: 16px;
+    font-weight: 200;
+    color: rgb(97, 96, 96);
+
+}
+.fare_card{
+    width: 100%;
+    height: 100%;    
+    border-radius: 4px;
+    
+}
+
+.check_in_box{
+    display: flex;
+    color: rgb(97, 96, 96);
+    margin-bottom: 3px;
+
+}
+.check_out_box{
+    display: flex;
+    color: rgb(97, 96, 96);
+
+}
+.check_in_text{
+    font-size: 14px;
+    font-weight: 600;
+
+}
+.check_out_text{
+    font-size: 14px;
+    font-weight: 600;
+}
+.check_in_data{
+    font-size: 13px;
+    font-weight: 200;
+}
+.check_out_data{
+    font-size: 13px;
+    font-weight: 200;
+}
+.number_of_nights{
+    font-size: 13px;
+    margin-top: 2px;
+    font-weight: 200;
+}
+.fare_top_box{
+display: flex;
+align-items: center;
+border-bottom: 0.8px solid rgb(216, 216, 216);
+padding: 14px;
+}
+.roomNight_box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    
+}
+.roomNight{
+    font-size: 16px;
+    font-weight: 100;
+}
+.roomNight_fare{
+    font-size: 16px;
+    font-weight: 100;  
+}
+.fare_taxes_box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.fare_taxes{
+    font-size: 16px;
+    font-weight: 100; 
+}
+.Taxes_fare{
+    font-size: 16px;
+    font-weight: 100; 
+}
+.local_tax_box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    font-size: 16px;
+}
+.local_taxes{
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.horizontal_line{
+    margin: 14px;
+    border-bottom: 0.8px solid rgb(215, 213, 213);
+}
+.fare_about_box{
+    padding: 14px;
+}
+.total_box{
+    padding: 14px; 
+}
+.total_fare_box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    
+}
+.total_text{
+    font-size: 18px;
+    font-weight: 600;
+}
+.paynow_box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.paynow_text{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(47,112,0);
+}
+
+.paynow_fare{
+    font-size: 18px;
+    font-weight: 600; 
+    color: rgb(47,112,0);
+}
+.pay_at_property_box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.pay_at_property_text{
+    font-size: 18px;
+    font-weight: 300;
+}
+.pay_at_property_fare{
+    font-size: 18px;
+    font-weight: 300;
+}
+.p_text_box{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.p_text{
+    font-size: 11px;
+    font-weight: 100;
+    color: rgb(108, 108, 108);
+}
+/* hotel fare */
+
+
+/* footer */
+
+#payment_page_footer{
+    
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    width: 91.5%;
+    margin-left: 56px;
+    margin-top: 25px;
+    margin-bottom:30px;
+    /* background: cornflowerblue; */
+}
+#footer_tell_us_what_you_think{
+    display: flex;
+   
+   
+    padding-left: 64%;
+}
+#footer_tell_us_text{
+    display: flex;
+    gap: 5px;
+    font-size: 14px;
+    
+
+}
+.for_text_decoration{
+    text-decoration: none;
+    color: rgb(0,101,184);
+}
+
+.for_text_decoration:hover{
+    text-decoration: underline;
+}
+#payment_page_privacy_policy_all_section{
+    width: 40%;
+    display: flex;
+    /* margin-left: 40%; */
+    /* background: #34a853; */
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 360px;
+    margin-top: 30px;
+    font-size: 12px;
+        color: rgb(97, 96, 96);
+   
+}
+.policy_links{
+    text-decoration: none;
+    color: rgb(97, 96, 96);
+}
+.policy_links:hover{
+    text-decoration: underline;
+}
+#payment_page_donot_sell_PI{
+    width: 40%;
+    display: flex;
+    /* margin-left: 40%; */
+    /* background: #34a853; */
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 360px;
+    margin-top: 17px;
+    font-size: 12px;
+        color: rgb(97, 96, 96);
+}
+#payment_page_all_right_reserved{
+    width: 50%;
+    display: flex;
+    /* margin-left: 40%; */
+    /* background: #34a853; */
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 360px;
+    margin-top: 17px;
+    font-size: 12px;
+        color: rgb(97, 96, 96);
+}
+#payment_page_footer_logo{
+    width: 180px;
+    /* background: #4285f4; */
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 500px;
+    margin-bottom: 20px;
+}
+/* footer */
