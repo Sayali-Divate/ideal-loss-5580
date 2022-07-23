@@ -72,8 +72,8 @@
                 <a href="">See all ></a>
             </div>
             <div id="map">         
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51717.434690228925!2d73.77370949277058!3d15.576744077282122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfea251e2c53a7%3A0x23b4f2985f47dd6b!2sFairfield%20by%20Marriott%20Goa%20Anjuna!5e0!3m2!1sen!2sin!4v1655218748135!5m2!1sen!2sin" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="googleMap"></iframe>                
-                <p>Survey No. 11/14, Plot B,C & E,Simvaddo, Anjuna, Goa, 403509</p>
+                <iframe  width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="googleMap"></iframe>                
+                <p id="addPlace"></p>
                 <h3>Explore the area</h3>
                 <div id="explore">
                     <!--============================= append your explore option ================================-->
@@ -123,7 +123,7 @@
               <!-- ================================side bar============================================= -->
               <div>
                 <h2>About this area</h2>
-                <h3>Anjuna</h3>
+                <h3 id="destination"></h3>
                 <p>
                   Located in Anjuna, Fairfield by Marriott Goa Anjuna is in the
                   entertainment district and near the beach. Chapora Fortress and Fort
@@ -137,7 +137,7 @@
               <!-- ==============================map div ===============================================-->
               <div>
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23708.954079234587!2d73.75567193218822!3d15.573539118509474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfea251e2c53a7%3A0x23b4f2985f47dd6b!2sFairfield%20by%20Marriott%20Goa%20Anjuna!5e0!3m2!1sen!2sin!4v1655448905309!5m2!1sen!2sin"
+                  id="viewMap"
                   width="100%"
                   height="300px"
                   style="border-radius: 10px 10px 0 0; border: none"
@@ -146,9 +146,7 @@
                   referrerpolicy="no-referrer-when-downgrade"
                 ></iframe>
                 <div>
-                  <a
-                    href="https://www.expedia.co.in/Anjuna-Hotels-Fairfield-By-Marriott-Goa-Anjuna.h15518705.Hotel-Information?beaconIssued=2022-06-17T05%3A11%3A02&chkin=2022-07-01&chkout=2022-07-02&destType=MARKET&destination=Goa%2C%20India&position=32&pwaDialog=whats-around-map&pwa_ts=1655442663365&rank=7&referrerUrl=aHR0cHM6Ly93d3cuZXhwZWRpYS5jby5pbi9Ib3RlbC1TZWFyY2g%3D&regionId=6049928&rfrr=HSR&rm1=a2&selectedRatePlan=286243496&selectedRoomType=219937204&semdtl=&slots=HSR_BB&sort=RECOMMENDED&testVersionOverride=Buttercup%2C43549.127812.2%2C43550.0.0%2C31936.102311.0%2C33775.98848.1%2C38414.114301.0%2C39483.0.0%2C38427.115718.0%2C42444.123988.0%2C42589.0.0%2C42876.124673.0%2C42973.124182.1%2C42974.123984.1%2C42975.124629.0%2C42976.125426.1%2C42802.125960.1%2C43153.0.0%2C33739.99567.0%2C37898.109354.0%2C37930.119094.0%2C37949.0.0%2C37354.0.0%2C43191.128259.1%2C43435.128144.0&top_cur=INR&top_dp=5849&trackingData=AAAAEArVS_PG91VJa6ws5LeBmviiZGaiC74K0PHEVCb_rNil9CaSEk_1eGMXU6S5I2EAsMCTRGYg1EnsxxZMsdYlgYSSppQ8rUYWQ8MAjEWhr7o6WiYtwYgjVuTbnZRiFYuqXdzMrv5o-u_2bE7y1N8nGbVRwH-4MGw7aXCO4Pyebm_mTuywECnWYLngDwuZkhegWPdjZwRqf4U5tgs0lEopTZl249X2PiGf-2tQXOyYr6giWdd1H2vDhpSMAMqklm6jl4KEM9bOrzGIss6fUX_iIjIu2AhrVLX9oUq2LM3onfKWrs6AzwYZfVMj3UujaWKy4_QdkdJY-PFjTDEKlzlm10U4qy7nWhLFZVdhZaOsRiBBhTVQpwbE6sYZXn-NMuBhZ-6Aq9HZiD-QGQ0pA0CXaQTFoeKHYLUfU190MGXuXvu9l79yqk-Sh5fLaCCvn3xPbLfftgDJJulHleJpGAh1gbvOWJmh0Dm03YkFFakwYJusvNK-LNbDGD6A6D6dDrhHhnQPduQxLfevTO2ATZfF2agpESlENn5zCT1uuZy69h4f-1_TV48TdRM6rf8jtv7f1H80tq9c_sfN2ZtHfHY3ay9cwJfYRg5kp9dWOUiGA-Mdz1SCQ6TaYtSl-lZLFWX1FNbNC9-RgtNCD1H-5NJi9DC_sHzc85XWmzsf7KS5tgfqdkLhccbJfPYLiPJAqsAtMFLhKCpSPTfztjan7kMnACQ5xJM0JPtqrU8BBhC_cwggT5XNzgTe94Ne3ij2lfwrEjOUnKtW5encwU7EfGBUnDblnJBPo03MpLoGdkNUYbTpBYdE8f2AApU3k0xyYg--X-5xq6ZpUbTO8pXBYxUYVpbU78k5b131zsxORMJNQgnMp5SNrwuTjL9k0VeQeE1AoKRepOzAxuvjTqFafZTTDaqfbvTpyeRNNWQxdQl65lCKYbihYWwe2r1g3-JtxETIDhrok9-TxpdwHDR-OsIgay4Iw_Y5ehXFhIpw9pFUxdf74zQudR7sjWQUc8aQjk5YxSFgYDPs8zaOuIDy-jm5VpAmwoargg5TXU-mgL5PIL6NNIQRE1rvs_8CqlANULzgf736ecqXSP0wxUzMmU3WK85HXAG9jAQJIXq2QQxl5N9wZBvXn0dN992RBsanpOQHVw%3D%3D&useRewards=true&userIntent=&x_pwa=1"
-                    >View in a map</a
+                  <a>View in a map</a
                   >
                 </div>
               </div>

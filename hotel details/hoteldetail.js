@@ -412,13 +412,49 @@ function chooseRoom(roomData) {
       extraDiv,
       divv
     );
-    document.querySelector("#chooseRoom").append(roomSpace);
+  document.querySelector("#chooseRoom").append(roomSpace);
   });
 
-  let data = JSON.parse(localStorage.getItem("queryHotel"));
+
+
+  document.body.onload=()=>{
+  
+
+  let data = JSON.parse(localStorage.getItem("hotel"));
 
   let name = document.querySelector("#description>h1");
   name.innerText = data.name;
 
-  let rating = JSON.parse(localStorage.getItem("queryRating"));
+  // let rating = JSON.parse(localStorage.getItem("rating"));
+  let rate= document.querySelector("#Hotelrating")
+  if (data.rating >4.6 ){
+    rate.innerText= `${data.rating} Exceptional` 
+  }
+  else if (data.rating >4.5){
+    rate.innerText= `${data.rating} Wonderful`
+  }
+  else if (data.rating >4){
+    rate.innerText= `${data.rating} Very Good`
+  }
+  else if (data.rating >3.5 ){
+    rate.innerText= `${data.rating} Exceptional`
+  }
+
+  let gmap=document.querySelector("#googleMap");
+  
+  let city = data.city
+  url=`https://maps.google.com/maps?q=${city}&t=&z=13&ie=UTF8&iwloc=&output=embed`;
+  gmap.src=url;
+
+  let Place = document.querySelector("#addPlace");
+  Place.innerText=city
+
+  let viewMap =document.querySelector("#viewMap");
+  viewMap.src=url;
+
+  let destination = document.querySelector("#destination");
+  destination.innerText=city
+  // destination
+  // viewMap
+  }
 }
