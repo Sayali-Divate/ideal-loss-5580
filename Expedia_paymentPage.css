@@ -355,23 +355,8 @@
     letter-spacing: -0.2px;
     color: rgb(97, 97, 97);
 }
+/* ********************************************************* */
 
-/* hotel details */
-#payment_page_content_page_girdbox_right {
-    width: 100%;
-    height: 300px;
-    /* width: 100px; */
-    /* background: rgb(255, 255, 255); */
-    background: #ea4335;
-    /* margin-left: -350.3px; */
-    margin-top: 12px;
-    border-radius: 4px;
-    /* position: absolute; */
-}
-
-/* #payment_page_content_page_hotel_details {
-
-} */
 
 /* room booking form */
 
@@ -1025,3 +1010,174 @@ margin-bottom: 25px;
     margin-bottom: 18px;
 }
 /* cards details */
+
+/* data appended */
+
+.image_box{
+    width: 100%;
+    position: relative;
+    border-radius: 4px;
+}
+.poster{
+    width: 100%;
+    border-radius: 4px;
+    
+}
+.title_box{
+   position: absolute;
+   color: whitesmoke;
+margin-top: -50px;
+margin-left: 15px;
+}
+.hotel_title{
+    color: whitesmoke;
+}
+
+/* data appended */
+
+
+/* hotel details */
+#payment_page_content_page_girdbox_right {
+    width: 100%;
+    height: 300px;
+    /* width: 100px; */
+    background: rgb(237,237,237);
+    /* background: #ea4335; */
+    /* margin-left: -350.3px; */
+    margin-top: 12px;
+    border-radius: 4px;
+    /* position: absolute; */
+}
+
+/* hotel fare */
+#payment_page_hotel_fare_details{
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 14px;
+    background: rgb(255, 255, 255);
+    
+    /* height: 400px; */
+}
+#payment_page_content_page_hotel_details {
+width: 100%;
+border-radius: 4px;
+
+}
+.fare_card{
+    width: 100%;
+    height: 100%;    
+    border-radius: 4px;
+    
+}
+.fare_top_box{
+display: flex;
+align-items: center;
+border-bottom: 0.8px solid rgb(216, 216, 216);
+padding: 14px;
+}
+.roomNight_box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    
+}
+.roomNight{
+    font-size: 16px;
+    font-weight: 100;
+}
+.roomNight_fare{
+    font-size: 16px;
+    font-weight: 100;  
+}
+.fare_taxes_box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.fare_taxes{
+    font-size: 16px;
+    font-weight: 100; 
+}
+.Taxes_fare{
+    font-size: 16px;
+    font-weight: 100; 
+}
+.local_tax_box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    font-size: 16px;
+}
+.local_taxes{
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.horizontal_line{
+    margin: 14px;
+    border-bottom: 0.8px solid rgb(215, 213, 213);
+}
+.fare_about_box{
+    padding: 14px;
+}
+.total_box{
+    padding: 14px; 
+}
+.total_fare_box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    
+}
+.total_text{
+    font-size: 18px;
+    font-weight: 600;
+}
+.paynow_box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.paynow_text{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(47,112,0);
+}
+
+.paynow_fare{
+    font-size: 18px;
+    font-weight: 600; 
+    color: rgb(47,112,0);
+}
+.pay_at_property_box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.pay_at_property_text{
+    font-size: 18px;
+    font-weight: 300;
+}
+.pay_at_property_fare{
+    font-size: 18px;
+    font-weight: 300;
+}
+.p_text_box{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.p_text{
+    font-size: 11px;
+    font-weight: 100;
+    color: rgb(108, 108, 108);
+}
+/* hotel fare */

@@ -1,18 +1,18 @@
 
 //mock data
-let hotel_container=document.querySelector("#payment_page_content_page_hotel_details")
-
-let hotel_objects=
-    {
-        "image":"https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/31000000/30790000/30783800/30783748/b015ad4a_b.jpg",
-        "name":"ITC, Grand Goa, a Luxury Collection Resort & Spa, Goa",
-        "place":"Arossin",
-        "services":"Free WiFi + Pool",
-        "payserv":"Fully refundable, Reserve now, pay later",
-        "rating":4.2,
-        "price":16150
-    }
-localStorage.setItem("hotel_data",JSON.stringify(hotel_objects))
+let hotel_container = document.querySelector("#payment_page_content_page_hotel_details")
+let hotel_fare_container = document.querySelector("#payment_page_hotel_fare_details")
+let hotel_objects =
+{
+    "image": "https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/31000000/30790000/30783800/30783748/b015ad4a_b.jpg",
+    "name": "ITC, Grand Goa, a Luxury Collection Resort & Spa, Goa",
+    "place": "Arossin",
+    "services": "Free WiFi + Pool",
+    "payserv": "Fully refundable, Reserve now, pay later",
+    "rating": 4.2,
+    "price": 16150
+}
+localStorage.setItem("hotel_data", JSON.stringify(hotel_objects))
 
 //mock data
 
@@ -339,31 +339,31 @@ function onUp(e) {
 }
 
 
-let not_a_residence_trigger=document.querySelector("#protect_your_hotel_click_here_not")
-let residence_trigger=document.querySelector("#protect_your_hotel_click_here")
-let residence_target=document.querySelector("#protect_your_hotel_note_section")
-let not_a_residence_target=document.querySelector("#protect_your_hotel_note_section_not")
+let not_a_residence_trigger = document.querySelector("#protect_your_hotel_click_here_not")
+let residence_trigger = document.querySelector("#protect_your_hotel_click_here")
+let residence_target = document.querySelector("#protect_your_hotel_note_section")
+let not_a_residence_target = document.querySelector("#protect_your_hotel_note_section_not")
 
-let is_not_resident=()=>{
+let is_not_resident = () => {
     event.preventDefault()
-    if(not_a_residence_target.style.display="none"){
-        not_a_residence_target.style.display="flex"
-        residence_target.style.display="none"
+    if (not_a_residence_target.style.display = "none") {
+        not_a_residence_target.style.display = "flex"
+        residence_target.style.display = "none"
     }
 }
 
-residence_trigger.addEventListener("click",is_not_resident)
+residence_trigger.addEventListener("click", is_not_resident)
 
-let is_resident=()=>{
+let is_resident = () => {
     event.preventDefault()
-    if(residence_target.style.display="none"){
-        residence_target.style.display="flex"
-        not_a_residence_target.style.display="none"
-        
+    if (residence_target.style.display = "none") {
+        residence_target.style.display = "flex"
+        not_a_residence_target.style.display = "none"
+
     }
 }
 
-not_a_residence_trigger.addEventListener("click",is_resident)
+not_a_residence_trigger.addEventListener("click", is_resident)
 
 
 // let radio_button_trigger_yes=document.querySelector("#protect_your_hotel_radio_input_yes")
@@ -395,28 +395,167 @@ not_a_residence_trigger.addEventListener("click",is_resident)
 
 // radio_button_trigger_no.addEventListener("click",radio_no)
 
-let data_from_ls=JSON.parse(localStorage.getItem("hotel_data"))
-console.log('data_from_ls:', data_from_ls)
+let data_from_ls = JSON.parse(localStorage.getItem("hotel_data"))
+console.log('data_from_ls:', typeof data_from_ls.price)
 
 append_hotel_data(data_from_ls)
 
-function append_hotel_data(el){
-    hotel_container.innerHTML=""
-    let card=document.createElement("div")
-    card.setAttribute("class","hotel_card")
+function append_hotel_data(el) {
+    hotel_container.innerHTML = ""
+    hotel_fare_container.innerHTML = ""
+    let card = document.createElement("div")
+    card.setAttribute("class", "hotel_card")
 
-    let hotel_poster_box=document.createElement("div")
-    hotel_poster_box.setAttribute("class","image_box")
+    let hotel_poster_box = document.createElement("div")
+    hotel_poster_box.setAttribute("class", "image_box")
 
-    let hotel_poster=document.createElement("img")
-    hotel_poster.src=el.image
+    let hotel_poster = document.createElement("img")
+    hotel_poster.setAttribute("class", "poster")
+    hotel_poster.src = el.image
+    let title_box = document.createElement("div")
+    title_box.setAttribute("class", "title_box")
+    let hotel_title = document.createElement("h4")
+    hotel_title.setAttribute("class", "hotel_title")
+    hotel_title.innerText = el.name
+    title_box.append(hotel_title)
 
-    hotel_poster_box.append(hotel_poster)
+    hotel_poster_box.append(hotel_poster, title_box)
+
+//***************************************************************** */
+//rating
+
+let hotel_ratings_services_box=document.createElement("div")
 
 
-    
+
+
+
+
+
+
     card.append(hotel_poster_box)
     hotel_container.append(card)
+//***************************************************************** */
+    // hotel fare
+
+    let fare_top_box = document.createElement("div")
+    fare_top_box.setAttribute("class", "fare_top_box")
+
+    let fare_top_text = document.createElement("h2")
+    fare_top_text.setAttribute("class", "fare_top_text")
+    fare_top_text.innerText = "Price details"
+    fare_top_box.append(fare_top_text)
+    let fare_about_details_box = document.createElement("div")
+    fare_about_details_box.setAttribute("class", "fare_about_box")
+
+    let roomNight_box = document.createElement("div")
+    roomNight_box.setAttribute("class", "roomNight_box")
+
+    let roomNight = document.createElement("h3")
+    roomNight.setAttribute("class", "roomNight")
+    roomNight.innerText = "1 room x 1 night"
+
+    let roomNight_fare = document.createElement("h3")
+    roomNight_fare.setAttribute("class", "roomNight_fare")
+    roomNight_fare.innerText = `₹${el.price}`
+console.log('price:',typeof el.price)
+    roomNight_box.append(roomNight, roomNight_fare)
+
+    let fare_taxes_box = document.createElement("div")
+    fare_taxes_box.setAttribute("class", "fare_taxes_box")
+
+    let fare_taxes = document.createElement("h3")
+    fare_taxes.setAttribute("class", "fare_taxes")
+    fare_taxes.innerText = "Taxes"
+
+    let Taxes_fare = document.createElement("h3")
+    Taxes_fare.setAttribute("class", "Taxes_fare")
+    let taxesBe = +1875
+    Taxes_fare.innerText = `₹${taxesBe}`
+    fare_taxes_box.append(fare_taxes, Taxes_fare)
+
+    let local_tax_box = document.createElement("div")
+    local_tax_box.setAttribute("class", "local_tax_box")
+
+    let local_taxes = document.createElement("h3")
+    local_taxes.setAttribute("class", "local_taxes")
+    local_taxes.innerText = "Local tax"
+
+    let local_taxes_fare = document.createElement("h3")
+    local_taxes_fare.setAttribute("class", "Taxes_fare")
+    let local_taxBe = +487
+    local_taxes_fare.innerText = `₹${local_taxBe}`
+    local_tax_box.append(local_taxes, local_taxes_fare)
+
+    fare_about_details_box.append(roomNight_box, fare_taxes_box, local_tax_box)
+
+    let horizontal_line = document.createElement("div")
+    horizontal_line.setAttribute("class", "horizontal_line")
+//horizontal line******************************
+    let total_box = document.createElement("div")
+    total_box.setAttribute("class", "total_box")
+
+    let total_fare_box = document.createElement("div")
+    total_fare_box.setAttribute("class", "total_fare_box")
+    
+    let total_text = document.createElement("h2")
+    total_text.setAttribute("class", "total_text")
+    total_text.innerText = "Total"
+    let total_fare = document.createElement("h2")
+    total_fare.setAttribute("class", "total_fare")
+    console.log('roomNight_fare:',typeof el.price,typeof taxesBe,typeof local_taxBe)
+    let total_of_all = el.price + taxesBe + local_taxBe
+    console.log('total_of_all:',typeof total_of_all)
+    total_fare = `₹${total_of_all}`
+
+    total_fare_box.append(total_text, total_fare)
+    let paynow_box = document.createElement("div")
+    paynow_box.setAttribute("class", "paynow_box")
+
+    let paynow_text = document.createElement("h2")
+    paynow_text.setAttribute("class", "paynow_text")
+    paynow_text.innerText = "Pay now"
+    let paynow_fare = document.createElement("h2")
+    paynow_fare.setAttribute("class", "paynow_fare")
+    let paynow_zero = 0
+    paynow_fare.innerText = `₹${paynow_zero}.00`
+
+    paynow_box.append(paynow_text, paynow_fare)
+
+//***************************************************************** */
+
+    let pay_at_property_box = document.createElement("div")
+    pay_at_property_box.setAttribute("class", "pay_at_property_box")
+
+    let pay_at_property_text = document.createElement("h2")
+    pay_at_property_text.setAttribute("class", "pay_at_property_text")
+    pay_at_property_text.innerText = "Pay at property"
+    let pay_at_property_fare = document.createElement("h2")
+    pay_at_property_fare.setAttribute("class", "pay_at_property_fare")
+
+    pay_at_property_fare.innerText = `₹${total_of_all}.00`
+    pay_at_property_box.append(pay_at_property_text,pay_at_property_fare)
+    
+    let p_text_box = document.createElement("div")
+    p_text_box.setAttribute("class", "p_text_box")
+
+    let p_text = document.createElement("p")
+    p_text.setAttribute("class", "p_text")
+    p_text.innerText = `Rates quoted in Indian Rupees are based on current exchange rates, which may vary at the time of travel. The property will charge you the full amount of ₹${total_of_all} approx in Dollars ($${Math.floor(total_of_all/75)}).`
+p_text_box.append(p_text)
+
+
+      total_box.append(total_fare_box,paynow_box,pay_at_property_box,p_text_box)
+
+
+      let fare_card=document.createElement("div")
+
+fare_card.setAttribute("class","fare_card")
+
+fare_card.append(fare_top_box,fare_about_details_box,horizontal_line,total_box)
+    hotel_fare_container.append(fare_card)
+
+
 }
 
 
