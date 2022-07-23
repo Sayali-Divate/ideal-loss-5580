@@ -1,0 +1,599 @@
+body{
+    background-color:
+#f6f4f0;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:  "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+:root {
+    --width:80%;
+    --font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-synthesis: none;
+}
+
+.buttonStyle {
+    background-color: #3662D8;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3662D8;
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+#overview{
+    width: var(--width);
+    margin: auto; 
+    background-color: white;   
+}
+#icon{
+    display: flex;
+    padding: 20px 20px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--font-family)
+}
+#icon>a{
+    text-decoration: none;
+    color:#5f82e4 ;
+}
+#imageGallary{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 2px;
+    grid-template-areas: 
+    "first first second forth"
+    "first first third last";
+    border: 1px solid rgb(255, 0, 0);
+    width:100%;
+    height: 500px;
+}
+#imageGallary>div:first-child{
+    grid-area: first;
+    border: 1px solid rgb(97, 7, 89);
+    width: 100%;
+    height: 100%;
+}
+#imageGallary>div:nth-child(2){
+    grid-area: second;
+    border: 1px solid rgb(26, 177, 46);
+}
+#imageGallary>div:nth-child(3){
+    grid-area: third;
+    border: 1px solid rgb(238, 1, 13);
+}
+#imageGallary>div:nth-child(4){
+    grid-area: forth;
+    border: 1px solid rgb(245, 222, 13);
+}
+#imageGallary>div:last-child{    
+    grid-area: last;
+    position: relative;
+    border: 1px solid rgb(145, 100, 216); 
+ }
+#imageGallary img{
+    width: 100%;
+    height: 100%;     
+} 
+ #imageGallary>div:last-child>button{
+    position: absolute;
+    width: 32%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px 15px;
+    background-color:rgba(0, 11, 38, 0.56);    
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+}
+#imageGallary>div:last-child>button>a{
+    color: white;
+    text-decoration: none;
+}
+#imageGallary>div:last-child>button:hover{
+    background-color: rgb(58, 57, 57);
+}
+#menu{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-family);
+    font-size: 14px; 
+    font-weight: 600; 
+    border-bottom: 1px solid grey; 
+}
+#menu>div{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#menu>div>div>a{
+    text-decoration: none;
+    color: black;
+}
+#menu>div>div>a:hover{
+    color: #3662d8;
+    cursor: pointer;
+}
+#menu>button{
+    display: flex;
+    padding: 10px;
+    color: white;
+    background-color: #3662d8;
+    /* opacity: 0; */
+    margin: 4px 15px ;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;   
+    padding: 10px 16px;
+}
+#menu>button>a{
+    text-decoration: none;
+    color: white;
+}
+#menu>button:hover{
+    background-color:#037bff;
+}
+#details{
+    width: 95%;
+    margin: 20px auto;
+    padding: 0px 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-family);
+}
+#details h3{
+    margin: 30px 0px 10px;
+}
+#description>p{
+    margin:0px 0px 10px;
+}
+#description>a{
+    text-decoration: none;
+    color: #3662d8;
+}
+#amenities, 
+#cleaningSafety,
+#explore{
+    display: grid;
+    margin: 10px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+#amenities>div, 
+#cleaningSafety>div,
+#explore>div{
+    display: flex;
+    align-items: center;
+    margin: 5px 0px ;
+}
+#amenities>div>i,
+#cleaningSafety>div>i,
+#explore>div>i{
+    margin: 5px 10px 0px 0px;
+}
+#map{
+    width: 31%;
+}
+#googleMap{
+    width: 100%;
+    border-radius: 10px;
+}
+#explore{    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+#explore>div:nth-child(odd){
+    display: flex; 
+    align-items: center;   
+}
+#explore>div:nth-child(even){
+    display: flex;
+    justify-content: flex-end;
+}
+#chooseTime, #chooseHead{
+    width: var(--width);
+    margin:auto;
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    font-family: var(--font-family);
+}
+#notAvailable{
+    width: 80%;
+    display: none;
+    margin: 0px auto 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    color: darkred;
+}
+#chooseHead>h1{
+    margin: -10px 0px 20px;
+    
+}
+#chooseTime>button{
+    font-size: 14px;
+    padding: 5px 5px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+#chooseTime>button:first-child,
+#chooseTime>button:nth-child(2){
+    width: 18%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+#chooseTime>button:first-child>input,
+#chooseTime>button:nth-child(2)>input{
+    width: 40%;
+    font-size: 16px;
+    padding: 2px;
+    /* margin: 1px; */
+    border: none;   
+}
+#chooseTime>button:nth-child(3){
+    width: 35%;
+}
+#chooseTime>button:last-child{
+    width: 25%;
+    background-color: #3662d8 ;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+/* #travellersOverlay{
+    width: 50%;
+    height: 80%;
+    margin: auto;
+    /* display: none; */
+/* }
+#travellers{
+    display: flex; */
+    
+/* }  */
+#travelDetail{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+#travelDetail>div{
+    display: flex;
+    font-size: 16px;
+    padding: 2px;
+}
+#travelDetail>div>input{
+    width: 30%;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    margin-right: 1px;
+}
+#chooseRoom{
+    width: 80%;
+    margin: 30px auto;    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    font-family: var(--font-family);
+}
+#chooseRoom>div{
+    background-color: white;
+    border-radius: 10px;
+    
+}
+#chooseRoom>div>h3{
+    font-weight: 600;
+    font-size: 17px;
+    margin: 0px 12px 15px;
+}
+#chooseRoom>div>div{
+    height: 200px;
+}
+#chooseRoom>div>div>img{
+    width: 100%;
+    height: 90%;
+    border-radius: 10px 10px 0px 0px;
+}
+#chooseRoom>div>ul{
+    margin-bottom: 15px ;
+}
+#chooseRoom>div>ul>li{
+    font-size: 16px;
+    margin: 10px;
+}
+#cancelDiv, 
+#extraDiv{
+    width: 90%;
+    height: fit-content;
+    margin: 0px auto 0px;
+    display: grid;
+    grid-template-columns: 3fr 1fr; 
+    /* align-items: center; */
+    font-family: var(--font-family); 
+    font-size: 16px;
+    /* border: 1px solid red;   */
+}
+#cancelDiv>div:first-child,
+#extraDiv>div:first-child{
+    font-weight: bold;
+}
+/* #cancelDiv>div,
+#extraDiv>div{ */
+   /* height: 20px; */
+   /* border: 1px solid red; */
+    
+/* } */
+#cancelDiv>div:nth-child(2),
+#extraDiv>div:nth-child(2){
+    color: grey;
+    font-size: 14px;
+    /* border: 1px solid red; */
+}
+#cancelDiv>div:nth-child(even),
+#extraDiv>div:nth-child(even){
+    display: grid;
+    justify-content: flex-end;
+}
+#cancelDiv input[type="radio"],
+#extraDiv input[type="radio"]{
+    margin-right:10px;
+    -webkit-transform: scale(1.5);
+    transform:scale(1.5);
+   
+}#extraDiv>button{
+    width: fit-content;
+    padding: 0px 5px;
+    background-color: #497d85;
+    color: white;
+    border: none;
+    border-radius: 10px;
+
+}
+#positioningDiv{
+    width: 90%;
+    min-height: 10%;
+    /* border: 1px solid black; */
+    margin: auto;
+    position: relative;
+    bottom: 10px;
+    bottom: 0px; 
+}    
+#expenseDiv{
+    width: 100%;
+    position:absolute;
+    bottom: 20px;
+}
+#expenseDiv>div:last-child{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#reserveDiv>button{
+    background-color: #3662d8 ;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+}
+#location {
+    width: 80%;
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 341px 300px;
+    grid-template-areas: "a b b" "a c c";
+    grid-gap: 25px;
+  }
+  #location > div:nth-child(1) {
+    grid-area: a;
+  }
+  #location > div:nth-child(2) {
+    grid-area: b;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+  }
+  #location > div:nth-child(3) {
+    grid-area: c;
+  }
+  #location > div:nth-child(1) > h2 {
+    font-weight: 500;
+    color: #141d38;
+    padding: 0 0 24px;
+  }
+  #location > div:nth-child(1) > h3 {
+    font-weight: 500;
+    color: #141d38;
+  }
+  #location > div:nth-child(1) > p {
+    font-size: 16px;
+    color: #343b53;
+    padding: 12px 0;
+  }
+  #location > div:nth-child(2) > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #location > div:nth-child(3) > div {
+    display: flex;
+    padding: 12px 0 0;
+  }
+  #location > div:nth-child(3) > div > div {
+    margin: 6px;
+  }
+  #location > div:nth-child(3) > div > div + div {
+    padding: 0;
+  }
+  #location > div:nth-child(3) > div > div + div > h4 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  #location > div:nth-child(3) > div > div + div > h4 + ul {
+    margin: 8px 0 0;
+  }
+  #location > div:nth-child(3) > div > div + div > h4 + ul li {
+    list-style: none;
+  }
+  #location > div:nth-child(3) > div > div + div > h4 + ul li span{
+    padding-right: 5px;
+  }
+/* 
+  .newsletterCard {
+    width: 80%;
+    margin: auto;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    display: grid;
+    grid-template-columns: 3fr 5fr 1fr;
+    justify-content: space-between;
+    gap: 20px;
+    border: 1px solid #a7a7a7c9;
+    border-radius: 8px;
+}
+
+.newsletterCard>img {
+    width: 100%;
+}
+
+.newsletterCard>#bRadius {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.newsletterCard>div {
+    padding: 25px 10px;
+}
+
+.newsletterCard>div>h1 {
+    font-size: 1.5rem;
+    font-weight: 1000;
+    margin-bottom: 7px;
+    color: #000000;
+}
+
+.newsletterCard>div>p {
+    font-size: .9rem;
+    margin-bottom: 25px;
+    color: #000000;
+}
+
+.newsletterCard>div>h2 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #000000;
+}
+
+.newsletterCard>div>h6 {
+    font-size: .8rem;
+    color: #000000;
+}
+
+.newsletterCard>div>div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+
+}
+
+.newsletterCard>div>div>input,
+select {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #a7a7a7c9;
+    padding: 14px 8px;
+}
+
+.newsletterCard>div>div>input {
+    width: 90%;
+}
+
+.newsletterCard>#qrcode {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.quote {
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+
+}
+
+.quote>p {
+    margin-bottom: 5px;
+    font-size: .9rem;
+}
+
+.quote>a {
+    font-size: .9rem;
+    text-decoration: underline;
+} */
+
+
+
+#searchHotel{
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 100px;
+}
+
+#overview{
+    border: 1px solid green;
+}
+#menu{
+    border: 1px solid purple;
+}
+#icon{
+    border: 1px solid yellow;
+}
