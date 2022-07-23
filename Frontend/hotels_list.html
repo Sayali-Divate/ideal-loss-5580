@@ -65,9 +65,9 @@
                     <!-- insert map here -->
                 </div>
                 <hr>
-                <div id="search_by_property">
+                <div id="search_by_property" >
                     <h3>Search by property name</h3>
-                    <div id="property_div">
+                    <div id="property_div" class="topBlock">
                         <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
                         <input class="head" id="property" placeholder="e.g. Best western">
                     </div>
@@ -77,24 +77,25 @@
                     <h3>Filter by</h3>
                     <div id="price_per_night">
                         <p>Price per night</p>
-                        <div><input type="radio" name="price"><label for="">Less than Rs 2000</label></div>
-                        <div><input type="radio" name="price"><label for="">Rs 2000 to Rs 4000</label></div>
-                        <div><input type="radio" name="price"><label for="">Rs 4000 to Rs 8000</label></div>
-                        <div><input type="radio" name="price"><label for="">Rs 8000 to Rs 11000</label></div>
-                        <div><input type="radio" name="price"><label for="">Greater than Rs 11000</label></div>
+                        <div><input type="radio" name="price" id="anyPrice" checked="true"><label for="" >Any</label></div>
+                        <div><input type="radio" name="price" id="lessThan2k"><label for="" >Less than Rs 2000</label></div>
+                        <div><input type="radio" name="price" id="2kTo4K"><label for="" >Rs 2000 to Rs 4000</label></div>
+                        <div><input type="radio" name="price" id="4kTo8k"><label for="" >Rs 4000 to Rs 8000</label></div>
+                        <div><input type="radio" name="price" id="8kTo11k"><label for="" >Rs 8000 to Rs 11000</label></div>
+                        <div><input type="radio" name="price" id="greaterThan11k"><label for="">Greater than Rs 11000</label></div>
                     </div>
                     <div id="guest_rating">
                         <p>Guest rating</p>
-                        <div><input type="radio" name="rating"><label for="">Any</label></div>
-                        <div><input type="radio" name="rating"><label for="">Exceptional 4.6+</label></div>
-                        <div><input type="radio" name="rating"><label for="">Wonderful 4.5+</label></div>
-                        <div><input type="radio" name="rating"><label for="">Very good 4+</label></div>
-                        <div><input type="radio" name="rating"><label for="">Good 3.5+</label></div>
+                        <div><input type="radio" name="rating" id="1" checked="true"><label for="">Any</label></div>
+                        <div><input type="radio" name="rating" id="4.7"><label for="">Exceptional 4.6+</label></div>
+                        <div><input type="radio" name="rating" id="4.6"><label for="">Wonderful 4.5+</label></div>
+                        <div><input type="radio" name="rating" id="4.1"><label for="">Very good 4+</label></div>
+                        <div><input type="radio" name="rating" id="3.6"><label for="">Good 3.5+</label></div>
                     </div>
                     <div id="payment_type">
                         <p>Payment type</p>
-                        <div><input type="checkbox"><label for="">Fully refundable</label></div>
-                        <div><input type="checkbox"><label for="">Reserve now, pay later</label></div>
+                        <div><input type="checkbox" id="Fully refundable"><label for="">Fully refundable</label></div>
+                        <div><input type="checkbox" id="Reserve now, pay later"><label for="">Reserve now, pay later</label></div>
                     </div>
                 </div>                
             </div>
@@ -107,9 +108,14 @@
                     <div id="sortOption" class="topBlock">
                         <div>
                             <p class="tag">Sort by</p>
-                            <button class="head">Recommended</button>
+                            <select name="select" id="selectPrice">
+                                <option value="rec">Recommended</option>
+                                <option value="low">Low to High</option>
+                                <option value="high">High to Low</option>
+                                <option value="rating">Rating</option>
+                              </select>
                         </div>
-                        <div class="icon"><i class="fa-solid fa-angle-down"></i></div>
+                        <!-- <div class="icon"><i class="fa-solid fa-angle-down"></i></div> -->
                     </div>
                     <!-- tab for sorting functionality -->
                 </div>
