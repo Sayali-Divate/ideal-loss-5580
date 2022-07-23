@@ -1,4 +1,6 @@
-
+body{
+  margin: 0;
+}
 #navbar {
   display: flex;
   width: 100%;

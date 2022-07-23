@@ -9,7 +9,12 @@
       crossorigin="anonymous"
     ></script>
     <style>
+      body{
+        margin: 0;
+        
+      }
       #navbar {
+        
         display: flex;
         justify-content: space-evenly;
         text-align: center;
@@ -18,8 +23,8 @@
         width: 100%;
         padding-left: 10px;
         padding-right: 10px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
       }
       #frstd {
         margin: auto;
@@ -51,7 +56,7 @@
       #gol {
         margin-top: 10px;
       }
-      #a {
+      .a {
          color: #343b53;
         text-decoration: none;
       }
@@ -107,15 +112,25 @@
       <div id="secdiv">
         <i id="gol" class="fa-solid fa-globe"></i>
         <button id="para1" class="para">English</button>
-        <button id="para2" class="para">List your property</button>
+        <button id="para2" class="para"><a class="a" href="list.html">List your property</a></button>
         <button id="para3" class="para">Support</button>
         <button id="para4" class="para">Trips</button>
         <i id="bell" class="fa-solid fa-bell"></i>
 
         <button id="para5" class="para">
-          <a id="a" href="signup.html">Sign in</a>
+          <a class="a" href="signup.html">Sign in</a>
         </button>
       </div>
     </div>
   </body>
 </html>
+<script>
+  let arr=localStorage.getItem("sign")
+let append=document.getElementById("a")
+  
+append.innerText=arr
+
+   if(arr==null) {
+    append.innerText="Sign in"
+  }
+</script>

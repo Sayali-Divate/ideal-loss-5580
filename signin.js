@@ -3,24 +3,13 @@ let LOGIN = async () => {
     username: document.getElementById("username").value,
     password: document.getElementById("password").value,
   };
-  if (logindata.username == "") {
-    document.getElementById("use").innerHTML = "Email is required !";
-    document.getElementById("use").style.color = "red";
-    return false;
-  }
-  if (logindata.password == "") {
-    document.getElementById("passi").innerHTML = "Password is required !";
-    document.getElementById("passi").style.color = "red";
-    return false;
-  }
-  logindata = JSON.stringify(logindata);
 
   let url = "https://masai-api-mocker.herokuapp.com/auth/login";
 
   let res = await fetch(url, {
     method: "POST",
 
-    body: logindata,
+    body: JSON.stringify(logindata),
 
     headers: {
       "Content-Type": "application/json",
@@ -31,12 +20,15 @@ let LOGIN = async () => {
   console.log(data);
   getprofile(data, logindata);
 
-  if(data.error==true){
-    alert('Invalid login creadentials')
-    window.location.href="signin.html"
-  } else if(data.error==false){
-    alert("Login Successful")
-    window.location.href="navbar.html"
+  if (data.error == true) {
+    alert("Invalid login creadentials");
+    window.location.href = "signin.html";
+  } else if (data.error == false) {
+    localStorage.setItem("sign",logindata.username);
+
+    alert("Login Successful");
+
+    window.location.href = "navbar.html";
   }
 };
 
