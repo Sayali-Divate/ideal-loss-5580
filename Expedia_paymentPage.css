@@ -1061,6 +1061,55 @@ margin-left: 15px;
 #payment_page_content_page_hotel_details {
 width: 100%;
 border-radius: 4px;
+background: rgb(255, 255, 255);
+
+
+}
+.hotel_card{
+    width: 100%;
+border-radius: 4px;
+background: rgb(255, 255, 255);
+
+}
+.hotel_ratings_services_box{
+    padding: 14px;
+    
+}
+.hotel_rating{
+    font-size: 16px;
+    font-weight: 200;
+    margin-bottom: 12px;
+}
+.rating_text_review{
+    font-size: 16px;
+    font-weight: 200;
+    color: rgb(97, 96, 96);
+
+}
+.rating_number{
+    font-weight: 600;
+    color: rgb(96, 96, 96);
+
+    
+}
+.guest_review{
+    font-size: 15px;
+    font-weight: 200;  
+    color: rgb(97, 96, 96);
+margin-bottom: 15px;
+}
+.room_number_details_box{
+    display: flex;
+    margin-bottom: 15px;
+}
+.room_number{
+    font-size: 16px;
+    font-weight: 600;
+}
+.room_details{
+    font-size: 16px;
+    font-weight: 200;
+    color: rgb(97, 96, 96);
 
 }
 .fare_card{
@@ -1068,6 +1117,40 @@ border-radius: 4px;
     height: 100%;    
     border-radius: 4px;
     
+}
+
+.check_in_box{
+    display: flex;
+    color: rgb(97, 96, 96);
+    margin-bottom: 3px;
+
+}
+.check_out_box{
+    display: flex;
+    color: rgb(97, 96, 96);
+
+}
+.check_in_text{
+    font-size: 14px;
+    font-weight: 600;
+
+}
+.check_out_text{
+    font-size: 14px;
+    font-weight: 600;
+}
+.check_in_data{
+    font-size: 13px;
+    font-weight: 200;
+}
+.check_out_data{
+    font-size: 13px;
+    font-weight: 200;
+}
+.number_of_nights{
+    font-size: 13px;
+    margin-top: 2px;
+    font-weight: 200;
 }
 .fare_top_box{
 display: flex;

@@ -9,6 +9,7 @@ let hotel_objects =
     "place": "Arossin",
     "services": "Free WiFi + Pool",
     "payserv": "Fully refundable, Reserve now, pay later",
+    "room":2,
     "rating": 4.2,
     "price": 16150
 }
@@ -425,6 +426,97 @@ function append_hotel_data(el) {
 //rating
 
 let hotel_ratings_services_box=document.createElement("div")
+hotel_ratings_services_box.setAttribute("class","hotel_ratings_services_box")
+
+let hotel_rating_box=document.createElement("div")
+hotel_rating_box.setAttribute("class","hotel_rating_box") 
+
+let hotel_rating=document.createElement("h3")
+hotel_rating.setAttribute("class","hotel_rating")
+let rating_number=document.createElement("h2")
+rating_number.setAttribute("class","rating_number")
+rating_number=el.rating
+let rating_text_review=document.createElement("h2")
+rating_text_review.setAttribute("class","rating_text_review")
+if(el.rating<4){
+    rating_text_review="Satisfactory (1156 reviews)"
+    hotel_rating.innerText=rating_number+"/5 "+rating_text_review
+}
+else if(el.rating>=4){
+    rating_text_review="Wonderful (973 reviews)"
+    // hotel_rating.innerText=`${rating_number}/5 ${rating_text_review}`
+    hotel_rating.innerText=rating_number+"/5 "+rating_text_review
+}
+
+hotel_rating_box.append(hotel_rating)
+//********************************************************** */
+let guest_review_box=document.createElement("div")
+guest_review_box.setAttribute("class","guest_review_box")
+
+let guest_review=document.createElement("h3")
+guest_review.setAttribute("class","guest_review")
+guest_review.innerText=`Guests rated this property ${el.rating+0.1}/5 for cleanliness`
+console.log('guest_review:', guest_review)
+
+guest_review_box.append(guest_review)
+//***************************************************************** */
+
+let room_number_details_box=document.createElement("div")
+room_number_details_box.setAttribute("class","room_number_details_box")
+
+let room_details=document.createElement("h3")
+room_details.setAttribute("class","room_details")
+room_details="Superior Double or Twin Room"
+let room_number=document.createElement("h3")
+room_number.setAttribute("class","room_number")
+
+if(el.room==undefined|| el.room==1){
+    room_number=` 1 Room: ${room_details}`
+}else if(el.room>1){
+    room_number=` ${el.room} Rooms: ${room_details}`
+}
+
+room_number_details_box.append(room_number)
+
+//***************************************************************** */
+
+let checkin_checkout_box=document.createElement("div")
+checkin_checkout_box.setAttribute("class","checkin_checkout_box")
+
+let check_in_box=document.createElement("div")
+check_in_box.setAttribute("class","check_in_box")
+
+let check_in_text=document.createElement("h3")
+check_in_text.setAttribute("class","check_in_text")
+check_in_text.innerText="Check-in:"
+
+let check_in_data=document.createElement("h3")
+check_in_data.setAttribute("class","check_in_data")
+check_in_data.innerText="Tue, Aug 2"
+
+check_in_box.append(check_in_text,check_in_data)
+
+let check_out_box=document.createElement("div")
+check_out_box.setAttribute("class","check_out_box")
+
+let check_out_text=document.createElement("h3")
+check_out_text.setAttribute("class","check_out_text")
+check_out_text.innerText="Check-out:"
+
+let check_out_data=document.createElement("h3")
+check_out_data.setAttribute("class","check_out_data")
+check_out_data.innerText="Wed, Aug 3"
+
+check_out_box.append(check_out_text,check_out_data)
+
+
+let number_of_nights=document.createElement("h4")
+number_of_nights.setAttribute("class","number_of_nights")
+number_of_nights.innerText="1-night stay"
+checkin_checkout_box.append(check_in_box,check_out_box,number_of_nights)
+
+hotel_ratings_services_box.append(hotel_rating_box,guest_review_box,room_number_details_box,checkin_checkout_box)
+console.log('room_number:', room_number)
 
 
 
@@ -432,8 +524,7 @@ let hotel_ratings_services_box=document.createElement("div")
 
 
 
-
-    card.append(hotel_poster_box)
+    card.append(hotel_poster_box,hotel_ratings_services_box)
     hotel_container.append(card)
 //***************************************************************** */
     // hotel fare
@@ -453,11 +544,18 @@ let hotel_ratings_services_box=document.createElement("div")
 
     let roomNight = document.createElement("h3")
     roomNight.setAttribute("class", "roomNight")
-    roomNight.innerText = "1 room x 1 night"
+    if(el.room==undefined|| el.room==1){
+        roomNight.innerText = "1 room x 1 night"
+    }
+    else if(el.room>1){
+        roomNight.innerText = `${el.room} rooms x 1 night`
+    }
+    
 
     let roomNight_fare = document.createElement("h3")
     roomNight_fare.setAttribute("class", "roomNight_fare")
-    roomNight_fare.innerText = `₹${el.price}`
+    let price_for_perNight=el.room*el.price
+    roomNight_fare.innerText = `₹${price_for_perNight}`
 console.log('price:',typeof el.price)
     roomNight_box.append(roomNight, roomNight_fare)
 
@@ -504,7 +602,7 @@ console.log('price:',typeof el.price)
     let total_fare = document.createElement("h2")
     total_fare.setAttribute("class", "total_fare")
     console.log('roomNight_fare:',typeof el.price,typeof taxesBe,typeof local_taxBe)
-    let total_of_all = el.price + taxesBe + local_taxBe
+    let total_of_all = price_for_perNight + taxesBe + local_taxBe
     console.log('total_of_all:',typeof total_of_all)
     total_fare = `₹${total_of_all}`
 
