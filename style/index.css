@@ -363,12 +363,12 @@ body{
 
 
 /* this is my js styling */
+
 #parentAm{
     width: 25%;
-    height: 50%;
+    /* height: 60%; */
     background-color: #FFFFFF;
     position: absolute;
-    margin-top: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
 }
@@ -378,4 +378,75 @@ body{
     margin-left: 20px;
     font-weight: 300;
 
+}
+#parentAm > button{
+    height: 15%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    background-color: #3662D8;
+    color: white;
+    border: none;
+    width: 95%;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+#parentAm > h2{
+    font-size: 1rem;
+    text-align: end;
+    margin-right: 10px;
+    color: #3662D8;
+    cursor: pointer;
+
+}
+.subDiv{
+  width: 100%;
+  /* height: 50%; */
+  /* border: 2px solid green; */
+  display: flex;
+}
+.subDiv2{
+    width: 50%;
+    /* height: 100%; */
+    padding: 10px;
+    /* border: 2px solid purple; */
+}
+.subDiv2 > select{
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.subDiv2 > select > option{
+    font-size: 1rem;
+}
+.insideSubDiv3{
+    width: 90%;
+    /* height: 50%; */
+    /* border: 2px solid brown; */
+    display: flex;
+    justify-content: space-evenly;
+}
+.insideSubDiv3 > p:nth-child(2){
+    font-size: 1rem;
+    margin:40px 20px 0px 20px;
+}
+.insideSubDiv3 > p:first-child,.insideSubDiv3 > p:last-child{
+    font-size: 1.3rem;
+    border: 2px solid  #a7a7a7c9;
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#DemoDiv{
+    width: 93%;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
