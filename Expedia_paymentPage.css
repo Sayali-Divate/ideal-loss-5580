@@ -1264,3 +1264,91 @@ padding: 14px;
     color: rgb(108, 108, 108);
 }
 /* hotel fare */
+
+
+/* footer */
+
+#payment_page_footer{
+    
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    width: 91.5%;
+    margin-left: 56px;
+    margin-top: 25px;
+    margin-bottom:30px;
+    /* background: cornflowerblue; */
+}
+#footer_tell_us_what_you_think{
+    display: flex;
+   
+   
+    padding-left: 64%;
+}
+#footer_tell_us_text{
+    display: flex;
+    gap: 5px;
+    font-size: 14px;
+    
+
+}
+.for_text_decoration{
+    text-decoration: none;
+    color: rgb(0,101,184);
+}
+
+.for_text_decoration:hover{
+    text-decoration: underline;
+}
+#payment_page_privacy_policy_all_section{
+    width: 40%;
+    display: flex;
+    /* margin-left: 40%; */
+    /* background: #34a853; */
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 360px;
+    margin-top: 30px;
+    font-size: 12px;
+        color: rgb(97, 96, 96);
+   
+}
+.policy_links{
+    text-decoration: none;
+    color: rgb(97, 96, 96);
+}
+.policy_links:hover{
+    text-decoration: underline;
+}
+#payment_page_donot_sell_PI{
+    width: 40%;
+    display: flex;
+    /* margin-left: 40%; */
+    /* background: #34a853; */
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 360px;
+    margin-top: 17px;
+    font-size: 12px;
+        color: rgb(97, 96, 96);
+}
+#payment_page_all_right_reserved{
+    width: 50%;
+    display: flex;
+    /* margin-left: 40%; */
+    /* background: #34a853; */
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 360px;
+    margin-top: 17px;
+    font-size: 12px;
+        color: rgb(97, 96, 96);
+}
+#payment_page_footer_logo{
+    width: 180px;
+    /* background: #4285f4; */
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 500px;
+    margin-bottom: 20px;
+}
+/* footer */
