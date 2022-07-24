@@ -28,7 +28,7 @@ let LOGIN = async () => {
 
     alert("Login Successful");
 
-    window.location.href = "navbar.html";
+    window.location.href = "index.html";
   }
 };
 
