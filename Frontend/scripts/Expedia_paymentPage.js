@@ -6,48 +6,48 @@
 
 // let checkOutDate_=	"Thu Jul 28 2022 05:30:00 GMT+0530 (India Standard Time)"	
 // noOfDays	4	
-let num=4
-let number_of_cont=document.querySelector("#booking_form_number_rooms_number")
-let number_of_traveller_cont=document.querySelector("#booking_form_number_people")
+let num = 4
+let number_of_cont = document.querySelector("#booking_form_number_rooms_number")
+let number_of_traveller_cont = document.querySelector("#booking_form_number_people")
 // localStorage.setItem("checkInDate",JSON.stringify(checkInDate_))
 // localStorage.setItem("checkOutDate",JSON.stringify(checkOutDate_))
-let noOfroom=+localStorage.getItem("noOfroom")
-console.log('noOfroom:',typeof noOfroom,noOfroom)
+let noOfroom = +localStorage.getItem("noOfroom")
+console.log('noOfroom:', typeof noOfroom, noOfroom)
 
-let noOfTravellers=+localStorage.getItem("noOfTravellers")
+let noOfTravellers = +localStorage.getItem("noOfTravellers")
 console.log('noOfTravellers:', noOfTravellers)
 
-let checkInDate=localStorage.getItem("checkInDate")
-let checkOutDate=localStorage.getItem("checkOutDate")
+let checkInDate = localStorage.getItem("checkInDate")
+let checkOutDate = localStorage.getItem("checkOutDate")
 
 console.log('checkInDate:', checkInDate)
-let arry=checkInDate.trim().split(" ")
-let array=checkOutDate.trim().split(" ")
+let arry = checkInDate.trim().split(" ")
+let array = checkOutDate.trim().split(" ")
 console.log('arry:', arry)
-let checkIn_box=""
-let checkOut_box=""
-let checkindate=0
-let checkoutdate=0
-for(var i=0;i<=3;i++){
-     checkIn_box+=arry[i]+" "
-     checkOut_box+=array[i]+" "
-     if(i==2){
-        checkindate=+arry[i]
-        checkoutdate=+array[i]
-     }
+let checkIn_box = ""
+let checkOut_box = ""
+let checkindate = 0
+let checkoutdate = 0
+for (var i = 0; i <= 3; i++) {
+    checkIn_box += arry[i] + " "
+    checkOut_box += array[i] + " "
+    if (i == 2) {
+        checkindate = +arry[i]
+        checkoutdate = +array[i]
+    }
 }
-console.log('checkIn_box:', checkIn_box,checkOut_box)
-console.log('checkindate:',typeof checkindate, typeof checkoutdate)
-let arr=localStorage.getItem("sign")
-let append=document.getElementById("payment_page_navbar_signIn_option_text")
-  
-append.innerText=arr
+console.log('checkIn_box:', checkIn_box, checkOut_box)
+console.log('checkindate:', typeof checkindate, typeof checkoutdate)
+let arr = localStorage.getItem("sign")
+let append = document.getElementById("payment_page_navbar_signIn_option_text")
 
-   if(arr==null) {
-    append.innerText="Sign in"
-  }else {
-    append.innerText=arr
-  }
+append.innerText = arr
+
+if (arr == null) {
+    append.innerText = "Sign in"
+} else {
+    append.innerText = arr
+}
 //mock data
 let hotel_container = document.querySelector("#payment_page_content_page_hotel_details")
 let hotel_fare_container = document.querySelector("#payment_page_hotel_fare_details")
@@ -445,12 +445,45 @@ not_a_residence_trigger.addEventListener("click", is_resident)
 
 // radio_button_trigger_no.addEventListener("click",radio_no)
 
-let data_from_ls = JSON.parse(localStorage.getItem("hotel_data"))
+
+
+// let hotel_obj = {
+
+//     city: "mumbai",
+//     images: {
+//         four: "https://images.trvl-media.com/hotels/6000000/5310000/5301700/5301691/cea6d2e2.jpg?impolicy=resizecrop&rw=455&ra=fit",
+//         one: "https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/6000000/5310000/5301700/5301691/42bd346d_b.jpg",
+//         three: "https://images.trvl-media.com/hotels/6000000/5310000/5301700/5301691/12567285.jpg?impolicy=resizecrop&rw=455&ra=fit",
+//         two: "https://images.trvl-media.com/hotels/6000000/5310000/5301700/5301691/33d94bb4.jpg?impolicy=resizecrop&rw=455&ra=fit",
+//     },
+//     name: "The St. Regis Mumbai",
+//     payserv: "Fully refundable, Reserve now, pay later",
+//     place: "Mumbai",
+//     price: 12000,
+//     rating: 4.6,
+//     services: "Free WiFi + Pool"
+// }
+// localStorage.setItem("hotel_details", JSON.stringify(hotel_obj))
+// images: {,…}, name: "The St. Regis Mumbai", city: "mumbai", place: "Mumbai",…}
+// city: "mumbai"
+// images: {,…}
+// four: "https://images.trvl-media.com/hotels/6000000/5310000/5301700/5301691/cea6d2e2.jpg?impolicy=resizecrop&rw=455&ra=fit"
+// one: "https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/6000000/5310000/5301700/5301691/42bd346d_b.jpg"
+// three: "https://images.trvl-media.com/hotels/6000000/5310000/5301700/5301691/12567285.jpg?impolicy=resizecrop&rw=455&ra=fit"
+// two: "https://images.trvl-media.com/hotels/6000000/5310000/5301700/5301691/33d94bb4.jpg?impolicy=resizecrop&rw=455&ra=fit"
+// name: "The St. Regis Mumbai"
+// payserv: "Fully refundable, Reserve now, pay later"
+// place: "Mumbai"
+// price: 12000
+// rating: 4.6
+// services: "Free WiFi + Pool"
+
+let data_from_ls = JSON.parse(localStorage.getItem("hotel_details"))
 console.log('data_from_ls:', typeof data_from_ls.price)
 
-append_hotel_data(data_from_ls,noOfroom)
+append_hotel_data(data_from_ls, noOfroom)
 
-function append_hotel_data(el,noOfroom) {
+function append_hotel_data(el, noOfroom) {
     hotel_container.innerHTML = ""
     hotel_fare_container.innerHTML = ""
     let card = document.createElement("div")
@@ -461,7 +494,7 @@ function append_hotel_data(el,noOfroom) {
 
     let hotel_poster = document.createElement("img")
     hotel_poster.setAttribute("class", "poster")
-    hotel_poster.src = el.image
+    hotel_poster.src = el.images.two
     let title_box = document.createElement("div")
     title_box.setAttribute("class", "title_box")
     let hotel_title = document.createElement("h4")
@@ -471,114 +504,114 @@ function append_hotel_data(el,noOfroom) {
 
     hotel_poster_box.append(hotel_poster, title_box)
 
-//***************************************************************** */
-//rating
+    //***************************************************************** */
+    //rating
+    document.querySelector("#form_free_wifi").innerText = el.services
+    let hotel_ratings_services_box = document.createElement("div")
+    hotel_ratings_services_box.setAttribute("class", "hotel_ratings_services_box")
 
-let hotel_ratings_services_box=document.createElement("div")
-hotel_ratings_services_box.setAttribute("class","hotel_ratings_services_box")
+    let hotel_rating_box = document.createElement("div")
+    hotel_rating_box.setAttribute("class", "hotel_rating_box")
 
-let hotel_rating_box=document.createElement("div")
-hotel_rating_box.setAttribute("class","hotel_rating_box") 
+    let hotel_rating = document.createElement("h3")
+    hotel_rating.setAttribute("class", "hotel_rating")
+    let rating_number = document.createElement("h2")
+    rating_number.setAttribute("class", "rating_number")
+    rating_number = el.rating
+    let rating_text_review = document.createElement("h2")
+    rating_text_review.setAttribute("class", "rating_text_review")
+    if (el.rating < 4) {
+        rating_text_review = "Satisfactory (1156 reviews)"
+        hotel_rating.innerText = rating_number + "/5 " + rating_text_review
+    }
+    else if (el.rating >= 4) {
+        rating_text_review = "Wonderful (973 reviews)"
+        // hotel_rating.innerText=`${rating_number}/5 ${rating_text_review}`
+        hotel_rating.innerText = rating_number + "/5 " + rating_text_review
+    }
 
-let hotel_rating=document.createElement("h3")
-hotel_rating.setAttribute("class","hotel_rating")
-let rating_number=document.createElement("h2")
-rating_number.setAttribute("class","rating_number")
-rating_number=el.rating
-let rating_text_review=document.createElement("h2")
-rating_text_review.setAttribute("class","rating_text_review")
-if(el.rating<4){
-    rating_text_review="Satisfactory (1156 reviews)"
-    hotel_rating.innerText=rating_number+"/5 "+rating_text_review
-}
-else if(el.rating>=4){
-    rating_text_review="Wonderful (973 reviews)"
-    // hotel_rating.innerText=`${rating_number}/5 ${rating_text_review}`
-    hotel_rating.innerText=rating_number+"/5 "+rating_text_review
-}
+    hotel_rating_box.append(hotel_rating)
+    //********************************************************** */
+    let guest_review_box = document.createElement("div")
+    guest_review_box.setAttribute("class", "guest_review_box")
+    console.log('rating:', typeof el.rating)
+    let guest_review = document.createElement("h3")
+    guest_review.setAttribute("class", "guest_review")
+    guest_review.innerText = `Guests rated this property ${el.rating}/5 for cleanliness`
+    console.log('guest_review:', guest_review)
 
-hotel_rating_box.append(hotel_rating)
-//********************************************************** */
-let guest_review_box=document.createElement("div")
-guest_review_box.setAttribute("class","guest_review_box")
+    guest_review_box.append(guest_review)
+    //***************************************************************** */
 
-let guest_review=document.createElement("h3")
-guest_review.setAttribute("class","guest_review")
-guest_review.innerText=`Guests rated this property ${el.rating+0.1}/5 for cleanliness`
-console.log('guest_review:', guest_review)
+    let room_number_details_box = document.createElement("div")
+    room_number_details_box.setAttribute("class", "room_number_details_box")
 
-guest_review_box.append(guest_review)
-//***************************************************************** */
+    let room_details = document.createElement("h3")
+    room_details.setAttribute("class", "room_details")
+    room_details = "Superior Double or Twin Room"
+    let room_number = document.createElement("h3")
+    room_number.setAttribute("class", "room_number")
+    number_of_cont.innerText = ""
+    number_of_cont.innerText = noOfroom
+    number_of_traveller_cont.innerText = ""
+    number_of_traveller_cont.innerText = `${noOfTravellers} Adults,`
+    if (noOfroom == undefined || noOfroom == 1) {
+        room_number = ` 1 Room: ${room_details}`
+    } else if (noOfroom > 1) {
+        room_number = ` ${noOfroom} Rooms: ${room_details}`
+    }
 
-let room_number_details_box=document.createElement("div")
-room_number_details_box.setAttribute("class","room_number_details_box")
+    room_number_details_box.append(room_number)
 
-let room_details=document.createElement("h3")
-room_details.setAttribute("class","room_details")
-room_details="Superior Double or Twin Room"
-let room_number=document.createElement("h3")
-room_number.setAttribute("class","room_number")
-number_of_cont.innerText=""
-number_of_cont.innerText=noOfroom
-number_of_traveller_cont.innerText=""
-number_of_traveller_cont.innerText=`${noOfTravellers} Adults,`
-if(noOfroom==undefined|| noOfroom==1){
-    room_number=` 1 Room: ${room_details}`
-}else if(noOfroom>1){
-    room_number=` ${noOfroom} Rooms: ${room_details}`
-}
+    //***************************************************************** */
 
-room_number_details_box.append(room_number)
+    let checkin_checkout_box = document.createElement("div")
+    checkin_checkout_box.setAttribute("class", "checkin_checkout_box")
 
-//***************************************************************** */
+    let check_in_box = document.createElement("div")
+    check_in_box.setAttribute("class", "check_in_box")
 
-let checkin_checkout_box=document.createElement("div")
-checkin_checkout_box.setAttribute("class","checkin_checkout_box")
+    let check_in_text = document.createElement("h3")
+    check_in_text.setAttribute("class", "check_in_text")
+    check_in_text.innerText = "Check-in:"
 
-let check_in_box=document.createElement("div")
-check_in_box.setAttribute("class","check_in_box")
+    let check_in_data = document.createElement("h3")
+    check_in_data.setAttribute("class", "check_in_data")
+    check_in_data.innerText = checkIn_box
 
-let check_in_text=document.createElement("h3")
-check_in_text.setAttribute("class","check_in_text")
-check_in_text.innerText="Check-in:"
+    check_in_box.append(check_in_text, check_in_data)
 
-let check_in_data=document.createElement("h3")
-check_in_data.setAttribute("class","check_in_data")
-check_in_data.innerText=checkIn_box
+    let check_out_box = document.createElement("div")
+    check_out_box.setAttribute("class", "check_out_box")
 
-check_in_box.append(check_in_text,check_in_data)
+    let check_out_text = document.createElement("h3")
+    check_out_text.setAttribute("class", "check_out_text")
+    check_out_text.innerText = "Check-out:"
 
-let check_out_box=document.createElement("div")
-check_out_box.setAttribute("class","check_out_box")
+    let check_out_data = document.createElement("h3")
+    check_out_data.setAttribute("class", "check_out_data")
+    check_out_data.innerText = checkOut_box
 
-let check_out_text=document.createElement("h3")
-check_out_text.setAttribute("class","check_out_text")
-check_out_text.innerText="Check-out:"
+    check_out_box.append(check_out_text, check_out_data)
 
-let check_out_data=document.createElement("h3")
-check_out_data.setAttribute("class","check_out_data")
-check_out_data.innerText=checkOut_box
+    let day_difference = checkoutdate - checkindate
+    let number_of_nights = document.createElement("h4")
+    number_of_nights.setAttribute("class", "number_of_nights")
+    number_of_nights.innerText = `${day_difference}-night stay`
+    checkin_checkout_box.append(check_in_box, check_out_box, number_of_nights)
 
-check_out_box.append(check_out_text,check_out_data)
-
-
-let number_of_nights=document.createElement("h4")
-number_of_nights.setAttribute("class","number_of_nights")
-number_of_nights.innerText="1-night stay"
-checkin_checkout_box.append(check_in_box,check_out_box,number_of_nights)
-
-hotel_ratings_services_box.append(hotel_rating_box,guest_review_box,room_number_details_box,checkin_checkout_box)
-console.log('room_number:', room_number)
-
-
+    hotel_ratings_services_box.append(hotel_rating_box, guest_review_box, room_number_details_box, checkin_checkout_box)
+    console.log('room_number:', room_number)
 
 
 
 
 
-    card.append(hotel_poster_box,hotel_ratings_services_box)
+
+
+    card.append(hotel_poster_box, hotel_ratings_services_box)
     hotel_container.append(card)
-//***************************************************************** */
+    //***************************************************************** */
     // hotel fare
 
     let fare_top_box = document.createElement("div")
@@ -596,20 +629,20 @@ console.log('room_number:', room_number)
 
     let roomNight = document.createElement("h3")
     roomNight.setAttribute("class", "roomNight")
-    let day_difference=checkoutdate-checkindate
-    if(noOfroom==undefined|| noOfroom==1){
+
+    if (noOfroom == undefined || noOfroom == 1) {
         roomNight.innerText = "1 room x 1 night"
     }
-    else if(noOfroom>1){
+    else if (noOfroom > 1) {
         roomNight.innerText = `${noOfroom} rooms x ${day_difference} nights`
     }
-    
+
 
     let roomNight_fare = document.createElement("h3")
     roomNight_fare.setAttribute("class", "roomNight_fare")
-    let price_for_perNight=noOfroom*el.price*day_difference
+    let price_for_perNight = noOfroom * el.price * day_difference
     roomNight_fare.innerText = `₹${price_for_perNight}`
-console.log('price:',typeof el.price)
+    console.log('price:', typeof el.price)
     roomNight_box.append(roomNight, roomNight_fare)
 
     let fare_taxes_box = document.createElement("div")
@@ -642,21 +675,21 @@ console.log('price:',typeof el.price)
 
     let horizontal_line = document.createElement("div")
     horizontal_line.setAttribute("class", "horizontal_line")
-//horizontal line******************************
+    //horizontal line******************************
     let total_box = document.createElement("div")
     total_box.setAttribute("class", "total_box")
 
     let total_fare_box = document.createElement("div")
     total_fare_box.setAttribute("class", "total_fare_box")
-    
+
     let total_text = document.createElement("h2")
     total_text.setAttribute("class", "total_text")
     total_text.innerText = "Total"
     let total_fare = document.createElement("h2")
     total_fare.setAttribute("class", "total_fare")
-    console.log('roomNight_fare:',typeof el.price,typeof taxesBe,typeof local_taxBe)
+    console.log('roomNight_fare:', typeof el.price, typeof taxesBe, typeof local_taxBe)
     let total_of_all = price_for_perNight + taxesBe + local_taxBe
-    console.log('total_of_all:',typeof total_of_all)
+    console.log('total_of_all:', typeof total_of_all)
     total_fare = `₹${total_of_all}`
 
     total_fare_box.append(total_text, total_fare)
@@ -673,7 +706,7 @@ console.log('price:',typeof el.price)
 
     paynow_box.append(paynow_text, paynow_fare)
 
-//***************************************************************** */
+    //***************************************************************** */
 
     let pay_at_property_box = document.createElement("div")
     pay_at_property_box.setAttribute("class", "pay_at_property_box")
@@ -685,39 +718,39 @@ console.log('price:',typeof el.price)
     pay_at_property_fare.setAttribute("class", "pay_at_property_fare")
 
     pay_at_property_fare.innerText = `₹${total_of_all}.00`
-    
 
 
-    pay_at_property_box.append(pay_at_property_text,pay_at_property_fare)
-    
+
+    pay_at_property_box.append(pay_at_property_text, pay_at_property_fare)
+
     let p_text_box = document.createElement("div")
     p_text_box.setAttribute("class", "p_text_box")
 
     let p_text = document.createElement("p")
     p_text.setAttribute("class", "p_text")
-    p_text.innerText = `Rates quoted in Indian Rupees are based on current exchange rates, which may vary at the time of travel. The property will charge you the full amount of ₹${total_of_all} approx in Dollars ($${Math.floor(total_of_all/75)}).`
-p_text_box.append(p_text)
+    p_text.innerText = `Rates quoted in Indian Rupees are based on current exchange rates, which may vary at the time of travel. The property will charge you the full amount of ₹${total_of_all} approx in Dollars ($${Math.floor(total_of_all / 79.85)}).`
+    p_text_box.append(p_text)
 
 
-      total_box.append(total_fare_box,paynow_box,pay_at_property_box,p_text_box)
+    total_box.append(total_fare_box, paynow_box, pay_at_property_box, p_text_box)
 
 
-      let fare_card=document.createElement("div")
+    let fare_card = document.createElement("div")
 
-fare_card.setAttribute("class","fare_card")
+    fare_card.setAttribute("class", "fare_card")
 
-fare_card.append(fare_top_box,fare_about_details_box,horizontal_line,total_box)
+    fare_card.append(fare_top_box, fare_about_details_box, horizontal_line, total_box)
     hotel_fare_container.append(fare_card)
 
 
 }
-function sendAlert(){
+function sendAlert() {
     alert(`Payment of Successful.`)
     alert(`Booking Successful`)
-    window.location.href="ideal-loss-5580\Frontend\index.html"
+    window.location.href = "./index.html"
 
-        }
-document.querySelector("#continue_button").addEventListener("click",sendAlert)
+}
+document.querySelector("#continue_button").addEventListener("click", sendAlert)
 
 
 
