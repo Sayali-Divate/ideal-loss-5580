@@ -148,7 +148,7 @@ let ratingBasedTag=(rating)=>{
 // functionality of search button
 let sBtn= document.getElementById("searchBtn");
 sBtn.onclick=()=>{
-    window.location.href="hoteldetail.html"
+    defaultData();
 }
 
 
