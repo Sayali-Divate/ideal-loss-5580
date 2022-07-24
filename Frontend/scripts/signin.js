@@ -18,30 +18,37 @@ let LOGIN = async () => {
 
   let data = await res.json();
   console.log(data);
-  getprofile(data, logindata);
 
-  if (data.error == true) {
-    alert("Invalid login creadentials");
-    window.location.href = "signin.html";
-  } else if (data.error == false) {
-    localStorage.setItem("sign",logindata.username);
+   let  username= document.getElementById("username").value;
 
-    alert("Login Successful");
-
-    window.location.href = "navbar.html";
+  if(data.token){
+    alert("Login successful");
+    window.location.href = "./";
+    getprofile(username, token);
   }
+  else{
+    alert("Invalid login credentials");
+  }  
 };
 
 // getprofile part
 
-async function getprofile({ token }, { username }) {
-  let url = `https://masai-api-mocker.herokuapp.com/user/${username}`;
-  let res = await fetch(url, {
-    headers: { Authorization: `Bearer ${token}` },
-  });
-  let data = await res.json();
-  console.log(data);
-}
+let  getprofile=async (username, token)=>{
+        console.log(username, token);git
+
+        let profile_url=`https://masai-api-mocker.herokuapp.com/user/${username}`
+
+        let response= await fetch(profile_url,{
+            method:"GET",
+            headers:{
+                Authorization: `Bearer ${token}`
+            }
+        });
+
+        let data= await response.json();
+        // console.log(data);
+        localStorage.setItem("user", JSON.stringify(data));
+    }
 //function cs
 let myfun = () => {
   let x = document.getElementById("password");

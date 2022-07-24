@@ -23,14 +23,14 @@
         padding: 10px 10px;
       }
       #logo {
-        margin-left: 550px;
+        margin: auto;
       }
       #b {
-        margin-left: 30px;
+        margin: auto;
       }
 
       #signin {
-        margin-left: 500px;
+        margin: auto;
 
         width: 400px;
       }
@@ -137,8 +137,7 @@
       .or {
         margin: auto;
         text-align: center;
-        justify-content: center;
-        margin-left: 50px;
+        justify-content: center;      
         margin-top: 50px;
       }
       a:hover {
@@ -235,30 +234,34 @@
     </div>
   </body>
 </html>
-<script src="./signin.js"></script>
-<!-- <script>
+<script src="./scripts/signin.js">
+
+  // let arr = JSON.parse(localStorage.getItem("sign")) || [];
+  // document.querySelector("button").addEventListener("click", myfunt);
+
+  // function myfunt() {
+  //   let email = document.querySelector("#email").value;
+  //   let password = document.querySelector("#password").value;
+
+  //   let user = false;
+
+  //   arr.forEach(function (elem) {
+  //     if (elem.email === email && elem.password === password) {
+  //       user = true;
+  //     }
+  //   });
+  //   if (user === true) {
+  //     alert("logged in");
+  //     window.location.href = "index1.html";
+  //   } else {
+  //     alert("Invalid Email OR Password");
+  //   }
+  // }
+
+
+</script>
+
   
 
-  let arr = JSON.parse(localStorage.getItem("sign")) || [];
-  document.querySelector("button").addEventListener("click", myfunt);
-
-  function myfunt() {
-    let email = document.querySelector("#email").value;
-    let password = document.querySelector("#password").value;
-
-    let user = false;
-
-    arr.forEach(function (elem) {
-      if (elem.email === email && elem.password === password) {
-        user = true;
-      }
-    });
-    if (user === true) {
-      alert("logged in");
-      window.location.href = "index1.html";
-    } else {
-      alert("Invalid Email OR Password");
-    }
-  }
-</script> -->
+  
 <!-- opacity: 0.36; -->
