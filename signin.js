@@ -24,7 +24,7 @@ let LOGIN = async () => {
     alert("Invalid login creadentials");
     window.location.href = "signin.html";
   } else if (data.error == false) {
-    localStorage.setItem("sign",logindata.username);
+    localStorage.setItem("sign", logindata.username)
 
     alert("Login Successful");
 

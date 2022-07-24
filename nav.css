@@ -1,0 +1,87 @@
+
+      body{
+        margin: 0;
+        
+      }
+      #navbar {
+        
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+
+        border-bottom: 0.1px solid rgb(214, 206, 206);
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      #frstd {
+        margin: auto;
+        margin-left: 70px;
+      }
+      #secdiv {
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 10px;
+        width: 38%;
+        margin-right: 50px;
+      }
+      #secdiv > div {
+        margin-top: 10px;
+      }
+      #para5 {
+        margin-right: 100px;
+      }
+      
+      #sel {
+        border: none;
+      }
+      #bell {
+        margin-top: 10px;
+
+        display: block;
+      }
+      #gol {
+        margin-top: 10px;
+      }
+      .a {
+         color: #343b53;
+        text-decoration: none;
+      }
+      #a {
+         color: #343b53;
+        text-decoration: none;
+      }
+      .para {
+        font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial, sans-serif;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        text-shadow: none;
+        font-weight: 500;
+        white-space: nowrap;
+        box-sizing: inherit;
+        border-style: solid;
+        border-width: 0;
+        background-repeat: no-repeat;
+
+        font-size: 0.875rem;
+        font-synthesis: style;
+        color: #343b53;
+        line-height: calc(18 / 14);
+        cursor: pointer;
+      }
+      .sel {
+        margin: auto;
+        margin-right: 440px;
+      }
+
+      .para:hover {
+        color: #3662d8;
+      }
+      button {
+        background-color: white;
+      }
+    
