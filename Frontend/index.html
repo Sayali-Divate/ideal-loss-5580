@@ -3,12 +3,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://is1-ssl.mzstatic.com/image/thumb/Purple122/v4/66/5c/0b/665c0bc0-c9d0-0a84-5083-3bcde3c1b657/AppIcon-0-1x_U007emarketing-0-7-0-85-220.png/1024x1024bb.png">
+    <link rel="icon" href="../images/Expedia-Logo_favicon.png">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <script src="https://kit.fontawesome.com/583f110147.js" crossorigin="anonymous"></script>
     <title>Expedia Travel: Vacation Homes, Hotels, Car Rental, Flights and More</title>
 </head>
 <body>
+        <div id="navbar">
+            <!-- add nvabar here -->
+        </div>
+        <hr>
        <!-- search box part -->
        <div id="mainAm">
         <div id="part1Am">
@@ -28,7 +34,7 @@
                 <label for="">Add a flight</label>
                 <input type="checkbox">
                 <label for="">Add a car</label>
-                <button onclick="clickForDestination()">Search</button>
+                <button onclick="clickForDestination()" id="search">Search</button>
             </div>
           
         </div>
@@ -218,7 +224,8 @@
         </div>
     </div>
     
-    
+    <div id="footer"></div>
 </body>
 </html>
-<script src="./scripts/index.js"></script>
+<script src="./scripts/index.js" type="module"></script>
+<script src="./scripts/navbar.js" type="module"></script>

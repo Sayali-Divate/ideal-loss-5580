@@ -1,3 +1,10 @@
+import {navbar} from "../components/navbar.js"
+import {footer} from "../components/footer.js"
+
+document.getElementById("navbar").innerHTML=navbar();
+
+// document.getElementById("footer").innerHTML=footer();
+
 
 let roomTravelersFun = (event) => {
 
@@ -188,9 +195,13 @@ let getTheApp = () => {
 
 /// user search part ///
 
+document.getElementById("search").onclick=()=>{
+    clickForDestination();
+}
+
 let clickForDestination = () =>{
     let query = document.querySelector("#GoingTo").value;
-    localStorage.setItem("query",JSON.stringify(query));
+    localStorage.setItem("place",query);
     window.location.href = "./hotels_list.html"
     console.log(query);
 }

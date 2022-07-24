@@ -1,0 +1,81 @@
+body{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;  
+    
+  }
+  #navbar {    
+    display: flex;
+    position: sticky;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: white;   
+    width: 100%;
+    padding: 10px 30px ;   
+  }
+  #frstd {
+    margin: auto;
+    margin: auto;
+  }
+  #secdiv {
+    display: flex;    
+    justify-content: space-around;
+    gap: 10px;
+    width: 38%;    
+  }
+  #secdiv > div {
+    margin-top: 10px;
+  }
+  #para5 {
+    /* margin-right: 100px; */
+  }
+  
+  #sel {
+    border: none;
+  }
+  #bell {
+    margin-top: 10px;
+
+    display: block;
+  }
+  #gol {
+    margin-top: 10px;
+  }
+  .a {
+     color: #343b53;
+    text-decoration: none;
+  }
+  #a {
+     color: #343b53;
+    text-decoration: none;
+  }
+  .para {
+    font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, "Helvetica Neue", Arial, sans-serif;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    text-shadow: none;
+    font-weight: 500;
+    white-space: nowrap;
+    box-sizing: inherit;
+    border-style: solid;
+    border-width: 0;
+    background-repeat: no-repeat;
+
+    font-size: 0.875rem;
+    font-synthesis: style;
+    color: #343b53;
+    line-height: calc(18 / 14);
+    cursor: pointer;
+  }
+  .sel {
+    margin: auto;
+    margin-right: 40%;
+  }
+
+  .para:hover {
+    color: #3662d8;
+  }
+  button {
+    background-color: white;
+  }

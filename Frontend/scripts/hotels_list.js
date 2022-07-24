@@ -1,3 +1,14 @@
+
+
+import {navbar} from "../components/navbar.js"
+
+document.getElementById("navbar").innerHTML=navbar();
+
+let city=localStorage.getItem("place"); 
+document.title = `${city} - Hotels`
+
+
+
 // To load the default data from previous page......
 
 document.body.onload=()=>{
@@ -9,7 +20,8 @@ document.body.onload=()=>{
 
 let defaultData= async(query)=>{
     
-    let city=localStorage.getItem("place") || "Goa"; 
+    let city=localStorage.getItem("place"); 
+    
     let place_name=document.querySelector("#destination");    
     place_name.value=city; 
 
@@ -132,6 +144,13 @@ let ratingBasedTag=(rating)=>{
     else return null;
    
 }
+
+// functionality of search button
+let sBtn= document.getElementById("searchBtn");
+sBtn.onclick=()=>{
+    window.location.href="hoteldetail.html"
+}
+
 
 // To focus the input tag on clicking the "going to" div...
 
