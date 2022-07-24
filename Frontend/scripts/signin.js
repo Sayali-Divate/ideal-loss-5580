@@ -32,7 +32,7 @@ let LOGIN = async () => {
   }
 };
 
-// getprofile part
+// getprofile partgit
 
 async function getprofile({ token }, { username }) {
   let url = `https://masai-api-mocker.herokuapp.com/user/${username}`;
