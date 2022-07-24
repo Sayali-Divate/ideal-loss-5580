@@ -1,19 +1,68 @@
+// noOfroom	1	
+// noOfTravellers	2	
+// let checkInDate_="Sun Jul 24 2022 05:30:00 GMT+0530 (India Standard Time)"
 
+
+
+// let checkOutDate_=	"Thu Jul 28 2022 05:30:00 GMT+0530 (India Standard Time)"	
+// noOfDays	4	
+let num=4
+let number_of_cont=document.querySelector("#booking_form_number_rooms_number")
+let number_of_traveller_cont=document.querySelector("#booking_form_number_people")
+// localStorage.setItem("checkInDate",JSON.stringify(checkInDate_))
+// localStorage.setItem("checkOutDate",JSON.stringify(checkOutDate_))
+let noOfroom=+localStorage.getItem("noOfroom")
+console.log('noOfroom:',typeof noOfroom,noOfroom)
+
+let noOfTravellers=+localStorage.getItem("noOfTravellers")
+console.log('noOfTravellers:', noOfTravellers)
+
+let checkInDate=localStorage.getItem("checkInDate")
+let checkOutDate=localStorage.getItem("checkOutDate")
+
+console.log('checkInDate:', checkInDate)
+let arry=checkInDate.trim().split(" ")
+let array=checkOutDate.trim().split(" ")
+console.log('arry:', arry)
+let checkIn_box=""
+let checkOut_box=""
+let checkindate=0
+let checkoutdate=0
+for(var i=0;i<=3;i++){
+     checkIn_box+=arry[i]+" "
+     checkOut_box+=array[i]+" "
+     if(i==2){
+        checkindate=+arry[i]
+        checkoutdate=+array[i]
+     }
+}
+console.log('checkIn_box:', checkIn_box,checkOut_box)
+console.log('checkindate:',typeof checkindate, typeof checkoutdate)
+let arr=localStorage.getItem("sign")
+let append=document.getElementById("payment_page_navbar_signIn_option_text")
+  
+append.innerText=arr
+
+   if(arr==null) {
+    append.innerText="Sign in"
+  }else {
+    append.innerText=arr
+  }
 //mock data
 let hotel_container = document.querySelector("#payment_page_content_page_hotel_details")
 let hotel_fare_container = document.querySelector("#payment_page_hotel_fare_details")
-let hotel_objects =
-{
-    "image": "https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/31000000/30790000/30783800/30783748/b015ad4a_b.jpg",
-    "name": "ITC, Grand Goa, a Luxury Collection Resort & Spa, Goa",
-    "place": "Arossin",
-    "services": "Free WiFi + Pool",
-    "payserv": "Fully refundable, Reserve now, pay later",
-    "room":2,
-    "rating": 4.2,
-    "price": 16150
-}
-localStorage.setItem("hotel_data", JSON.stringify(hotel_objects))
+// let hotel_objects =
+// {
+//     "image": "https://images.trvl-media.com/hotels/16000000/15520000/15518800/15518705/61ac74e1.jpg?impolicy=resizecrop&rw=598&ra=fit",
+//     "name": "Marriott Goa Anjuna",
+//     "place": "Arossin",
+//     "services": "Free WiFi + Pool",
+//     "payserv": "Fully refundable, Reserve now, pay later",
+//     "room":2,
+//     "rating": 4.2,
+//     "price": 16150
+// }
+// localStorage.setItem("hotel_data", JSON.stringify(hotel_objects))
 
 //mock data
 
@@ -396,12 +445,12 @@ not_a_residence_trigger.addEventListener("click", is_resident)
 
 // radio_button_trigger_no.addEventListener("click",radio_no)
 
-let data_from_ls = JSON.parse(localStorage.getItem("hotel_data"))
+let data_from_ls = JSON.parse(localStorage.getItem("hotel_details"))
 console.log('data_from_ls:', typeof data_from_ls.price)
 
-append_hotel_data(data_from_ls)
+append_hotel_data(data_from_ls,noOfroom)
 
-function append_hotel_data(el) {
+function append_hotel_data(el,noOfroom) {
     hotel_container.innerHTML = ""
     hotel_fare_container.innerHTML = ""
     let card = document.createElement("div")
@@ -469,11 +518,14 @@ room_details.setAttribute("class","room_details")
 room_details="Superior Double or Twin Room"
 let room_number=document.createElement("h3")
 room_number.setAttribute("class","room_number")
-
-if(el.room==undefined|| el.room==1){
+number_of_cont.innerText=""
+number_of_cont.innerText=noOfroom
+number_of_traveller_cont.innerText=""
+number_of_traveller_cont.innerText=`${noOfTravellers} Adults,`
+if(noOfroom==undefined|| noOfroom==1){
     room_number=` 1 Room: ${room_details}`
-}else if(el.room>1){
-    room_number=` ${el.room} Rooms: ${room_details}`
+}else if(noOfroom>1){
+    room_number=` ${noOfroom} Rooms: ${room_details}`
 }
 
 room_number_details_box.append(room_number)
@@ -492,7 +544,7 @@ check_in_text.innerText="Check-in:"
 
 let check_in_data=document.createElement("h3")
 check_in_data.setAttribute("class","check_in_data")
-check_in_data.innerText="Tue, Aug 2"
+check_in_data.innerText=checkIn_box
 
 check_in_box.append(check_in_text,check_in_data)
 
@@ -505,7 +557,7 @@ check_out_text.innerText="Check-out:"
 
 let check_out_data=document.createElement("h3")
 check_out_data.setAttribute("class","check_out_data")
-check_out_data.innerText="Wed, Aug 3"
+check_out_data.innerText=checkOut_box
 
 check_out_box.append(check_out_text,check_out_data)
 
@@ -544,17 +596,18 @@ console.log('room_number:', room_number)
 
     let roomNight = document.createElement("h3")
     roomNight.setAttribute("class", "roomNight")
-    if(el.room==undefined|| el.room==1){
+    let day_difference=checkoutdate-checkindate
+    if(noOfroom==undefined|| noOfroom==1){
         roomNight.innerText = "1 room x 1 night"
     }
-    else if(el.room>1){
-        roomNight.innerText = `${el.room} rooms x 1 night`
+    else if(noOfroom>1){
+        roomNight.innerText = `${noOfroom} rooms x ${day_difference} nights`
     }
     
 
     let roomNight_fare = document.createElement("h3")
     roomNight_fare.setAttribute("class", "roomNight_fare")
-    let price_for_perNight=el.room*el.price
+    let price_for_perNight=noOfroom*el.price*day_difference
     roomNight_fare.innerText = `₹${price_for_perNight}`
 console.log('price:',typeof el.price)
     roomNight_box.append(roomNight, roomNight_fare)
@@ -632,6 +685,9 @@ console.log('price:',typeof el.price)
     pay_at_property_fare.setAttribute("class", "pay_at_property_fare")
 
     pay_at_property_fare.innerText = `₹${total_of_all}.00`
+    
+
+
     pay_at_property_box.append(pay_at_property_text,pay_at_property_fare)
     
     let p_text_box = document.createElement("div")
@@ -655,8 +711,13 @@ fare_card.append(fare_top_box,fare_about_details_box,horizontal_line,total_box)
 
 
 }
+function sendAlert(){
+    alert(`Payment of Successful.`)
+    alert(`Booking Successful`)
+    window.location.href="ideal-loss-5580\Frontend\index.html"
 
-
+        }
+document.querySelector("#continue_button").addEventListener("click",sendAlert)
 
 
 

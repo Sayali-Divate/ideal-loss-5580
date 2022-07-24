@@ -191,7 +191,7 @@ let getTheApp = () => {
 let clickForDestination = () =>{
     let query = document.querySelector("#GoingTo").value;
     localStorage.setItem("query",JSON.stringify(query));
-    window.location.href = "signup.html"
+    window.location.href = "./hotels_list.html"
     console.log(query);
 }
 

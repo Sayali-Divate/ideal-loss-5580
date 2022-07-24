@@ -71,32 +71,34 @@ a:hover {
     grid-template-areas: 
     "first first second forth"
     "first first third last";
-    border: 1px solid rgb(255, 0, 0);
+    /* border: 1px solid rgb(255, 0, 0); */
     width:100%;
     height: 500px;
 }
 #imageGallary>div:first-child{
     grid-area: first;
-    border: 1px solid rgb(97, 7, 89);
+    /* border: 1px solid rgb(97, 7, 89); */
     width: 100%;
     height: 100%;
 }
 #imageGallary>div:nth-child(2){
     grid-area: second;
-    border: 1px solid rgb(26, 177, 46);
+    /* border: 1px solid rgb(26, 177, 46); */
 }
 #imageGallary>div:nth-child(3){
     grid-area: third;
-    border: 1px solid rgb(238, 1, 13);
+    /* border: 1px solid rgb(238, 1, 13); */
+
 }
 #imageGallary>div:nth-child(4){
     grid-area: forth;
-    border: 1px solid rgb(245, 222, 13);
+    /* border: 1px solid rgb(245, 222, 13); */
+
 }
 #imageGallary>div:last-child{    
     grid-area: last;
     position: relative;
-    border: 1px solid rgb(145, 100, 216); 
+    /* border: 1px solid rgb(145, 100, 216);  */
  }
 #imageGallary img{
     width: 100%;
@@ -280,16 +282,7 @@ a:hover {
     font-size: 16px;
     font-weight: 500;
 }
-/* #travellersOverlay{
-    width: 50%;
-    height: 80%;
-    margin: auto;
-    /* display: none; */
-/* }
-#travellers{
-    display: flex; */
-    
-/* }  */
+
 #travelDetail{
     width: 50%;
     margin: auto;
@@ -342,40 +335,35 @@ a:hover {
     font-size: 16px;
     margin: 10px;
 }
-#cancelDiv, 
+
 #extraDiv{
     width: 90%;
     height: fit-content;
     margin: 0px auto 0px;
     display: grid;
     grid-template-columns: 3fr 1fr; 
-    /* align-items: center; */
+
     font-family: var(--font-family); 
     font-size: 16px;
-    /* border: 1px solid red;   */
-}
-#cancelDiv>div:first-child,
-#extraDiv>div:first-child{
-    font-weight: bold;
-}
-/* #cancelDiv>div,
-#extraDiv>div{ */
-   /* height: 20px; */
-   /* border: 1px solid red; */
     
-/* } */
-#cancelDiv>div:nth-child(2),
+}
+
+#extraDiv>div:first-child{
+    font-weight:normal;
+}
+
+
 #extraDiv>div:nth-child(2){
-    color: grey;
+    /* color: grey; */
     font-size: 14px;
     /* border: 1px solid red; */
 }
-#cancelDiv>div:nth-child(even),
+
 #extraDiv>div:nth-child(even){
     display: grid;
     justify-content: flex-end;
 }
-#cancelDiv input[type="radio"],
+
 #extraDiv input[type="radio"]{
     margin-right:10px;
     -webkit-transform: scale(1.5);
@@ -384,7 +372,7 @@ a:hover {
 }#extraDiv>button{
     width: fit-content;
     padding: 0px 5px;
-    background-color: #497d85;
+    /* background-color: #497d85; */
     color: white;
     border: none;
     border-radius: 10px;
@@ -483,101 +471,6 @@ a:hover {
   #location > div:nth-child(3) > div > div + div > h4 + ul li span{
     padding-right: 5px;
   }
-/* 
-  .newsletterCard {
-    width: 80%;
-    margin: auto;
-    margin-top: 48px;
-    margin-bottom: 48px;
-    display: grid;
-    grid-template-columns: 3fr 5fr 1fr;
-    justify-content: space-between;
-    gap: 20px;
-    border: 1px solid #a7a7a7c9;
-    border-radius: 8px;
-}
-
-.newsletterCard>img {
-    width: 100%;
-}
-
-.newsletterCard>#bRadius {
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-}
-
-.newsletterCard>div {
-    padding: 25px 10px;
-}
-
-.newsletterCard>div>h1 {
-    font-size: 1.5rem;
-    font-weight: 1000;
-    margin-bottom: 7px;
-    color: #000000;
-}
-
-.newsletterCard>div>p {
-    font-size: .9rem;
-    margin-bottom: 25px;
-    color: #000000;
-}
-
-.newsletterCard>div>h2 {
-    font-size: 1.1rem;
-    margin-bottom: 8px;
-    color: #000000;
-}
-
-.newsletterCard>div>h6 {
-    font-size: .8rem;
-    color: #000000;
-}
-
-.newsletterCard>div>div {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 25px;
-
-}
-
-.newsletterCard>div>div>input,
-select {
-    width: 100%;
-    border-radius: 8px;
-    border: 1px solid #a7a7a7c9;
-    padding: 14px 8px;
-}
-
-.newsletterCard>div>div>input {
-    width: 90%;
-}
-
-.newsletterCard>#qrcode {
-    width: 100%;
-    margin-top: 25px;
-}
-
-.quote {
-    width: 90%;
-    margin: auto;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    text-align: center;
-
-}
-
-.quote>p {
-    margin-bottom: 5px;
-    font-size: .9rem;
-}
-
-.quote>a {
-    font-size: .9rem;
-    text-decoration: underline;
-} */
 
 
 
@@ -588,12 +481,3 @@ select {
     width: 100px;
 }
 
-#overview{
-    border: 1px solid green;
-}
-#menu{
-    border: 1px solid purple;
-}
-#icon{
-    border: 1px solid yellow;
-}

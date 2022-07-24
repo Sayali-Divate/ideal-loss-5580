@@ -145,7 +145,7 @@ roomData = [
   },
   {
     img: "https://images.trvl-media.com/hotels/16000000/15520000/15518800/15518705/a4403450.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium",
-    name: "Room, 2 Single Beds, Non Smoking, Pool View",
+    name: "Room, 2 Single Beds, Pool View",
     area: "194 sq ft",
     view: "Pool view",
     sleep: 2,
@@ -169,7 +169,7 @@ roomData = [
   },
   {
     img: "https://images.trvl-media.com/hotels/16000000/15520000/15518800/15518705/c3ca2100.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium",
-    name: "Studio Suite, 1 Queen Bed, Non Smoking, Pool View",
+    name: "Studio Suite, 1 Queen Bed, Pool View",
     area: "194 sq ft",
     view: "Pool view",
     sleep: 2,
@@ -181,7 +181,7 @@ roomData = [
   },
   {
     img: "https://images.trvl-media.com/hotels/16000000/15520000/15518800/15518705/c3ca2100.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium",
-    name: "Room, 2 Single Beds, Non Smoking, Pool View",
+    name: "Room, 2 Single Beds, Non Smoking",
     area: "194 sq ft",
     view: "Pool view",
     sleep: 1,
@@ -202,7 +202,7 @@ unList = [
   { icon: "fa-solid fa-square-parking", text: "Free self-parking" },
   { icon: "fa-solid fa-check", text: "Reserve now, pay later" },
 ];
-let refundOneDaybefore = 1800;
+let refundOneDaybefore = 0;
 // localStorage.setItem("refundOneDaybefore", refundOneDaybefore);
 
 let breakFastbuffet = 750;
@@ -245,55 +245,55 @@ function chooseRoom(roomData) {
 
     
 
-    let line = document.createElement("hr");
-    let cancelDiv = document.createElement("div");
+    let line = document.createElement("h1");
+    let cancelDiv = document.createElement("h1");
     cancelDiv.id = "cancelDiv";
 
-    let div1 = document.createElement("div");
-    div1.innerText = "Cancellation policy";
-    div1.id = "policy";
+    let div1 = document.createElement("h1");
+    div1.innerText = "";
+    div1.id = "";
 
-    let div2 = document.createElement("div");
-    div2.innerText = "per night";
+    let div2 = document.createElement("h1");
+    div2.innerText = "";
 
-    let div3 = document.createElement("div");
-    let checkbox1 = document.createElement("input");
+    let div3 = document.createElement("h1");
+    let checkbox1 = document.createElement("h1");
     checkbox1.type = "radio";
     checkbox1.className = "radio11";
     checkbox1.name = "radio1";
     checkbox1.value = 0;
-    let label1 = document.createElement("label");
-    label1.innerText = "Fully refundable 2 days before";
+    let label1 = document.createElement("h1");
+    label1.innerText = "";
     div3.append(checkbox1, label1);
 
-    let div4 = document.createElement("div");
-    div4.innerText = "+ Rs0";
+    let div4 = document.createElement("h1");
+    div4.innerText = "";
 
-    let div5 = document.createElement("div");
-    let checkbox2 = document.createElement("input");
+    let div5 = document.createElement("h1");
+    let checkbox2 = document.createElement("h1");
     checkbox2.type = "radio";
     checkbox2.name = "radio1";
     checkbox2.value = refundOneDaybefore;
-    let label2 = document.createElement("label");
-    label2.innerText = "Fully refundable  1 day before";
+    let label2 = document.createElement("h1");
+    label2.innerText = "";
     div5.append(checkbox2, label2);
 
     let div6 = document.createElement("div");
-    div6.innerText = "+ Rs" + refundOneDaybefore;
+    div6.innerText =""
 
-    cancelDiv.append(div1, div2, div3, div4, div5, div6);
+    // cancelDiv.append(div1, div2, div3, div4, div5, div6);
 
     let extraDiv = document.createElement("div");
     extraDiv.id = "extraDiv";
 
-    let line1 = document.createElement("hr");
+    let line1 = document.createElement("h1");
 
     let div7 = document.createElement("div");
-    div7.innerText = "Extras";
+    div7.innerText = "";
     div7.id = "extra";
 
-    let div8 = document.createElement("div");
-    div8.innerText = "per night";
+    let div8 = document.createElement("h1");
+    div8.innerText = "";
 
     let div9 = document.createElement("div");
     let checkbox3 = document.createElement("input");
@@ -393,9 +393,9 @@ function chooseRoom(roomData) {
     let reserveDiv = document.createElement("div");
     reserveDiv.id = "reserveDiv";
     let reserveBtn = document.createElement("button");
-    reserveBtn.innerText = "Reserve a Room";
+    reserveBtn.innerText = "Reserve";
     reserveBtn.addEventListener("click", function () {
-      window.location.href = "payment.html";
+      window.location.href = "Expedia_paymentPage.html";
     });
     reserveDiv.append(reserveBtn);
 

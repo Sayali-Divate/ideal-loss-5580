@@ -114,7 +114,7 @@ let append=(data)=>{
         hotel.append(imgDiv, mainDiv);
         container.append(hotel);
 
-        hotel.click=()=>{
+        hotel.onclick=()=>{
             hotelDetails(ele);
         }
     })   
@@ -159,8 +159,9 @@ let trigger= async (info)=>{
 //  To redirect to hotel details page after clicking a hotel..
 
 let hotelDetails=(data)=>{
+    console.log("yEs");
     localStorage.setItem("hotel_details", JSON.stringify(data));
-    window.location.href="./hoteldetail.html"
+    window.location.href= "hoteldetail.html"
 }
 
 //  To trigger the calender on clicking div for check in and check out
@@ -291,6 +292,7 @@ let filterbyPayserv=(id)=>{
 
     fetchIt(url)
 }
+
 
  
 
