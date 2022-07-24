@@ -752,7 +752,8 @@ function sendAlert() {
 }
 document.querySelector("#continue_button").addEventListener("click", sendAlert)
 
-
+let user_name=document.getElementById("payment_page_navbar_signIn_option_text");
+user_name.innerText=localStorage.getItem("sign") || "Sign in"
 
 
 

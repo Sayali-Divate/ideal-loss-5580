@@ -8,13 +8,19 @@
     <link rel="icon" href="../images/Expedia-Logo_favicon.png">
     <script src="https://kit.fontawesome.com/40eef63782.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/hoteldetail.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 </head>
 <body>
  <!--=====================================================Add navbar =========================================-->
 
+    <div id="navbar">
+      <!-- add navbar here -->
+    </div>
+    
     <div id="overview">
         <div id="icon">            
-            <a href="goa.html"> <i class="fa-solid fa-arrow-left-long"></i> See all properties</a>
+            <a href="./hotels_list.html"> <i class="fa-solid fa-arrow-left-long"></i> See all properties</a>
             <i class="fa-regular fa-heart fa-xl"></i>
         </div>
         <div id="imageGallary">
@@ -72,8 +78,9 @@
                 <a href="">See all ></a>
             </div>
             <div id="map">         
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51717.434690228925!2d73.77370949277058!3d15.576744077282122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfea251e2c53a7%3A0x23b4f2985f47dd6b!2sFairfield%20by%20Marriott%20Goa%20Anjuna!5e0!3m2!1sen!2sin!4v1655218748135!5m2!1sen!2sin" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="googleMap"></iframe>                
-                <p>Survey No. 11/14, Plot B,C & E,Simvaddo, Anjuna, Goa, 403509</p>
+                <iframe id="gMap"
+                width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="googleMap"></iframe>                
+                <p id="destination"></p>
                 <h3>Explore the area</h3>
                 <div id="explore">
                     <!--============================= append your explore option ================================-->
@@ -136,7 +143,7 @@
         ​
               <!-- ==============================map div ===============================================-->
               <div>
-                <iframe
+                <iframe id="aboutArea"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23708.954079234587!2d73.75567193218822!3d15.573539118509474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfea251e2c53a7%3A0x23b4f2985f47dd6b!2sFairfield%20by%20Marriott%20Goa%20Anjuna!5e0!3m2!1sen!2sin!4v1655448905309!5m2!1sen!2sin"
                   width="100%"
                   height="300px"
@@ -185,9 +192,12 @@
               </div>
             </div>
 
-   
+   <div id="footer">
+    <!-- add footer here -->
+   </div>
   <!-- ============================================footer part Expedia ==========================================-->
 
 </body>
-<script src="./scripts/hoteldetail.js"></script>
+<script src="./scripts/hoteldetail.js" type="module"></script>
+<script src="./scripts/navbar.js" type="module"></script>
 </html>
