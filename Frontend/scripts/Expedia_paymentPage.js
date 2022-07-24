@@ -1,16 +1,16 @@
 // noOfroom	1	
 // noOfTravellers	2	
-let checkInDate_="Sun Jul 24 2022 05:30:00 GMT+0530 (India Standard Time)"
+// let checkInDate_="Sun Jul 24 2022 05:30:00 GMT+0530 (India Standard Time)"
 
 
 
-let checkOutDate_=	"Thu Jul 28 2022 05:30:00 GMT+0530 (India Standard Time)"	
+// let checkOutDate_=	"Thu Jul 28 2022 05:30:00 GMT+0530 (India Standard Time)"	
 // noOfDays	4	
 let num=4
 let number_of_cont=document.querySelector("#booking_form_number_rooms_number")
 let number_of_traveller_cont=document.querySelector("#booking_form_number_people")
-localStorage.setItem("checkInDate",JSON.stringify(checkInDate_))
-localStorage.setItem("checkOutDate",JSON.stringify(checkOutDate_))
+// localStorage.setItem("checkInDate",JSON.stringify(checkInDate_))
+// localStorage.setItem("checkOutDate",JSON.stringify(checkOutDate_))
 let noOfroom=+localStorage.getItem("noOfroom")
 console.log('noOfroom:',typeof noOfroom,noOfroom)
 
@@ -51,18 +51,18 @@ append.innerText=arr
 //mock data
 let hotel_container = document.querySelector("#payment_page_content_page_hotel_details")
 let hotel_fare_container = document.querySelector("#payment_page_hotel_fare_details")
-let hotel_objects =
-{
-    "image": "https://images.trvl-media.com/hotels/16000000/15520000/15518800/15518705/61ac74e1.jpg?impolicy=resizecrop&rw=598&ra=fit",
-    "name": "Marriott Goa Anjuna",
-    "place": "Arossin",
-    "services": "Free WiFi + Pool",
-    "payserv": "Fully refundable, Reserve now, pay later",
-    "room":2,
-    "rating": 4.2,
-    "price": 16150
-}
-localStorage.setItem("hotel_data", JSON.stringify(hotel_objects))
+// let hotel_objects =
+// {
+//     "image": "https://images.trvl-media.com/hotels/16000000/15520000/15518800/15518705/61ac74e1.jpg?impolicy=resizecrop&rw=598&ra=fit",
+//     "name": "Marriott Goa Anjuna",
+//     "place": "Arossin",
+//     "services": "Free WiFi + Pool",
+//     "payserv": "Fully refundable, Reserve now, pay later",
+//     "room":2,
+//     "rating": 4.2,
+//     "price": 16150
+// }
+// localStorage.setItem("hotel_data", JSON.stringify(hotel_objects))
 
 //mock data
 
