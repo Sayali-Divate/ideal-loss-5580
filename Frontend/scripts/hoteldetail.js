@@ -2,7 +2,40 @@ import {navbar} from "../components/navbar.js"
 import {footer} from "../components/footer.js"
 
 document.getElementById("navbar").innerHTML=navbar();
+document.getElementById("footer").innerHTML=footer();
 
+document.body.onload=()=>{
+  localStorage.setItem("checkOutDate", event.target.value);
+  localStorage.setItem("checkInDate", event.target.value);
+  localStorage.setItem("noOfroom", event.target.value);
+  localStorage.setItem("noOfTravellers", event.target.value);
+  countNoofDays();
+}
+
+document.getElementById("checkIn").onchange=()=>{
+  localStorage.setItem("checkInDate", event.target.value)
+  countNoofDays();
+}
+
+document.getElementById("checkOut").onchange=()=>{
+  localStorage.setItem("checkOutDate", event.target.value);
+  countNoofDays();
+}
+
+document.getElementById("noOfRooms").oninput=()=>{
+  localStorage.setItem("noOfroom", event.target.value);
+  
+}
+
+document.getElementById("noOfTravellers").oninput=()=>{
+  localStorage.setItem("noOfTravellers", event.target.value);
+  
+}
+
+let hotelData=JSON.parse(localStorage.getItem("hotel_details"));
+let hotel_name=hotelData.name;
+console.log(hotelData.name)
+document.title=`${hotelData.name}`
 
 let amenities=[
   {icon:"fa-solid fa-person-swimming", text:"Pool"},
@@ -66,7 +99,12 @@ mapp.forEach(ele=>{
 
 let noOfDays=0;
 let btn = document.querySelector("#check");
-btn.addEventListener("click", function () {
+btn.onclick=()=>{
+  countNoofDays();
+}
+  
+
+let countNoofDays= ()=> {
   let minute = 1000 * 60;
   let hour = minute * 60;
   let day = hour * 24;
@@ -77,7 +115,7 @@ btn.addEventListener("click", function () {
   localStorage.setItem("noOfDays", noOfdays) 
   localStorage.setItem("checkInDate", checkInDate);
   localStorage.setItem("checkOutDate", checkOutDate);
-});
+};
 
 
 
@@ -377,11 +415,11 @@ function chooseRoom(roomData){
       reserveBtn.innerText="Reserve a Room";
       reserveBtn.addEventListener("click", function(){
 
-        // let user=document.getElementById("a");
-        // if(user.innerText=="Sign in"){
-        //   alert("Please Login to Book")
-        // }
-        // else  
+        let user=document.getElementById("a");
+        if(user.innerText=="Sign in"){
+          alert("Please Login to Book")
+        }
+        else  
         window.location.href="Expedia_paymentPage.html"
        
       })

@@ -11,46 +11,46 @@
     <title>Expedia Travel: Vacation Homes, Hotels, Car Rental, Flights and More</title>
 </head>
 <body>
-        <div id="navbar">
-            <!-- add nvabar here -->
+    <div id="navbar">
+        <!-- add nvabar here -->
+    </div>
+    <hr>
+   <!-- search box part -->
+   <div id="mainAm">
+    <div id="part1Am">
+        <a href=""><p>Stays</p></a>
+        <a href=""><p>Flights</p></a>
+        <a href=""><p>Cars</p></a>
+        <a href=""><p>Packages</p></a>
+        <a href=""><p>Things to do</p></a>
+        <a href=""><p>Cruises</p></a>
+    </div>
+    <hr>
+    <div id="part2Am">
+    <div id="subPart1Am">
+        <input type="text" name="" id="GoingTo" placeholder="Going to">
+        <div>
+            <input type="checkbox">
+            <label for="">Add a flight</label>
+            <input type="checkbox">
+            <label for="">Add a car</label>
+            <button onclick="clickForDestination()" id="search">Search</button>
         </div>
-        <hr>
-       <!-- search box part -->
-       <div id="mainAm">
-        <div id="part1Am">
-            <a href=""><p>Stays</p></a>
-            <a href=""><p>Flights</p></a>
-            <a href=""><p>Cars</p></a>
-            <a href=""><p>Packages</p></a>
-            <a href=""><p>Things to do</p></a>
-            <a href=""><p>Cruises</p></a>
-        </div>
-        <hr>
-        <div id="part2Am">
-        <div id="subPart1Am">
-            <input type="text" name="" id="GoingTo" placeholder="Going to">
-            <div>
-                <input type="checkbox">
-                <label for="">Add a flight</label>
-                <input type="checkbox">
-                <label for="">Add a car</label>
-                <button onclick="clickForDestination()" id="search">Search</button>
-            </div>
-          
-        </div>
-        <div id="subPart2Am">
-            <label for="" class="Label">Check-in</label>
-            <input min="2022-07-01" max="2023-12-31" type="date">
-        </div>
-        <div id="subPart3Am">
-            <p  id="DefaultAdultsNo">1 room, 2 travelers</p>
-            <div id="APDP"></div>
-            <label for="" class="Label">Check-out</label>
-            <input type="date" min="2022-07-01" max="2023-12-31">
-        </div>
+      
+    </div>
+    <div id="subPart2Am">
+        <label for="" class="Label">Check-in</label>
+        <input min="2022-07-01" max="2023-12-31" type="date">
+    </div>
+    <div id="subPart3Am">
+        <p onclick="roomTravelersFun()" id="DefaultAdultsNo">1 room, 2 travelers</p>
+        <div id="APDP"></div>
+        <label for="" class="Label">Check-out</label>
+        <input type="date" min="2022-07-01" max="2023-12-31">
+    </div>
 
-        </div>
-       </div>
+    </div>
+   </div>
 
        <!-- app details box -->
        <div id="appboxAm">
@@ -97,7 +97,7 @@
         <button>See flight deals</button>
         <img src="https://a.travel-assets.com/travel-assets-manager/5348/MTT-HP-Hero-D-928x398.jpg" alt="">
 
-    </div>
+       </div>
     <!-- heldest part -->
       <h1 class="heading">Here to help keep you on the move</h1>
       <div id="helpdeskAm">

@@ -1,5 +1,5 @@
 
-  .headings{
+  .footerHeadings{
     font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, "Helvetica Neue", Arial, sans-serif;
     font-synthesis: none;
@@ -7,16 +7,19 @@
     border-style: solid;
     border-width: 0;
     background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-    padding-top: 0.5rem;
+    margin: 10px 0 10px ;
+    
+    box-sizing: inherit;    
     color: #141d38;
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-weight: 500;
-    line-height: 1.125rem;
+    /* line-height: 1.125rem; */
   }
-  .links {
+  .footerSection{
+    display: block;
+    gap: 20px;
+  }
+  .footerLinks {
     font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, "Helvetica Neue", Arial, sans-serif;
     font-synthesis: none;
@@ -24,8 +27,6 @@
     border-style: solid;
     border-width: 0;
     background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
     box-sizing: inherit;
     touch-action: manipulation;
     background-color: transparent;
@@ -35,32 +36,32 @@
     width: 100%;
     justify-content: flex-start;
     text-align: left;
-    font-size: 0.75rem;
-    gap: 0.25rem;
+    font-size: 16px;   
+    margin: 20px 0 0;
     line-height: 1rem;
     display: flex;
   }
-  .links:hover {
+  .footerLinks:hover {
     text-decoration: underline;
   }
-  #footer {
+  #footerMain {
     display: grid;
-    width: 100%;
-    margin: auto;
+    width: 90%;
+    margin: 50px auto;
     grid-template-columns: repeat(5, 1fr);  
-    gap: 50px;  
+    gap: 30px;  
   }
-  #ft {
+  #footerFt {
     margin-top: 10px;
   }
-  #down{
+  #footerEnd{
     border-top: 0.1px solid rgb(214, 206, 206);
-    width: 90%;
-    margin: auto;
-    margin-top: 20px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px;
     
   }
-  .down{
+  .footerCondition{
     
 font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 border-style: solid;

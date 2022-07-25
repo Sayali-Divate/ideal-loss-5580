@@ -8,7 +8,7 @@
 
 /* search part styling */
 #mainAm{
-    width: 90%;
+    width: 80%;
     height: 300px;
     border: 1px solid grey;
     margin: 30px auto;
@@ -121,23 +121,25 @@
     border: 2px solid rgb(223, 222, 222);
     margin: auto;
     margin-top: 55px;
+    justify-content: space-between;
+    align-items: center;
 
 }
+
 #appPart1{
     width: 35%;
-
 }
 #appPart1 > img{
-    width: 370px;
-    height: 314px;
+    width: 100%;    
 }
 #appboxPart2{
     width: 52%;
     height: 100%;
     /* border: 2px solid green; */
+    margin: 0 30px;
 }
 #appboxPart2 > div > h1{
-    margin-left: 2px;
+    /* margin-left: 2px; */
 }
 #appboxPart2 > div:first-child{
     width: 100%;
@@ -147,7 +149,7 @@
 
 #appboxPart2 > div:first-child > p{
     color: #343B53;
-    margin-left: 2px;
+    margin: 10px 0;
 }
 
 #appboxPart2 > div:last-child{
@@ -157,12 +159,12 @@
 
 #appboxPart2 > div:last-child > input,button{
     padding: 10px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
 }
 #appboxPart2 > div:last-child > label{
     position: absolute;
     font-size: .7rem;
-    margin:8px 0px 0px 8px;
+    /* margin:8px 0px 0px 8px; */
 }
 #appboxPart2 > div:last-child > select{
     width: 34%;
@@ -174,7 +176,7 @@
 }
 
 #phone{
-    margin-left: 2px;
+    /* margin-left: 2px; */
 }
 #appboxPart2 > div:last-child > button{
     width: 25%;
@@ -189,11 +191,12 @@
 
 #appboxPart2 > div:last-child > p{
     color: #343B53;
-    margin-left: 2px;
+    margin: 3px 0;
     font-size: .8rem;
 }
 #appboxPart2 > div:last-child > h3{
-    margin-left: 2px;
+    /* margin-left: 2px; */
+    margin: 0 0 10px;
 }
 #appboxPart3{
     width: 17%;
@@ -202,13 +205,14 @@
     text-align: center;
 }
 #appboxPart3 > img{
-    height: 155px;
+    width: 100%;
+    /* height: 155px; */
     display: block;
     margin: auto;
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 #appboxPart3  > p{
-    margin: -3px;
+    /* margin: -3px; */
 }
 
 /* day two work  */
@@ -219,6 +223,7 @@
     margin-top: 50px;
 }
 #poster > img{
+    width: 100%;
     height: 515px;
     border-radius: 10px;
 }
@@ -258,16 +263,16 @@
     font-weight: 790;
 }
  #helpdeskAm{
-    width: 90%;
-    margin: auto;
-    display: flex;
-    margin: 40px 20px 40px 50px;
+    width: 80%;
+    margin: 20px auto;
+    display: flex; 
+    gap: 20px;   
  }
  .subDivAm{
     width: 33%;
     display: flex;
     border: 1px solid #a7a7a7c9;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     border-radius: 10px;
     padding: 10px;
     cursor: pointer;
@@ -281,25 +286,32 @@
 #threeImageAm{
     width: 90%;
     margin: auto;
-    margin-top: 40px;
     display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    gap: 20px
+
 }
-#threeImageAm > div{
-    margin-right: 20px;
+#threeImageAm > div{    
     cursor: pointer;
 }
 #threeImageAm > div > img{
-    height: 255px;
+    width: 100%;
+    /* height: 255px; */
     border-radius: 10px;
 }
-#threeImageAm > div > p{
+#threeImageAm > div > p,
+#twoImageAm > div>p{
     font-size: 13px;
+    margin: 10px;
     font-size: 'Centra No2', sans-serif;
     line-height: 6px;
 }
-#threeImageAm > div > h3{
+#threeImageAm > div > h3,
+#twoImageAm > div > h3{
    font-size: 1.1rem;
    font-weight: 600;
+   margin: 10px;
    font-family: 'Centra No2', sans-serif;
    letter-spacing: .4px;
 }
@@ -310,6 +322,7 @@
     margin: auto;
     display: flex;
     margin-top: 50px;
+    gap: 30px;
 }
 #twoImageAm > div{
     width: 48%;
@@ -317,10 +330,11 @@
     cursor: pointer;
 }
 #twoImageAm > div:first-child{
-    margin-right: 39px;
+    /* margin-right: 39px; */
 }
 #twoImageAm > div > img{
-    height: 324px;
+    width: 100%;
+    /* height: 324px; */
     border-radius: 10px;
 }
 
@@ -340,8 +354,8 @@
     color: blue;
 }
 #scrollbar{
-    width: 87.6%;
-    height: 200px;
+    width: 88%;
+    height: 500px;
     border: 1px solid #a7a7a7c9;
     margin: auto;
     overflow-y: auto;
@@ -350,13 +364,16 @@
     cursor: pointer;
 }
 #scrollbar > div{
-    margin-right: 110px;
+    /* margin-right: 110px; */
+    margin: auto;
+
 }
 
 #scrollbar > div > p{
-    color: blue;
+    color: #3662d8;
     font-size: .9rem;
     font-weight: 500;
+    margin: 10px;
 }
 
 
