@@ -1,2 +1,2 @@
 web:node server.js
-web:node ./Frontend/scripts/index.js
+web:node ./scripts/index.js
