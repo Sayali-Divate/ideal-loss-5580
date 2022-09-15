@@ -58,12 +58,6 @@ body{
 #destination{
     outline: none;
 }
-#check-in,
-#check-out,
-#travellers,
-#searchBtn{
-    /* width:15%; */
-}
 input[type="date"]{
     /* width: 60%; */
     outline: none;
