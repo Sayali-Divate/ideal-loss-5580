@@ -1,11 +1,14 @@
 let footer=()=>{
-    return `<div id="footerMain">
-    <div id="footerFt">
+    return `
+    
+  <div id="hiddenImage">
       <img
         src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg"
         alt=""
-      />
-    </div>
+    />
+  </div>
+    <div id="footerMain">  
+    
     <div class="footerSection">
       <h3 class="footerHeadings">Company</h3>
       <p><a class="footerLinks" href="#">About</a></p>

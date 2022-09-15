@@ -5,7 +5,7 @@ document.getElementById("navbar").innerHTML=navbar();
 document.getElementById("footer").innerHTML=footer();
 
 document.getElementById("DefaultAdultsNo").onclick=()=>{
-    // roomTravelersFun();
+    roomTravelersFun();
 }
 
 let roomTravelersFun = (event) => {
@@ -173,6 +173,18 @@ let roomTravelersFun = (event) => {
     }
    
 
+}
+
+let checkIn=document.querySelector("#check-in");
+checkIn.onclick=()=>{
+    let date=document.querySelector("#checkin_date");
+    date.showPicker();
+   
+}
+let checkOut=document.querySelector("#check-out");
+checkOut.onclick=()=>{
+    let date=document.querySelector("#checkout_date");
+    date.showPicker();   
 }
 
 

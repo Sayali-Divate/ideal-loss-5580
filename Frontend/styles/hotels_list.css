@@ -10,37 +10,50 @@ body{
 }
 #parent{
     width: 80%;
-    margin:20px auto;
+    margin: 20px auto;
+    /* border: 1px solid; */
 }
 #childParent1{
     width: 100%;
+    margin: auto;
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between; 
+    gap: 10px;   
+}
+#childParent1>div:first-child{
+    width: 40%;
+}
+#childParent1>div:nth-child(2){
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.2fr 0.8fr;
+    gap: 10px;
+    /* border: 1px solid; */
 }
 .topBlock{
     display: flex;
-    border: 2px solid black;
+    border: 1px solid rgb(171, 168, 168);
     justify-content: flex-start;
     align-items: center;  
-    padding: 0px 15px;  
+    padding: 0px 10px;  
     border-radius: 10px;
     gap: 20px;
     background-color: white;
 }
 .topBlock:hover{
     cursor: pointer; 
-    border: 2px solid #3662d8;
+    border: 1px solid #3662d8;
 }
 .topBlock:hover .icon>i{
     cursor: pointer; 
     color:#3662d8;
 }
 #search{
-    width: 35%;
+    width: 100%;
 }
 #search:hover{  
     cursor: pointer; 
-    border: 2px solid #3662d8;
+    border: 1px solid #3662d8;
 }
 #destination{
     outline: none;
@@ -49,7 +62,7 @@ body{
 #check-out,
 #travellers,
 #searchBtn{
-    width:15%;
+    /* width:15%; */
 }
 input[type="date"]{
     /* width: 60%; */
@@ -58,8 +71,7 @@ input[type="date"]{
 input[type="date"]::-webkit-calendar-picker-indicator{
     display: none;
 }
-#travellers{
-    width: fit-content;
+#travellers{    
     overflow: hidden;
 }
 #searchBtn{
@@ -99,12 +111,12 @@ hr{
 }
 #map{
     width: 100%; 
-    border: 2px solid black; 
+    border: 1px solid rgb(171, 168, 168);; 
     border-radius: 10px;  
 }
 #map:hover,
 #search_by_property>div:hover{
-    border: 2px solid #3662d8;
+    border: 1px solid #3662d8;
 }
 #gmap_canvas{
     border-radius: 10px;
@@ -114,7 +126,7 @@ hr{
     gap: 20px;
     justify-content: flex-start;
     align-items: center;
-    border: 2px solid #343b53;
+    border: 1px solid #343b53;
     border-radius: 10px;
     padding: 10px;    
 }
@@ -238,3 +250,151 @@ input[type="checkbox"]{
     justify-content: center;
     align-items: center;
 }
+
+@media all and (min-width: 768px) and (max-width: 1024px){    
+    #parent{
+        width: 90%;
+        margin: 20px auto;        
+    }
+    #childParent1{
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;   
+    }
+    #childParent1>div:first-child{
+        width: 100%;
+    }
+    #childParent1>div:nth-child(2){
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1.25fr 0.75fr;
+        gap: 10px;        
+    }
+    #childParent2{       
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;        
+    }
+    #sidebar{
+        width: 20%;
+    }
+    #map>iframe{
+        width: 100%;
+    }      
+    #search_by_property>div{
+        display: flex;
+        gap: 20px;
+        justify-content: flex-start;
+        align-items: center;
+        border: 1px solid #343b53;
+        border-radius: 10px;
+        padding: 10px;    
+    }
+    #search_by_property>h3,
+    #filter>h3{
+        font-size: 16px;
+    }
+    #property_div>input{
+        font-size: 12px;
+    }    
+    #filter>div>div{       
+        font-size: 14px;
+    }
+    input[type="radio"],
+    input[type="checkbox"]{
+        transform: scale(1.2);
+    }    
+    .hotel h3{        
+        font-size: 16px;
+    }
+    .hotel>div:first-child{
+        width: 60%;   
+    }   
+    .hotel>div:last-child{       
+        gap: 10px;
+    }   
+    .payserv{
+        width: 80%;  
+        font-size: 14px;         
+    }
+    .payserv>p{
+        color: green;
+    }   
+}
+
+@media all and (min-width: 0px) and (max-width: 767px){    
+    #childParent1{
+        display: flex;
+        flex-direction: column;
+    }
+    #childParent1>div:first-child{
+        width: 100%;
+    }
+    #childParent1>div:nth-child(2){
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);                
+    }
+    #childParent2{       
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;        
+    }    
+    #sidebar{
+        display: none;        
+    } 
+    #sort{
+        flex-direction: column;
+        gap: 5px;
+    }
+    #sort>div:nth-child(2){
+        width: 100%;
+    }
+    #sort>div:nth-child(2)>div option{
+        width: 80%;
+    }
+    #selectPrice{
+        width: 100%
+    }
+    .hotel{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }     
+    .hotel h3{        
+        font-size: 16px;
+    }
+    .hotel>div:first-child>img{
+        width: 100%;
+        height:fit-content;
+        border-radius: 10px 10px 0 0;        
+    }
+    .hotel>div:first-child{
+        width: 100%;   
+    }   
+    .hotel>div:last-child{       
+        gap: 10px;
+        padding: 0 20px 20px;
+    }   
+    .payserv{
+        width: 80%;  
+        font-size: 14px;         
+    }
+    .payserv>p{
+        color: green;
+    }
+    .rating>p{
+        font-size: 15px;
+    }
+    .bottomBlock>div:last-child{
+        width: fit-content;
+    }
+    .bottomBlock h2{
+        font-size: 17px;
+    }
+   
+}
+
+

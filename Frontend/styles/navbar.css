@@ -1,46 +1,26 @@
 body{
     margin: 0; 
     padding: 0;
-    box-sizing: border-box;  
-    
+    box-sizing: border-box;      
   }
   #navbar {    
     display: flex;
     position: sticky;
-    justify-content: space-evenly;
-    text-align: center;
+    justify-content: space-between;   
     background-color: white;   
     width: 100%;
     padding: 10px 30px ;   
-  }
-  #frstd {
-    margin: auto;
-    margin: auto;
-  }
+  }  
   #secdiv {
+    width: 70%;
     display: flex;    
-    justify-content: space-around;
-    gap: 10px;
-    width: 38%;    
-  }
-  #secdiv > div {
-    margin-top: 10px;
-  }
-  #para5 {
-    /* margin-right: 100px; */
-  }
-  
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;    
+  } 
   #sel {
     border: none;
-  }
-  #bell {
-    margin-top: 10px;
-
-    display: block;
-  }
-  #gol {
-    margin-top: 10px;
-  }
+  }  
   .a {
      color: #343b53;
     text-decoration: none;
@@ -53,29 +33,59 @@ body{
     font-family: "Centra No2", -apple-system, BlinkMacSystemFont, "Segoe UI",
       Roboto, "Helvetica Neue", Arial, sans-serif;
     cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-    text-shadow: none;
+    -webkit-tap-highlight-color: transparent;    
     font-weight: 500;
     white-space: nowrap;
     box-sizing: inherit;
     border-style: solid;
     border-width: 0;
     background-repeat: no-repeat;
-
     font-size: 0.875rem;
     font-synthesis: style;
     color: #343b53;
     line-height: calc(18 / 14);
     cursor: pointer;
   }
-  .sel {
-    margin: auto;
-    margin-right: 40%;
-  }
-
   .para:hover {
     color: #3662d8;
   }
   button {
     background-color: white;
+  }
+
+  @media all and (min-width: 768px) and (max-width: 1024px){
+    #navbar{
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+    #navbar>div:first-child{
+      width: 30%;
+    }
+    #navbar>div:last-child{
+      width: 20%;            
+    }
+    #secdiv>i:first-child,
+    #secdiv>button:nth-child(2),
+    #secdiv>button:nth-child(3),
+    #secdiv>button:nth-child(4){
+      display: none;
+    }
+  }
+  @media all and (min-width: 0px) and (max-width: 767px){   
+    #navbar{
+      width: 100%;
+    }    
+    #navbar>div:first-child{
+      width: 20%;
+    }
+    #navbar>div:last-child{
+      width: 20%;      
+    }
+    #secdiv>i:first-child,
+    #secdiv>button:nth-child(2),
+    #secdiv>button:nth-child(3),
+    #secdiv>button:nth-child(4){
+      display: none;
+    }
   }

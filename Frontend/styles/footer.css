@@ -37,7 +37,7 @@
     justify-content: flex-start;
     text-align: left;
     font-size: 16px;   
-    margin: 20px 0 0;
+    margin: 10px 0 0;
     line-height: 1rem;
     display: flex;
   }
@@ -47,8 +47,8 @@
   #footerMain {
     display: grid;
     width: 90%;
-    margin: 50px auto;
-    grid-template-columns: repeat(5, 1fr);  
+    margin: 10px auto;
+    grid-template-columns: repeat(4,1fr);  
     gap: 30px;  
   }
   #footerFt {
@@ -72,5 +72,45 @@ color: #343B53;
 text-align: center;
 font-weight: 400;
 
+  } 
+  #hiddenImage{
+    padding: 30px;
+  }
 
+  @media all and (min-width: 768px) and (max-width: 1024px){
+    #footerMain{
+      width: 80%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      /* padding: 30px; */
+      /* margin-top: 20px; */
+      gap: 5px;
+    }   
+    #footerMain a{
+      font-size: 14px;
+    }
+   
+
+  }
+  @media all and (min-width: 0px) and (max-width: 767px){   
+    #footerMain{
+      width: 80%;
+      /* margin: auto; */
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 10px;
+      gap: 5px;
+      margin-top: 5px;
+      /* border: 1px solid; */
+    }  
+    #footerMain a{
+      font-size: 12px;
+    }
+    #footerMain h3{
+      font-size: 13px;
+    }    
+    #hiddenImage{
+      display: block;
+      width: 30%;
+    }
   }

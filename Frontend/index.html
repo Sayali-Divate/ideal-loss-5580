@@ -17,39 +17,50 @@
     <hr>
    <!-- search box part -->
    <div id="mainAm">
-    <div id="part1Am">
-        <a href=""><p>Stays</p></a>
-        <a href=""><p>Flights</p></a>
-        <a href=""><p>Cars</p></a>
-        <a href=""><p>Packages</p></a>
-        <a href=""><p>Things to do</p></a>
-        <a href=""><p>Cruises</p></a>
-    </div>
-    <hr>
-    <div id="part2Am">
-    <div id="subPart1Am">
-        <input type="text" name="" id="GoingTo" placeholder="Going to">
-        <div>
-            <input type="checkbox">
-            <label for="">Add a flight</label>
-            <input type="checkbox">
-            <label for="">Add a car</label>
-            <button onclick="clickForDestination()" id="search">Search</button>
+        <div id="part1Am">
+            <a href=""><p>Stays</p></a>
+            <a href=""><p>Flights</p></a>
+            <a href=""><p>Cars</p></a>
+            <a href=""><p>Packages</p></a>
+            <a href=""><p>Things to do</p></a>
+            <a href=""><p>Cruises</p></a>
+        </div>    
+        <div id="part2Am">
+            <div id="DefaultAdultsNo">1 room, 2 travelers</div>
+            <div id="destination_details">
+                <div>
+                    <i class="fa-solid fa-location-dot "></i>
+                    <input type="text" name="" id="GoingTo" placeholder="Going to">
+                </div>                
+                <div id="dates">
+                    <div id="check-in">
+                        <i class="fa-regular fa-calendar"></i>
+                        <div>
+                            <label for="" class="Label">Check-in</label>
+                            <input min="2022-07-01" max="2023-12-31" type="date" id="checkin_date">
+                        </div>
+                    </div>
+                    <div id="check-out">
+                        <i class="fa-regular fa-calendar"></i>
+                        <div>
+                            <label for="" class="Label">Check-out</label>
+                            <input type="date" min="2022-07-01" max="2023-12-31" id="checkout_date"> 
+                        </div>
+                    </div>
+                </div>                
+            </div>
+            <div id="option">
+                <div>
+                    <input type="checkbox">
+                    <label for="">Add a flight</label>
+                </div>
+                <div>
+                    <input type="checkbox">
+                    <label for="">Add a car</label>
+                </div>
+            </div>
+            <button onclick="clickForDestination()" id="search">Search</button>          
         </div>
-      
-    </div>
-    <div id="subPart2Am">
-        <label for="" class="Label">Check-in</label>
-        <input min="2022-07-01" max="2023-12-31" type="date">
-    </div>
-    <div id="subPart3Am">
-        <p onclick="roomTravelersFun()" id="DefaultAdultsNo">1 room, 2 travelers</p>
-        <div id="APDP"></div>
-        <label for="" class="Label">Check-out</label>
-        <input type="date" min="2022-07-01" max="2023-12-31">
-    </div>
-
-    </div>
    </div>
 
        <!-- app details box -->

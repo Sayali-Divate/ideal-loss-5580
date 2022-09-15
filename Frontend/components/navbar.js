@@ -5,14 +5,8 @@ let navbar = ()=>{
         id="logo"
         src="https://www.expedia.com/_dms/header/logo.svg?locale=en_US&siteid=1&2"
         alt="logo"
-      />
+      />     
     </div>
-    <div class="sel">
-      <select class="para" name="More travel" id="sel">
-        More travel
-
-        <option class="para" value="More travels">More travels</option>
-      </select>
     </div>
 
     <div id="secdiv">
