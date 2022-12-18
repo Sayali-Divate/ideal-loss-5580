@@ -6,7 +6,7 @@
 2.Sayali Divate  <br>
 3.Vikas Kumar  <br>
 4.Aman Kumar  <br>
-5.Vikash
+5.Vikas Sanodiya <br>
 
 # Tools in Projects:-
 1.HTML && CSS <br>
